@@ -19,7 +19,7 @@ So there are 2-3 things to do in order to use it :
 
 6. start MAMP or XAMP. 
 
-7. In your browser to to
+7. In your browser go to
 
         http://[my-localhost-server] 
 
