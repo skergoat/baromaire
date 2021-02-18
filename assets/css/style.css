@@ -281,7 +281,10 @@ footer {
   background: #f6f6f6;
   cursor: pointer;
 }
-.sidebar-left_nav li:hover a, .sidebar-left_nav li:hover a > i::before, .sidebar-left_nav li.active a, .sidebar-left_nav li.active a > i::before {
+.sidebar-left_nav li:hover a, .sidebar-left_nav li:hover a > i::before {
+  color: #2d4e9d;
+}
+.sidebar-left_nav li.active a, .sidebar-left_nav li.active a > i::before {
   color: #2d4e9d;
   font-weight: 600;
 }

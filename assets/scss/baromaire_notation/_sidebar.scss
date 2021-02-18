@@ -19,7 +19,9 @@
       cursor: pointer;
     }
     & li:hover a,
-    & li:hover a > i::before,
+    & li:hover a > i::before {
+      color: #2d4e9d;
+    }
     & li.active a,
     & li.active a > i::before {
       color: #2d4e9d;
