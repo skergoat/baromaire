@@ -19,7 +19,7 @@ ob_start(); ?>
         // loop >> see : Model/Cards
         foreach($cards->create() as $domaine) { ?>
          <div class="col-2 p-0 mr-4 mb-4">
-            <a href="https://skergoat.com/baromaire/?cadre&quartier=2">
+            <a href="/?cadre&quartier=2">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
                     <div class="reajust">
