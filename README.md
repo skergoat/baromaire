@@ -1,6 +1,6 @@
 # baromaire
 
-My projet uses PHP and yarn. 
+My project uses PHP and yarn. 
 So there are 2-3 things to do in order to use it : 
 
 1. clone repository
