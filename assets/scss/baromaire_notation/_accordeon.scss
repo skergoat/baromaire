@@ -1,0 +1,38 @@
+.accordeon {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+
+.badge-secondary {
+  background-color: $lightprimary !important;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: black !important;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.watch {
+  cursor: pointer;
+}
+
+.watch .fa-plus {
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+}
+
+.watch:hover .fa-plus {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: $danger;
+}
+
+.description {
+  overflow: hidden;
+  height: 0px;
+}
+
+.opened {
+  height: 100%;
+}

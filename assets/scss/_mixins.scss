@@ -1,0 +1,181 @@
+/*border*/
+@mixin border($color) {
+  border: 2px solid $color;
+}
+
+.b-black {
+  @include border(black);
+}
+.b-red {
+  @include border(red);
+}
+.b-blue {
+  @include border(blue);
+}
+.b-green {
+  @include border(green);
+}
+.b-orange {
+  @include border(orange);
+}
+.b-pink {
+  @include border(pink);
+}
+.b-purple {
+  @include border(purple);
+}
+
+/*color*/
+@mixin color($color) {
+  color: $color;
+}
+
+.black {
+  @include color(black);
+}
+.red {
+  @include color(red);
+}
+.blue {
+  @include color(blue);
+}
+.green {
+  @include color(green);
+}
+.orange {
+  @include color(orange);
+}
+.pink {
+  @include color(pink);
+}
+.purple {
+  @include color(purple);
+}
+/*custom colors*/
+.primary {
+  @include color($primary);
+}
+.success {
+  @include color($success);
+}
+.warning {
+  @include color($warning);
+}
+.danger {
+  @include color($danger);
+}
+
+/*bakground*/
+@mixin background($color) {
+  border: 2px solid $color;
+}
+
+.back-white {
+  @include background(white);
+}
+
+/*font-size*/
+@mixin fontSize($size) {
+  font-size: $size;
+}
+
+.font-10 {
+  @include fontSize(10px);
+}
+
+.font-11 {
+  @include fontSize(11px);
+}
+
+.font-12 {
+  @include fontSize(12px);
+}
+
+.font-13 {
+  @include fontSize(13px);
+}
+
+.font-14 {
+  @include fontSize(14px);
+}
+
+.font-15 {
+  @include fontSize(15px);
+}
+
+.font-16 {
+  @include fontSize(16px);
+}
+
+.font-17 {
+  @include fontSize(17px);
+}
+
+.font-18 {
+  @include fontSize(18px);
+}
+
+.font-19 {
+  @include fontSize(19px);
+}
+
+.font-20 {
+  @include fontSize(20px);
+}
+
+.font-21 {
+  @include fontSize(21px);
+}
+
+.font-22 {
+  @include fontSize(22px);
+}
+
+.font-23 {
+  @include fontSize(23px);
+}
+
+.font-24 {
+  @include fontSize(24px);
+}
+
+.font-25 {
+  @include fontSize(25px);
+}
+
+.font-30 {
+  @include fontSize(30px);
+}
+
+.font-50 {
+  @include fontSize(50px);
+}
+
+/*font-weight*/
+@mixin font-weight($font-weight) {
+  font-weight: $font-weight;
+}
+
+.bold {
+  @include font-weight("bold");
+}
+
+.w-500 {
+  @include font-weight(500);
+}
+
+.w-600 {
+  @include font-weight(600);
+}
+
+.w-700 {
+  @include font-weight(700);
+}
+
+.w-800 {
+  @include font-weight(800);
+}
+
+.w-900 {
+  @include font-weight(900);
+}

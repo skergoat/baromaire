@@ -1,0 +1,92 @@
+.progresses {
+  position: relative;
+  // margin: 4px;
+  width: 95px;
+  height: 50px; /* Half circle (overflow) */
+  text-align: center !important;
+  font-size: 16px;
+  margin: auto;
+  /*model 2*/
+  &.progresses-2,
+  &.progresses-5 {
+    width: 130px !important;
+    height: auto !important; /* Half circle (overflow) */
+    font-size: 22px;
+  }
+  &.progresses-3 {
+    width: 80px !important;
+    height: auto !important; /* Half circle (overflow) */
+    font-size: 15px;
+  }
+  &.progresses-4 {
+    width: 50px !important;
+    height: auto !important; /* Half circle (overflow) */
+    font-size: 12px;
+  }
+}
+
+.barOverflow {
+  /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  width: 100px;
+  height: 47px !important; /* Half circle (overflow) */
+  margin-bottom: -20px; /* bring the numbers up */
+  /*model 2*/
+  &.barOverflow-2,
+  &.barOverflow-5 {
+    width: 130px;
+    height: 60px !important; /* Half circle (overflow) */
+    margin-bottom: -30px; /* bring the numbers up */
+  }
+  &.barOverflow-3 {
+    width: 100px;
+    height: 40px !important;
+    margin-bottom: -20px;
+    font-size: 15px;
+  }
+  &.barOverflow-4 {
+    width: 50px;
+    height: 25px !important;
+    margin-bottom: -15px;
+    font-size: 12px;
+  }
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 95px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 10px solid #d9d9d9;
+  /*model 2*/
+  &.bar-second,
+  &.bar-fifth {
+    width: 130px;
+    height: 130px;
+    border: 13px solid #d9d9d9;
+  }
+  &.bar-third {
+    width: 80px;
+    height: 80px;
+    border: 7px solid #d9d9d9;
+  }
+  &.bar-fourth {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #d9d9d9;
+  }
+}
+
+.success-bar {
+  border-bottom-color: $success !important; /* half azure */
+  border-right-color: $success !important;
+}
+
+.warning-bar {
+  border-bottom-color: $warning !important; /* half azure */
+  border-right-color: $warning !important;
+}

@@ -1,0 +1,8 @@
+.card {
+  padding: 10px;
+  box-shadow: 0 3px 6px 0px rgb(0 0 0 / 30%);
+  &.card-loop:hover {
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+  }
+}

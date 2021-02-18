@@ -1,0 +1,13 @@
+.nb {
+  // font-size: 25px;
+  font-weight: bold;
+  &.nb-success {
+    color: $success;
+  }
+  &.nb-warning {
+    color: $warning;
+  }
+  &.nb-danger {
+    color: $danger;
+  }
+}

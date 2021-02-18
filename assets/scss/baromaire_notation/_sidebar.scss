@@ -1,0 +1,55 @@
+.sidebar-left {
+  color: $primary !important;
+  &_nav {
+    padding: 0px !important;
+    & li {
+      list-style-type: none;
+      line-height: 2.25rem;
+    }
+    & li a {
+      width: 100%;
+      display: block;
+    }
+    & li a > i::before {
+      color: black;
+    }
+    & li:hover,
+    & li.active {
+      background: #f6f6f6;
+      cursor: pointer;
+    }
+    & li:hover a,
+    & li:hover a > i::before,
+    & li.active a,
+    & li.active a > i::before {
+      color: #2d4e9d;
+      font-weight: 600;
+    }
+  }
+}
+// divider dashed
+.divider {
+  color: $primary !important;
+  &_first {
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.21176470588235294);
+    &_title {
+      font-weight: 800;
+    }
+  }
+  &_second {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.21176470588235294);
+  }
+}
+// maire image
+.image {
+  background-size: cover;
+  border-radius: 200px;
+  height: 160px;
+  width: 160px;
+  &-rounded {
+    background-image: url("assets/../../img/maire.jpg");
+  }
+  &-placeholder {
+    background-image: url("assets/../../img/placeholder.png");
+  }
+}
