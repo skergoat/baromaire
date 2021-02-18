@@ -18,11 +18,11 @@ ob_start(); ?>
         // loop >> see : Model/Cards
         foreach($cards->engagement() as $domaine) { ?>
         <div class="col-2 p-0 mr-4 mb-4">
-            <a href="/?cadre&quartier=1">
+            <a href="https://skergoat.com/baromaire/?cadre&quartier=1">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
                     <div class="reajust">
-                        <img class="card-img-top" src="../../assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
                     </div>
                     <?= $progress->cards(40) ?>
                     <div class="card-body p-0 pt-1">

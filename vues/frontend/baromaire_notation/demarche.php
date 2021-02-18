@@ -16,7 +16,7 @@ ob_start(); ?>
     <h4 class="mb-4">Notre démarche</h4>
     <div class="row">
         <div class="col-6 p-0">
-            <img src="../../assets/img/engagements/image_29.jpg" alt="Team">
+            <img src="assets/img/engagements/image_29.jpg" alt="Team">
         </div>
         <div class="col-6 pr-0">
             <p class="primary font-16 text-justify mb-2" style="line-height:1.7rem">Vous le savez, à Beaubourg, nous innovons sans cesse pour transformer notre ville et la moderniser. Cela ne se limite pas uniquement à des projets ! Aujourd'hui, grace au Baromaire, c'est une manière plus transparente de vous informer que je vous propose. </p>
@@ -25,7 +25,7 @@ ob_start(); ?>
                 <div class="col-4 offset-7 primary p-0">
                     <p class="text-center mb-2">Le Maire,</p>
                     <p class="text-center mb-2">Robert Dupont</p>
-                    <img src="../../assets/img/engagements/image_27.jpg" alt="Team" class="d-block mx-auto" style="max-width:120px;">
+                    <img src="assets/img/engagements/image_27.jpg" alt="Team" class="d-block mx-auto" style="max-width:120px;">
                 </div>
             </div>
         </div>

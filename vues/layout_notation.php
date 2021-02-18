@@ -30,7 +30,7 @@
         <!-- header -->
         <header class="header_baromaire row align-items-center justify-content-between">
             <div>
-                <a href="/">
+                <a href="https://skergoat.com/baromaire/">
                     <img class="logo" src="assets/img/logo_baromaire.png" alt="">
                 </a>
             </div>
@@ -74,12 +74,12 @@
                         </div>
                     </div>
                     <ul class="sidebar-left_nav">
-                        <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
-                        <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
-                        <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
-                        <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Dans votre quartier</a></li>
+                        <li class="pl-2"><a href="baromaire/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
+                        <li class="pl-2"><a href="baromaire/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
+                        <li class="pl-2"><a href="baromaire/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
+                        <li class="pl-2"><a href="baromaire/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Dans votre quartier</a></li>
                         <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
-                        <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
+                        <li class="pl-2"><a href="baromaire/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
                     </ul>
                     <!-- alert -->
                     <?php if(isset($_GET['admin'])) { ?>

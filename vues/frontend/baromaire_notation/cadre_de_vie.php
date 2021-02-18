@@ -24,7 +24,7 @@ ob_start(); ?>
                 <!-- image -->
                 <div class="accordeon_image col-3 p-0 pl-3 d-flex align-items-center justify-content-center position-relative">
                     <div>
-                        <img src="../../assets/img/engagements/<?= $accordeons['image'] ?>" alt="image engagements" style="max-width:130px;"/>
+                        <img src="assets/img/engagements/<?= $accordeons['image'] ?>" alt="image engagements" style="max-width:130px;"/>
                     </div>
                 </div>
                 <div class="accordeon_body col-9 p-0 pl-3 pb-2">

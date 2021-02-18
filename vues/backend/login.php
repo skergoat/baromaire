@@ -18,7 +18,7 @@ ob_start(); ?>
       <div class="card-body">
         <!-- title -->
         <div class="row">
-            <img src="../../assets/img/admin/image_28.jpg" alt="" class="col-2 pr-0" id="login-logo-1"> 
+            <img src="assets/img/admin/image_28.jpg" alt="" class="col-2 pr-0" id="login-logo-1"> 
             <p class="col-10 card-title text-left danger font-30 w-900">Pas de Baromaire dans votre commune ?</p>
         </div>
         <!-- body -->
@@ -34,7 +34,7 @@ ob_start(); ?>
     <div class="card">
       <div class="card-body">
         <!-- title -->
-        <p class="card-title text-center font-23"><img src="../../assets/img/icone_m.png" alt="icon baromaire" class="pr-0" id="login-logo-2">Acces à la gestion de votre Baromaire</p>
+        <p class="card-title text-center font-23"><img src="assets/img/icone_m.png" alt="icon baromaire" class="pr-0" id="login-logo-2">Acces à la gestion de votre Baromaire</p>
         <div class="alert alert-danger text-center mx-auto" id="alert-remove" role="alert" style="max-width:500px;">
           Email ou Mot de Passe incorrects 
         </div>
@@ -67,7 +67,7 @@ ob_start(); ?>
 <script>var child = 6;</script>
 <!-- redirect provisoire -->
 <script>
-  $('#submit').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=sign"});
+  $('#submit').on('click', function(e) {e.preventDefault(); window.location.href="?admin=sign"});
 </script> 
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_notation.php'); ?>

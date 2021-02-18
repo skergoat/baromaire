@@ -19,11 +19,11 @@ ob_start(); ?>
         // loop >> see : Model/Cards
         foreach($cards->create() as $domaine) { ?>
          <div class="col-2 p-0 mr-4 mb-4">
-            <a href="/?cadre&quartier=2">
+            <a href="https://skergoat.com/baromaire/?cadre&quartier=2">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
                     <div class="reajust">
-                        <img class="card-img-top" src="../../assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
                     </div>
                     <div class="card-body p-0 pt-4">
                         <p class="card-text text-center black font-14"><?= $domaine['title'] ?></p>
@@ -50,7 +50,7 @@ ob_start(); ?>
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
                     <div class="reajust">
-                        <img class="card-img-top" src="../../assets/img/engagements/<?= $quartier['image'] ?>" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/engagements/<?= $quartier['image'] ?>" alt="Card image cap">
                     </div>
                     <div class="card-body p-0 pt-4">
                         <p class="card-text text-center black font-14"><?= $quartier['title'] ?></p>

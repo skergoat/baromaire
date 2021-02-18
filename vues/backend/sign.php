@@ -49,7 +49,7 @@ ob_start(); ?>
 
 <!-- reirect provisoire -->
 <script>
-  $('#submit').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement&sign"});
+  $('#submit').on('click', function(e) {e.preventDefault(); window.location.href="?admin=engagement&sign"});
 </script> 
 <!-- sidebar menu .active -->
 <script>var child = 6;</script>
