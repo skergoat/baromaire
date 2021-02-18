@@ -19,4 +19,8 @@ So there are 2-3 things to do in order to use it :
 
 6. start MAMP or XAMP. 
 
-7. Go http://[my-localhost-server] and then watch the website 
+7. In your browser to to
+
+        http://[my-localhost-server] 
+
+and start using the website !
