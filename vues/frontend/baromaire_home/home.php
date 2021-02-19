@@ -17,9 +17,17 @@ ob_start(); ?>
             <!-- error message -->
             <div class="invalid-feedback">Commune ou code postal inconnus</div>
         </div>
-        <button type="submit" class="btn btn-primary mb-2">Envoyer</button>
+        <button type="submit" class="submit btn btn-primary mb-2">Envoyer</button>
     </form>
 </div>
+
+<!-- redirect provisoire -->
+<script>
+$('.submit').on('click', function(e) {
+    e.preventDefault();
+    window.location.href="/?progres";
+});
+</script>
 
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_home.php'); ?>

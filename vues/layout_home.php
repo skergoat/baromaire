@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- custom style -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 <body id="position-relative" style="min-height:100vh">
     <div class="container-baromaire mb-5">
@@ -32,7 +34,7 @@
         </header>
     </div>
     <?= $content ?>
-    <footer class="text-white pb-1 pt-3 position-absolute" style="bottom:0;">
+    <footer class="text-white pb-4 pt-4 position-absolute" style="bottom:0;">
         <div class="f-flex flex-column">
             <nav class="d-flex justify-content-center">
                 <ul class="footer-nav pl-0 mb-2 d-flex font-22">
@@ -43,7 +45,7 @@
                     <li><a href="" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
                 </ul>
             </nav>
-            <div class="text-center font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div>
+            <!-- <div class="text-center font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div> -->
         </div>
     </footer>
 </body>
