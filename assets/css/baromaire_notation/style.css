@@ -352,10 +352,10 @@ footer {
   width: 160px;
 }
 .image-rounded {
-  background-image: url("assets/../../img/maire.jpg");
+  background-image: url("assets/img/maire.jpg");
 }
 .image-placeholder {
-  background-image: url("assets/../../img/placeholder.png");
+  background-image: url("assets/img/placeholder.png");
 }
 
 .progresses {
@@ -581,94 +581,16 @@ footer {
 
 /*hearders and footers*/
 @media all and (max-width: 576px) {
-  body {
-    overflow: hidden;
-  }
-
   /**
-  * HOME 
-  */
-  h1.main-title {
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 0px;
-    margin-top: 60px;
-  }
-
-  h5.main-subtitle {
-    font-size: 14px;
-    margin-bottom: 1em !important;
-    margin-top: 70px;
-  }
-
-  /*header*/
-  header.row {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
-  }
-
-  .logo-home {
-    min-width: 100% !important;
-  }
-  .logo-left {
-    display: none;
-  }
-
-  #hamburger {
-    display: block !important;
-  }
-  #hamburger-button {
-    width: 50px;
-    cursor: pointer;
-  }
-  #hamburger-button div {
-    width: 35px;
-    height: 5px;
-    background-color: white !important;
-    margin: 6px 0;
-  }
-
-  /*form*/
-  .form-inline {
+    * NOTATION
+    */
+  .header_baromaire {
     flex-direction: column !important;
+    justify-content: center !important;
   }
-  .form-group {
+
+  .logo-notation {
     width: 100% !important;
-    min-width: 100% !important;
-  }
-
-  .submit {
-    width: 100%;
-    min-width: 100%;
-  }
-
-  #footer-home {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-  }
-
-  .footer-nav {
-    display: none !important;
-  }
-  .footer-responsive-nav {
-    background: #2d4e9d !important;
-    list-style-type: none !important;
-    position: absolute;
-    width: 100%;
-  }
-  .footer-responsive-nav li {
-    margin-bottom: 1rem;
-    border-bottom: 1px solid #152448;
-    margin-bottom: 0px !important;
-    font-size: 20px;
-  }
-  .footer-responsive-nav li a.active {
-    font-size: 25px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid white;
-  }
-  .footer-responsive-nav span {
-    display: none !important;
   }
 }
 

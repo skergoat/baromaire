@@ -1,6 +1,6 @@
 /*debug*/
-@import "vars";
-@import "mixins";
+@import "../vars";
+@import "../mixins";
 
 /*general*/
 body {
@@ -55,21 +55,21 @@ img {
 }
 
 /*home*/
-@import "baromaire_home/footer";
+@import "../baromaire_home/footer";
 
 /*notation*/
-@import "baromaire_notation/header";
-@import "baromaire_notation/sidebar";
-@import "baromaire_notation/progress";
-@import "baromaire_notation/card";
-@import "baromaire_notation/numbers";
-@import "baromaire_notation/accordeon";
+@import "../baromaire_notation/header";
+@import "../baromaire_notation/sidebar";
+@import "../baromaire_notation/progress";
+@import "../baromaire_notation/card";
+@import "../baromaire_notation/numbers";
+@import "../baromaire_notation/accordeon";
 
 /*admin*/
-@import "baromaire_admin/login";
-@import "baromaire_admin/icon";
-@import "baromaire_admin/forms";
+@import "login";
+@import "icon";
+@import "forms";
 
 // responsive
-@import "baromaire_home/max_width_576";
-@import "baromaire_notation/max_width_576";
+// @import "../baromaire_home/max_width_576";
+// @import "../baromaire_notation/max_width_576";
