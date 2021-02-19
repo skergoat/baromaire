@@ -12,6 +12,7 @@ body {
   // position: relative; /*footer bottom*/
   // min-height: 100vh; /*footer bottom*/
   padding-top: 20px;
+  min-height: 100vh;
 }
 
 a,
@@ -73,3 +74,5 @@ img {
 @import "baromaire_admin/login";
 @import "baromaire_admin/icon";
 @import "baromaire_admin/forms";
+
+@import "min_width_0";

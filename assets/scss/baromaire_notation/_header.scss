@@ -6,8 +6,18 @@
   border-radius: 5px;
 }
 
+.main-title {
+  margin-top: 80px;
+}
+
 .logo {
   width: 240px !important;
+  &-home {
+    min-width: 310px !important;
+  }
+  &-left {
+    max-width: 60px;
+  }
 }
 
 .title_baromaire {

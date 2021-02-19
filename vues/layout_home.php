@@ -17,24 +17,24 @@
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
-<body id="position-relative" style="min-height:100vh">
+<body id="position-relative">
     <div class="container-baromaire mb-5">
         <!-- header -->
         <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
             <div class="position-absolute pl-5" style="width:100%">
                 <a href="/">
-                    <img class="logo" src="assets/img/icone_m.png" alt="" style="max-width:60px;">
+                    <img class="logo-left" src="assets/img/icone_m.png" alt="">
                 </a>
             </div>
             <div>
                 <a href="/">
-                    <img class="logo" src="assets/img/logo_baromaire.png" alt="" style="min-width:310px;">
+                    <img class="logo-home" src="assets/img/logo_baromaire.png" alt="">
                 </a>
             </div>
         </header>
     </div>
     <?= $content ?>
-    <footer class="text-white pb-4 pt-4 position-absolute" style="bottom:0;">
+    <footer class="text-white pb-4 pt-4" style="bottom:0;">
         <div class="f-flex flex-column">
             <nav class="d-flex justify-content-center">
                 <ul class="footer-nav pl-0 mb-2 d-flex font-22">
