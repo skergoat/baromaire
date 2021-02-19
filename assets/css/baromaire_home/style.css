@@ -271,7 +271,6 @@ footer {
     font-size: 30px;
   }
 }
-/*notation*/
 .header_baromaire {
   border: 1px solid rgba(0, 0, 0, 0.125);
   padding: 28px;
@@ -302,7 +301,6 @@ footer {
   color: black;
 }
 
-/*admin*/
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   body {

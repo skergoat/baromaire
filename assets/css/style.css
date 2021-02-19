@@ -352,10 +352,10 @@ footer {
   width: 160px;
 }
 .image-rounded {
-  background-image: url("assets/img/maire.jpg");
+  background-image: url("../../../assets/img/maire.jpg");
 }
 .image-placeholder {
-  background-image: url("assets/img/placeholder.png");
+  background-image: url("../../../assets/img/placeholder.png");
 }
 
 .progresses {

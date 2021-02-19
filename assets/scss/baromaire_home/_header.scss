@@ -1,0 +1,29 @@
+.header_baromaire {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 28px;
+  background: white !important;
+  border-radius: 5px;
+}
+
+.main-title {
+  margin-top: 80px;
+}
+
+.logo {
+  width: 240px !important;
+  &-home {
+    min-width: 310px !important;
+  }
+  &-left {
+    max-width: 60px;
+  }
+}
+
+.title_baromaire {
+  text-transform: uppercase;
+  color: #f61130;
+}
+
+.subtitle_baromaire {
+  color: black;
+}
