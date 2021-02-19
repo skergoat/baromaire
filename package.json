@@ -9,6 +9,7 @@
   "author": "Stéphane Kergoat",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "sass": "^1.32.7"
   }
 }

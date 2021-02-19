@@ -11,7 +11,7 @@
     font-size: 25px;
     font-weight: bold;
     margin-top: 0px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   h5.main-subtitle {
     font-size: 14px;
@@ -64,6 +64,10 @@
   }
 
   // footer
+  #footer-home {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
   .footer {
     &-nav {
       display: none !important;
@@ -77,8 +81,9 @@
         margin-bottom: 1rem;
         border-bottom: 1px solid #152448;
         margin-bottom: 0px !important;
+        font-size: 20px;
         & a.active {
-          font-size: 30px;
+          font-size: 25px;
           padding-bottom: 3px;
           border-bottom: 1px solid white;
         }

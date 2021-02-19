@@ -252,7 +252,6 @@ footer {
   list-style-type: none !important;
 }
 .footer-nav li a.active {
-  font-size: 30px;
   padding-bottom: 5px;
   border-bottom: 2px solid white;
 }
@@ -262,6 +261,22 @@ footer {
   border-bottom: 2px solid white;
 }
 
+@media all and (min-width: 576px) {
+  .footer-nav {
+    font-size: 15px !important;
+  }
+  .footer-nav li a.active {
+    font-size: 22px;
+  }
+}
+@media all and (min-width: 992px) {
+  .footer-nav {
+    font-size: 22px !important;
+  }
+  .footer-nav li a.active {
+    font-size: 30px;
+  }
+}
 /*notation*/
 .header_baromaire {
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -571,7 +586,7 @@ footer {
     font-size: 25px;
     font-weight: bold;
     margin-top: 0px;
-    margin-top: 80px;
+    margin-top: 60px;
   }
 
   h5.main-subtitle {
@@ -621,6 +636,11 @@ footer {
     min-width: 100%;
   }
 
+  #footer-home {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
   .footer-nav {
     display: none !important;
   }
@@ -634,9 +654,10 @@ footer {
     margin-bottom: 1rem;
     border-bottom: 1px solid #152448;
     margin-bottom: 0px !important;
+    font-size: 20px;
   }
   .footer-responsive-nav li a.active {
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 3px;
     border-bottom: 1px solid white;
   }

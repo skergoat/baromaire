@@ -16,7 +16,7 @@ footer {
 .footer-nav {
   list-style-type: none !important;
   & li a.active {
-    font-size: 30px;
+    // font-size: 30px;
     padding-bottom: 5px;
     border-bottom: 2px solid white;
   }
@@ -24,5 +24,23 @@ footer {
     color: white;
     padding-bottom: 5px;
     border-bottom: 2px solid white;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .footer-nav {
+    font-size: 15px !important;
+    & li a.active {
+      font-size: 22px;
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .footer-nav {
+    font-size: 22px !important;
+    & li a.active {
+      font-size: 30px;
+    }
   }
 }
