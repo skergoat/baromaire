@@ -303,6 +303,16 @@ footer {
   color: black;
 }
 
+@media all and (max-width: 991px) {
+  .header_baromaire {
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  .header_baromaire .logo {
+    display: block !important;
+    margin: auto !important;
+  }
+}
 .sidebar-left {
   color: #707070 !important;
 }

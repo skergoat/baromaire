@@ -27,3 +27,14 @@
 .subtitle_baromaire {
   color: black;
 }
+
+@media all and (max-width: 991px) {
+  .header_baromaire {
+    flex-direction: column !important;
+    justify-content: center !important;
+    & .logo {
+      display: block !important;
+      margin: auto !important;
+    }
+  }
+}
