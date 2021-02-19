@@ -49,7 +49,7 @@ ob_start(); ?>
                                         <!-- content -->
                                         <div class="accordeon_body--title font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
                                     </div>
-                                    <div class="col-2">
+                                    <div class="col-2 p-0">
                                         <div class="progresses progresses-3 mb-2">
                                             <div class="barOverflow barOverflow-3">
                                                 <div class="success-bar bar bar-third"></div>
