@@ -1,3 +1,6 @@
+// style for mobile < 576 px
+// for larger screen, see inside .scss files
+
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   body {
@@ -5,8 +8,8 @@
   }
 
   /**
-    * HOME 
-    */
+  * HOME 
+  */
   h1.main-title {
     font-size: 25px;
     font-weight: bold;

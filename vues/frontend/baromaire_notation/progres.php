@@ -18,11 +18,12 @@ ob_start(); ?>
         <?php
         // loop >> see : Model/Cards
         foreach($cards->create() as $domaine) { ?>
-         <div class="col-2 p-0 mr-4 mb-4">
+         <div class="col-3 p-3">
             <a href="/?cadre&quartier=2">
+                <!-- <div class="card card-loop" style="height:180px;width:130px;"> -->
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
-                    <div class="reajust">
+                    <div>
                         <img class="card-img-top" src="assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
                     </div>
                     <div class="card-body p-0 pt-4">
@@ -45,7 +46,7 @@ ob_start(); ?>
         <?php
         // see : Model/Cards
         foreach($cards->quartier() as $quartier) { ?>
-        <div class="col-2 p-0 mr-4 mb-4">
+        <div class="col-3 p-3">
             <a href="#">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
