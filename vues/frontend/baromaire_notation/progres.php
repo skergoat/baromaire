@@ -18,7 +18,7 @@ ob_start(); ?>
         <?php
         // loop >> see : Model/Cards
         foreach($cards->create() as $domaine) { ?>
-         <div class="col-3 p-3">
+         <div class="col-3 pl-3 pr-3" style="padding-bottom:2em">
             <a href="/?cadre&quartier=2">
                 <!-- <div class="card card-loop" style="height:180px;width:130px;"> -->
                 <div class="card card-loop">
@@ -46,7 +46,7 @@ ob_start(); ?>
         <?php
         // see : Model/Cards
         foreach($cards->quartier() as $quartier) { ?>
-        <div class="col-3 p-3">
+        <div class="col-3 pl-3 pr-3" style="padding-bottom:2em">
             <a href="#">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
