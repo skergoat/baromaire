@@ -15,11 +15,11 @@ ob_start(); ?>
     <!-- title -->
     <div class="col-12"><h4 class="mb-4">Mes engagements par domaine</h4></div>
     <!-- card -->
-    <div class="row flex-wrap">
+    <div class="row flex-wrap justify-content-center justify-content-lg-start">
         <?php
         // loop >> see : Model/Cards
         foreach($cards->engagement() as $domaine) { ?>
-        <div class="col-3 col-card">
+        <div class="col-sm-3 col-card">
             <a href="/?cadre&quartier=1">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->

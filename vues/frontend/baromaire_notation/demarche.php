@@ -14,7 +14,7 @@ ob_start(); ?>
 <!-- row 1 -->
 <div class="mb-4">
     <h4 class="mb-4">Notre démarche</h4>
-    <div class="row">
+    <div class="row justify-content-sm-column">
         <div class="col-6 p-0">
             <img src="assets/img/engagements/image_29.jpg" alt="Team">
         </div>

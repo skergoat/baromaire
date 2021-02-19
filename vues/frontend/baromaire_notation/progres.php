@@ -14,13 +14,13 @@ ob_start(); ?>
 <!-- row 1 -->
 <div class="mb-4">
     <!-- title -->
-    <div class="col-12"> <h4 class="mb-4">Mes engagements par domaine</h4></div>
+    <div class="col-12"> <h4 class="mb-sm-4">Mes engagements par domaine</h4></div>
     <!-- cards -->
-    <div class="row flex-wrap">
+    <div class="row flex-wrap cards-container">
         <?php
         // loop >> see : Model/Cards
         foreach($cards->create() as $domaine) { ?>
-        <div class="col-3 col-card">
+        <div class="col-sm-3 col-card">
             <a href="/?cadre&quartier=2">
                 <!-- <div class="card card-loop" style="height:180px;width:130px;"> -->
                 <div class="card card-loop">
@@ -37,20 +37,20 @@ ob_start(); ?>
         <?php } ?>
     </div>
     <!-- pagination -->
-    <div class="d-flex justify-content-end">
+    <!-- <div class="d-flex justify-content-end">
         <div><a href="#">...</a></div>
-    </div>
+    </div> -->
 </div>
 <!-- row 2 -->
 <div>
     <!-- title -->
-    <div class="col-12"><h4 class="mb-4">Mes engagements par quartier</h4></div>
+    <div class="col-12"><h4 class="mb-sm-4">Mes engagements par quartier</h4></div>
     <!-- card  -->
-    <div class="row flex-wrap">
+    <div class="row flex-wrap cards-container">
         <?php
         // see : Model/Cards
         foreach($cards->quartier() as $quartier) { ?>
-        <div class="col-3 col-card">
+        <div class="col-sm-3 col-card">
             <a href="#">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
@@ -66,9 +66,9 @@ ob_start(); ?>
         <?php } ?>
     </div>
     <!-- pagination -->
-    <div class="d-flex justify-content-end">
+    <!-- <div class="d-flex justify-content-end d-sm-none">
         <div><a href="#">...</a></div>
-    </div>
+    </div> -->
 </div>
 <!-- sidebar menu .active -->
 <script>var child = 1;</script>

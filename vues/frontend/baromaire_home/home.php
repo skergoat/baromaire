@@ -12,7 +12,7 @@ ob_start(); ?>
         <!-- form -->
         <form class="form-inline justify-content-center">
             <div class="form-group mb-sm-2 mr-sm-3 col-4 pl-0 pr-0">
-                <input type="text" class="form-control col-12" id="commune" placeholder="ex. : 75015 ou Paris">
+                <input type="text" class="form-control col-sm-12" id="commune" placeholder="ex. : 75015 ou Paris">
                 <!-- error message -->
                 <div class="invalid-feedback">Commune ou code postal inconnus</div>
             </div>
