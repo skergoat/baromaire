@@ -1,9 +1,8 @@
 /*hearders and footers*/
 @media all and (max-width: 576px) {
-  // body {
-  //   height: 100% !important;
-  //   min-height: 100% !important;
-  // }
+  body {
+    overflow: hidden;
+  }
 
   /**
     * HOME 
@@ -64,21 +63,29 @@
     min-width: 100%;
   }
 
-  /*footer*/
-  #footer-home {
-    // display: none;
-  }
-  // footer {
-  //   position: relative !important;
-  // }
-  .footer-nav {
-    display: none !important;
-    // flex-direction: column !important;
-    // & li {
-    //   margin-bottom: 1rem;
-    // }
-    // & span {
-    //   display: none;
-    // }
+  // footer
+  .footer {
+    &-nav {
+      display: none !important;
+    }
+    &-responsive-nav {
+      background: #2d4e9d !important;
+      list-style-type: none !important;
+      position: absolute;
+      width: 100%;
+      & li {
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #152448;
+        margin-bottom: 0px !important;
+        & a.active {
+          font-size: 30px;
+          padding-bottom: 3px;
+          border-bottom: 1px solid white;
+        }
+      }
+      & span {
+        display: none !important;
+      }
+    }
   }
 }

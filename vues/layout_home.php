@@ -68,5 +68,13 @@
             </nav>
             <!-- <div class="text-center font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div> -->
         </div>
+        <ul class="footer-responsive-nav font-22 d-none pl-0">
+            <li class="pt-2 pb-2 pl-4"><a href="" class="white<?php if ($_SERVER['REQUEST_URI']== "/"){ ?> active <?php } ?>">Principes</a></li><span class="ml-4 mr-4">/</span>
+            <li class="pt-2 pb-2  pl-4"><a href="" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li><span class="ml-4 mr-4">/</span>
+            <li class="pt-2 pb-2 pl-4"><a href="" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li><span class="ml-4 mr-4">/</span>
+            <li class="pt-2 pb-2  pl-4"><a href="" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li><span class="ml-4 mr-4">/</span>
+            <li class="pt-2 pb-2  pl-4"><a href="" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
+        </ul>
+        <script src="assets/js/nav.js"></script>
     </footer>
 </body>

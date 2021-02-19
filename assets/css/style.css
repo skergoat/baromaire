@@ -560,6 +560,10 @@ footer {
 
 /*hearders and footers*/
 @media all and (max-width: 576px) {
+  body {
+    overflow: hidden;
+  }
+
   /**
     * HOME 
     */
@@ -617,8 +621,26 @@ footer {
     min-width: 100%;
   }
 
-  /*footer*/
   .footer-nav {
+    display: none !important;
+  }
+  .footer-responsive-nav {
+    background: #2d4e9d !important;
+    list-style-type: none !important;
+    position: absolute;
+    width: 100%;
+  }
+  .footer-responsive-nav li {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #152448;
+    margin-bottom: 0px !important;
+  }
+  .footer-responsive-nav li a.active {
+    font-size: 30px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+  }
+  .footer-responsive-nav span {
     display: none !important;
   }
 }
