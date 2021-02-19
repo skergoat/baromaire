@@ -12,12 +12,14 @@ $widget = $progress->create(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
 <!-- row 1 -->
 <div class="mb-4">
-    <h4 class="mb-4">Mes engagements par domaine</h4>
+    <!-- title -->
+    <div class="col-12"><h4 class="mb-4">Mes engagements par domaine</h4></div>
+    <!-- card -->
     <div class="row flex-wrap">
         <?php
         // loop >> see : Model/Cards
         foreach($cards->engagement() as $domaine) { ?>
-        <div class="col-2 p-0 mr-4 mb-4">
+        <div class="col-3 col-card">
             <a href="/?cadre&quartier=1">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->

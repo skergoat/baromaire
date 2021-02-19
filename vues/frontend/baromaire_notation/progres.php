@@ -13,17 +13,19 @@ $widget = $progress->create(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
 <!-- row 1 -->
 <div class="mb-4">
-    <h4 class="mb-4">Mes engagements par domaine</h4>
+    <!-- title -->
+    <div class="col-12"> <h4 class="mb-4">Mes engagements par domaine</h4></div>
+    <!-- cards -->
     <div class="row flex-wrap">
         <?php
         // loop >> see : Model/Cards
         foreach($cards->create() as $domaine) { ?>
-        <div class="col-3" style="padding-bottom:20px;padding-left:10px;padding-right:10px;">
+        <div class="col-3 col-card">
             <a href="/?cadre&quartier=2">
                 <!-- <div class="card card-loop" style="height:180px;width:130px;"> -->
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
-                    <div>
+                    <div class="reajust">
                         <img class="card-img-top" src="assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
                     </div>
                     <div class="card-body p-0 pt-4">
@@ -41,12 +43,14 @@ ob_start(); ?>
 </div>
 <!-- row 2 -->
 <div>
-    <h4 class="mb-4">Mes engagements par quartier</h4>
+    <!-- title -->
+    <div class="col-12"><h4 class="mb-4">Mes engagements par quartier</h4></div>
+    <!-- card  -->
     <div class="row flex-wrap">
         <?php
         // see : Model/Cards
         foreach($cards->quartier() as $quartier) { ?>
-        <div class="col-3" style="padding-bottom:20px;padding-left:10px;padding-right:10px;">
+        <div class="col-3 col-card">
             <a href="#">
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
