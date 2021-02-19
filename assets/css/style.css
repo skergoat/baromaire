@@ -30,6 +30,10 @@
 }
 
 /*color*/
+.white {
+  color: white;
+}
+
 .black {
   color: black;
 }
@@ -220,23 +224,36 @@ img {
 
 @media all and (min-width: 1440px) {
   .container-baromaire {
-    max-width: 95%;
+    max-width: 90%;
     margin: auto;
   }
 }
 @media all and (max-width: 1440px) {
   .container-baromaire {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: auto;
   }
 }
 /*home*/
 footer {
   line-height: 45px;
-  height: 70px;
   background-color: #2d4e9d !important;
   bottom: 0;
   width: 100%;
+}
+
+.footer-nav {
+  list-style-type: none !important;
+}
+.footer-nav li a.active {
+  font-size: 30px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+.footer-nav li a:hover {
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
 }
 
 /*notation*/

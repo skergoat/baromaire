@@ -48,5 +48,5 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'engagement') {
 // HOMEPAGE 
 else {
     // require('vues/frontend/baromaire_home/create.php');
-    require('vues/frontend/baromaire_notation/progres.php');
+    require('vues/frontend/baromaire_home/home.php');
 } 

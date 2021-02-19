@@ -8,44 +8,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- custom style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body id="page-top">
-    <!-- <div id="wrapper">
-        <div id="content-wrapper"> -->
-    <div class="container-fluid">
-        <div id="content" class="header d-none d-md-block">
-            <nav class="navbar not-sm">
-                <div>
-                    <a href="/">
-                    <img src="assets/img/icone_m.png" alt="" class="img-fluid px-3 px-sm-6 mt-3 mb-4 logo">
-                    </a>
-                </div>
-                <div class="col-xl-8 col-md-6 mb-4">
-                    <a href="/" class="my-auto m-3">
-                    <img class="mx-auto logo-baromaire mt-3" src="assets/img/logo_baromaire.png" alt="">
-                    </a>
-                </div>
-            </nav>
-        </div>
-        <!-- render -->
-        <?= $content; ?>
+    <div class="container-baromaire mb-5">
+        <!-- header -->
+        <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
+            <div class="position-absolute pl-5" style="width:100%">
+                <a href="/">
+                    <img class="logo" src="assets/img/icone_m.png" alt="" style="max-width:60px;">
+                </a>
+            </div>
+            <div>
+                <a href="/">
+                    <img class="logo" src="assets/img/logo_baromaire.png" alt="" style="min-width:310px;">
+                </a>
+            </div>
+        </header>
     </div>
-        <!-- </div>
-    </div> -->
-    <!-- footer bottom -> body{} -->
-    <footer class="footer d-none d-md-block">
-        <div class="container mx-auto my-auto ">
-            <ul class="list-group list-group-horizontal   mx-auto justify-content-center">
-                <li class="list-group-item-footer"><a href="/principes"> Principes</a></li><span class="ligne">/</span>
-                <li class="list-group-item-footer"><a href="/?progres">Démo </a></li><span class="ligne">/</span>
-                <li class="list-group-item-footer"><a href="/">Créer votre Baromaire </a></li><span class="ligne">/</span>
-                <li class="list-group-item-footer"><a href="/Tarifs"> Tarifs </a></li><span class="ligne">/</span>
-                <li class="list-group-item-footer"><a href="/NousContacter">Nous contacter </a></li>
-            </ul>
+    <?php $content ?>
+    <footer class="text-white pb-2 pt-4">
+        <div class="f-flex flex-column">
+            <nav class="d-flex justify-content-center">
+                <ul class="footer-nav pl-0 mb-3 d-flex font-22">
+                    <li><a href="" class="white<?php if ($_SERVER['REQUEST_URI']== "/"){ ?> active <?php } ?>">Principes</a></li><span class="ml-3 mr-3">/</span>
+                    <li><a href="" class="white">Démo</a></li><span class="ml-3 mr-3">/</span>
+                    <li><a href="" class="white">Créer votre Baromaire</a></li><span class="ml-3 mr-3">/</span>
+                    <li><a href="" class="white">Tarifs</a></li><span class="ml-3 mr-3">/</span>
+                    <li><a href="" class="white">Nous contacter</a></li>
+                </ul>
+            </nav>
+            <div class="text-center font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div>
         </div>
     </footer>
 </body>
-</html>

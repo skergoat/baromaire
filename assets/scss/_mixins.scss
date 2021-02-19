@@ -30,6 +30,9 @@
   color: $color;
 }
 
+.white {
+  @include color(white);
+}
 .black {
   @include color(black);
 }
