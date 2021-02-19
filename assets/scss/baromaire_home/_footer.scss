@@ -8,6 +8,11 @@ footer {
   position: absolute;
 }
 
+// nav mobile
+#hamburger {
+  display: none !important;
+}
+
 .footer-nav {
   list-style-type: none !important;
   & li a.active {

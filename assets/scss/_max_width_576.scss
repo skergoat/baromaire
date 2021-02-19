@@ -1,0 +1,84 @@
+/*hearders and footers*/
+@media all and (max-width: 576px) {
+  // body {
+  //   height: 100% !important;
+  //   min-height: 100% !important;
+  // }
+
+  /**
+    * HOME 
+    */
+  h1.main-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-top: 80px;
+  }
+  h5.main-subtitle {
+    font-size: 14px;
+    margin-bottom: 1em !important;
+    margin-top: 70px;
+  }
+
+  /*header*/
+  header.row {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .logo {
+    &-home {
+      min-width: 100% !important;
+    }
+    &-left {
+      display: none;
+    }
+  }
+
+  // nav mobile
+  #hamburger {
+    display: block !important;
+    &-button {
+      width: 50px;
+      cursor: pointer;
+      & div {
+        width: 35px;
+        height: 5px;
+        background-color: white !important;
+        margin: 6px 0;
+      }
+    }
+  }
+
+  /*form*/
+  .form {
+    &-inline {
+      flex-direction: column !important;
+    }
+    &-group {
+      width: 100% !important;
+      min-width: 100% !important;
+    }
+  }
+  .submit {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  /*footer*/
+  #footer-home {
+    // display: none;
+  }
+  // footer {
+  //   position: relative !important;
+  // }
+  .footer-nav {
+    display: none !important;
+    // flex-direction: column !important;
+    // & li {
+    //   margin-bottom: 1rem;
+    // }
+    // & span {
+    //   display: none;
+    // }
+  }
+}

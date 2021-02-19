@@ -10,15 +10,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script>
-    <!-- bootstrap -->
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- custom style -->
+    <!-- my styles -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- progress bar js -->
+    <script>$class = ".progresses";</script>
+    <script src="assets/js/progress_bar.js"></script>
 </head>
 <body id="position-relative">
-    <div class="container-baromaire mb-5">
+    <div class="container-baromaire">
         <!-- header -->
         <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
             <div class="position-absolute pl-5" style="width:100%">
@@ -33,10 +41,23 @@
             </div>
         </header>
     </div>
+    <!-- content -->
     <?= $content ?>
-    <footer class="text-white pb-4 pt-4" style="bottom:0;">
+    <!-- footer -->
+    <footer id="footer-home" class="text-white pb-4 pt-4" style="bottom:0;">
         <div class="f-flex flex-column">
             <nav class="d-flex justify-content-center">
+                <!-- nav button xs -->
+                <div id="hamburger" class="col-12">
+                    <div class="row justify-content-end">
+                        <div id="hamburger-button">
+                            <div class="mx-auto"></div>
+                            <div class="mx-auto"></div>
+                            <div class="mx-auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav sm -> xxl -->
                 <ul class="footer-nav pl-0 mb-2 d-flex font-22">
                     <li><a href="" class="white<?php if ($_SERVER['REQUEST_URI']== "/"){ ?> active <?php } ?>">Principes</a></li><span class="ml-4 mr-4">/</span>
                     <li><a href="" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li><span class="ml-4 mr-4">/</span>
