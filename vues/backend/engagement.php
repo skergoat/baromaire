@@ -110,9 +110,9 @@ ob_start(); ?>
                 </div>
                 <div class="col-12">
                     <div class="row justify-content-between">
-                        <button class="btn btn-primary" id="submit-1"><i class="fas fa-redo-alt mr-2"></i> Enregistrer et ajouter un engagement</button>
-                        <button class="btn btn-primary" id="submit-2"><i class="fas fa-plus mr-2"></i> Ajouter une action</button>
-                        <button class="btn btn-primary" id="submit-3"><i class="fas fa-directions mr-2"></i> Enregistrer et quitter</button>
+                        <button class="btn btn-primary" id="submit-1"><i class="fas fa-redo-alt mr-1"></i> Enregistrer et ajouter un engagement</button>
+                        <button class="btn btn-primary" id="submit-2"><i class="fas fa-plus mr-1"></i> Ajouter une action</button>
+                        <button class="btn btn-primary" id="submit-3"><i class="fas fa-directions mr-1"></i> Enregistrer et quitter</button>
                     </div>
                 </div>
             </form>

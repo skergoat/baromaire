@@ -544,6 +544,7 @@ footer {
   max-width: 70px;
   position: relative;
   top: -5px;
+  left: 20px;
 }
 
 .icon-edit-picture {

@@ -17,9 +17,9 @@ ob_start(); ?>
     <div class="card">
       <div class="card-body">
         <!-- title -->
-        <div class="row">
+        <div class="row align-items-center">
             <img src="assets/img/admin/image_28.jpg" alt="" class="col-2 pr-0" id="login-logo-1"> 
-            <p class="col-10 card-title text-left danger font-30 w-900">Pas de Baromaire dans votre commune ?</p>
+            <p class="col-10 card-title text-left danger font-25 text-center w-900 pr-0 pl-0">Pas de Baromaire dans votre commune ?</p>
         </div>
         <!-- body -->
         <p class="card-title text-center font-23">Vous pouvez engager votre commune ?</p>
