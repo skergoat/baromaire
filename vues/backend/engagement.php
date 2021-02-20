@@ -37,13 +37,13 @@ ob_start(); ?>
                             <!-- title -->
                             <div class="row">
                                 <!-- badges -->
-                                <div class="col-md-3 p-0 text-md-right badges d-flex justify-content-start">
+                                <div class="col-md-4 p-0 text-md-right badges d-flex justify-content-start">
                                     <?php foreach($accordeons['badges'] as $badges) { ?>
                                     <div><span class="badge badge-secondary"><?= $badges ?></span></div>
                                     <?php } ?>
                                 </div>
                                 <!-- title -->
-                                <div class="accordeon_body--title font-18 text-right pl-0 pr-md-3 col-8"><?= $accordeons['title'] ?></div>
+                                <div class="accordeon_body--title font-17 text-right p-0 col-7"><?= $accordeons['title'] ?></div>
                                 <!-- button -->
                                 <div class="open-accordion col-1 d-flex justify-content-center align-items-center font-18" data-url="<?= $accordeons['id'] ?>" style="cursor:pointer;">
                                     <div><i class="fas fa-chevron-down icon-open-close position-relative" id="icon-<?= $accordeons['id'] ?>" style="top:3px;"></i></div>

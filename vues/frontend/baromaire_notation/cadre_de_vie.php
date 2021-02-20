@@ -30,7 +30,7 @@ ob_start(); ?>
                     <!-- title -->
                     <div class="accordeon_body--title font-20 text-right pr-md-3 pt-md-1" id="accordeon-title-<?= $accordeons['id'] ?>"><?= $accordeons['title'] ?></div>
                     <!-- divider -->
-                    <div class="divider_second mb-2 mt-2  pl-3 pr-3"></div>
+                    <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
                     <!-- content -->
                     <div class="accordeon_body--content font-15 primary text-justify pr-md-3 pb-md-3">
                         <div class="content" id="content-<?= $accordeons['id'] ?>">
