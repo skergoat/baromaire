@@ -1,5 +1,5 @@
 /**
- * accordeon 
+ * accordeon FRONT 
  */
 $('.watch').on('click', function() { 
     let data = $(this).attr('data-url'); // description id 
@@ -41,4 +41,27 @@ $('.watch').on('click', function() {
     }
     // open /close class
     $(this).toggleClass('opened');
+});
+
+/**
+ * accordeon ADMIN  
+ */
+$('.open-accordion').on('click', function(e) {  
+    var data = $(this).attr('data-url');
+    // if(!$(this).hasClass('opened')) { 
+        
+    // } else {
+
+    // }
+    // open content 
+    $('#content-'+data).toggleClass('open-content').toggleClass('close-content');
+    // close other content 
+    $('.accordeon_body--content').not('#content-'+data).removeClass('open-content').addClass('close-content');
+    $('.icon-open-close').not('#icon-'+data).each(function() {
+        $(this).removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    });
+    // toggle chevron down 
+    $('#icon-'+data).toggleClass('fa-chevron-up').toggleClass('fa-chevron-down');
+    // toggle button class
+    // $(this).toggleClass('opened');
 });

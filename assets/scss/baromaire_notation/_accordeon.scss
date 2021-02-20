@@ -2,6 +2,19 @@
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
+  &.accordeons {
+    border-radius: 0px !important;
+  }
+}
+
+.close-content {
+  padding: 0px !important;
+  height: 0px !important;
+  overflow: hidden !important;
+}
+
+.open-content {
+  height: 100% !important;
 }
 
 .badge-secondary {
