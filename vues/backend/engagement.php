@@ -105,7 +105,15 @@ ob_start(); ?>
                                 <input type="number" class="form-control <?php if(isset($_GET['reload'])) { ?> is-invalid  <?php } ?>" min="0" max="10" id="order" placeholder="1">
                                 <div class="invalid-feedback">Chiffre invalide</div>
                             </div>
-                            <div class="form-group col-lg-2 pl-0">
+                            <!-- engagement -->
+                            <div class="form-group col-lg-7 pl-0 pr-0">
+                                <label for="engagement" class="w-900">Engagement</label>
+                                <input type="text" class="form-control <?php if(isset($_GET['reload'])) { ?> is-invalid  <?php } ?>" id="engagement" placeholder="Rénover les arrêts de bus, etc.">
+                                <div class="invalid-feedback">
+                                Entrez au moins 2 lettres svp
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-3 pr-0">
                                 <!-- realisation -->
                                 <label for="realisation" class="w-900">Réalisation</label>
                                 <div class="input-group">
@@ -113,14 +121,6 @@ ob_start(); ?>
                                     <div class="input-group-append">
                                         <span class="input-group-text" id="basic-addon2">%</span>
                                     </div>
-                                </div>
-                            </div>
-                            <!-- engagement -->
-                            <div class="form-group col-lg-8 pl-0 pr-0">
-                                <label for="engagement" class="w-900">Engagement</label>
-                                <input type="text" class="form-control <?php if(isset($_GET['reload'])) { ?> is-invalid  <?php } ?>" id="engagement" placeholder="Rénover les arrêts de bus, etc.">
-                                <div class="invalid-feedback">
-                                Entrez au moins 2 lettres svp
                                 </div>
                             </div>
                         </div>

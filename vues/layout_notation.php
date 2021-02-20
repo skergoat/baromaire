@@ -51,7 +51,7 @@
                             if($_GET['admin'] == 'sign') { ?>
                                 <!-- edit button -->
                             <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
+                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-responsive" data-toggle="popover-2" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } else { ?>
                                 <!-- edit button -->
@@ -123,10 +123,10 @@
                             <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
                         </div>
                         <?php if(isset($_GET['admin'])) { 
-                            if($_GET['admin'] == 'sign') { ?>
+                            if($_GET['admin'] != 'login') { ?>
                                 <!-- edit button -->
                             <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
+                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } else { ?>
                                 <!-- edit button -->
@@ -177,6 +177,9 @@
         // popover 
         $(function () {
             $('[data-toggle="popover"]').popover('show');
+        })
+        $(function () {
+            $('[data-toggle="popover-2"]').popover();
         })
     </script>
     <script src="assets/js/nav.js"></script>

@@ -45,6 +45,12 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'sign') {
 else if(isset($_GET['admin']) && $_GET['admin'] == 'engagement') {
     require('vues/backend/engagement.php');
 }  
+else if(isset($_GET['admin']) && $_GET['admin'] == 'action') {
+    require('vues/backend/action.php');
+}  
+else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
+    require('vues/backend/dashboard.php');
+}  
 // HOMEPAGE 
 else {
     // require('vues/frontend/baromaire_home/create.php');

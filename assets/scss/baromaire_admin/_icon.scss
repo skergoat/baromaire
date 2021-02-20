@@ -4,7 +4,11 @@
 }
 .icon-edit-2 {
   top: -40px;
-  left: 500% !important;
+  left: 75% !important;
+}
+
+#popover-responsive {
+  display: none !important;
 }
 
 .arrow::before,
@@ -25,9 +29,16 @@
 }
 
 @media all and (max-width: 991px) {
-  .popover {
+  // #popover-responsive {
+  //   display: block !important;
+  // }
+  #popover-desktop {
     display: none !important;
   }
+  #popover-responsive {
+    display: block !important;
+  }
+
   .icon-edit-1 {
     top: 60px;
     left: 57% !important;
