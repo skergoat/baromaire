@@ -51,9 +51,10 @@
                 <div id="hamburger" class="col-sm-12">
                     <div class="row justify-content-end">
                         <div id="hamburger-button">
+                            <i class="fas fa-bars"></i>
+                            <!-- <div class="mx-auto"></div>
                             <div class="mx-auto"></div>
-                            <div class="mx-auto"></div>
-                            <div class="mx-auto"></div>
+                            <div class="mx-auto"></div> -->
                         </div>
                     </div>
                 </div>

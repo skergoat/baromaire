@@ -57,17 +57,30 @@
 }
 // button toggle widgets
 @media all and (max-width: 991px) {
+  // body > overflow : hidden
+  .hidden {
+    overflow: hidden !important;
+  }
+  // nav position fixed, top : 0
+  #nav-responsive {
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100vh;
+    overflow-x: scroll;
+  }
   .sidebar-responsive {
     &-bottom {
       margin-top: 1rem !important;
     }
   }
-  #hamburger-button {
+  // button open/close nav responsive
+  #hamburger-buttons {
     position: fixed;
     top: 25%;
     right: 0;
     z-index: 999;
-    // display: block !important;
     width: 55px;
     height: 55px;
     border-left: 1px solid #2d4e9d !important;
@@ -75,18 +88,16 @@
     border-top: 1px solid #2d4e9d !important;
     background-color: #2d4e9d !important;
     cursor: pointer;
-    padding-top: 6px;
+    // padding-top: 6px
     padding-bottom: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    & div {
-      width: 30px;
-      height: 5px;
-      background-color: #2d4e9d !important;
-      background-color: white !important;
-      margin-bottom: 6px;
+    .fas.fa-bars,
+    .fas.fa-times {
+      color: white;
+      font-size: 30px;
     }
   }
 }

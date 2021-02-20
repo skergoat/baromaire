@@ -241,6 +241,13 @@ footer {
 #hamburger {
   display: none !important;
 }
+#hamburger-button {
+  text-align: center !important;
+  font-size: 30px !important;
+}
+#hamburger-button .fas.fa-bars, #hamburger-button .fas.fa-times {
+  color: white;
+}
 
 .footer-nav {
   list-style-type: none !important;

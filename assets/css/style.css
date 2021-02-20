@@ -243,6 +243,14 @@ footer {
   display: none !important;
 }
 
+#hamburger-button {
+  text-align: center !important;
+  font-size: 40px !important;
+}
+#hamburger-button .fas.fa-bars, #hamburger-button .fas.fa-times {
+  color: white;
+}
+
 .footer-nav {
   list-style-type: none !important;
 }
@@ -369,11 +377,24 @@ footer {
 }
 
 @media all and (max-width: 991px) {
+  .hidden {
+    overflow: hidden !important;
+  }
+
+  #nav-responsive {
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100vh;
+    overflow-x: scroll;
+  }
+
   .sidebar-responsive-bottom {
     margin-top: 1rem !important;
   }
 
-  #hamburger-button {
+  #hamburger-buttons {
     position: fixed;
     top: 25%;
     right: 0;
@@ -385,19 +406,16 @@ footer {
     border-top: 1px solid #2d4e9d !important;
     background-color: #2d4e9d !important;
     cursor: pointer;
-    padding-top: 6px;
     padding-bottom: 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  #hamburger-button div {
-    width: 30px;
-    height: 5px;
-    background-color: #2d4e9d !important;
-    background-color: white !important;
-    margin-bottom: 6px;
+  #hamburger-buttons .fas.fa-bars,
+#hamburger-buttons .fas.fa-times {
+    color: white;
+    font-size: 30px;
   }
 }
 .progresses {

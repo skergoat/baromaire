@@ -11,6 +11,14 @@ footer {
 // nav mobile
 #hamburger {
   display: none !important;
+  &-button {
+    text-align: center !important;
+    font-size: 30px !important;
+    & .fas.fa-bars,
+    & .fas.fa-times {
+      color: white;
+    }
+  }
 }
 
 .footer-nav {
