@@ -23,33 +23,33 @@ ob_start(); ?>
         <div class="accordeon mt-4">
             <div class="row">
                 <!-- image -->
-                <div class="accordeon_image col-3 p-0 pl-3 d-flex align-items-center justify-content-center position-relative">
+                <div class="accordeon_image col-sm-3 p-0 pl-sm-3 d-flex align-items-center justify-content-center position-relative">
                     <div>
                         <img src="assets/img/engagements/<?= $accordeons['image'] ?>" alt="image engagements" style="max-width:130px;"/>
                     </div>
                 </div>
-                <div class="accordeon_body col-9 p-0 pl-3 pb-2">
+                <div class="accordeon_body col-sm-9 p-0 pl-sm-3 pb-2">
                     <!-- title -->
-                    <div class="accordeon_body--title font-20 text-right pr-3 pt-1" id="accordeon-title-<?= $accordeons['id'] ?>"><?= $accordeons['title'] ?></div>
+                    <div class="accordeon_body--title font-20 text-right pr-sm-3 pt-sm-1" id="accordeon-title-<?= $accordeons['id'] ?>"><?= $accordeons['title'] ?></div>
                     <!-- divider -->
                     <div class="divider_second mb-2 mt-2  pl-3 pr-3"></div>
                     <!-- content -->
-                    <div class="accordeon_body--content font-15 primary text-justify pr-3 pb-3">
+                    <div class="accordeon_body--content font-15 primary text-justify pr-sm-3 pb-sm-3">
                         <div class="content" id="content-<?= $accordeons['id'] ?>">
                             <?php echo $accordeons['content']; ?>
                         </div>
                         <div class="description"id="description-<?= $accordeons['id'] ?>">
                             <?php // description
                             foreach($accordeon->open() as $loads){ ?>
-                            <div class="mt-4 mb-4">
+                            <div class="mt-sm-4 mb-sm-4">
                                 <div class="row">
-                                    <div class="col-10 p-0">
+                                    <div class="col-sm-9 p-0">
                                         <!-- title -->
                                         <div class="accordeon_body--title font-13 text-left pr-3 pt-1 bold black"><?= $loads['title'] ?></div>
                                         <!-- content -->
                                         <div class="accordeon_body--title font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
                                     </div>
-                                    <div class="col-2 p-0">
+                                    <div class="col-sm-3 p-0">
                                         <div class="progresses progresses-3 mb-2">
                                             <div class="barOverflow barOverflow-3">
                                                 <div class="success-bar bar bar-third"></div>
@@ -66,13 +66,13 @@ ob_start(); ?>
                     </div>
                     <div class="accordeon_body--icons row">
                         <!-- badges -->
-                        <div class="col-11 text-right badges">
+                        <div class="col-sm-11 text-sm-right badges">
                             <?php foreach($accordeons['badges'] as $badges) { ?>
                             <span class="badge badge-secondary"><?= $badges ?></span>
                             <?php } ?>
                         </div>
                         <!-- button -->
-                        <div class="col-1 pr-3 text-center">
+                        <div class="col-sm-1 pr-3 text-center">
                             <div class="watch watch-quartier" id="watch-<?= $accordeons['id'] ?>" data-url="<?= $accordeons['id'] ?>"><i class="fas fa-plus font-17"></i></div>
                         </div>
                     </div>
