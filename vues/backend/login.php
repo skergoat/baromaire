@@ -13,13 +13,13 @@ ob_start(); ?>
 
 <div class="row">
 <!-- card top -->
-  <div class="col-sm-12 mb-5">
+  <div class="col-sm-12 mb-5 login-card-top">
     <div class="card">
       <div class="card-body">
         <!-- title -->
         <div class="row align-items-center">
             <img src="assets/img/admin/image_28.jpg" alt="" class="col-2 pr-0" id="login-logo-1"> 
-            <p class="col-10 card-title text-left danger font-25 text-center w-900 pr-0 pl-0">Pas de Baromaire dans votre commune ?</p>
+            <p class="col-sm-10 card-title danger font-25 text-center w-900 pr-0 pl-0">Pas de Baromaire dans votre commune ?</p>
         </div>
         <!-- body -->
         <p class="card-title text-center font-23">Vous pouvez engager votre commune ?</p>
@@ -30,7 +30,7 @@ ob_start(); ?>
     </div>
   </div>
   <!-- card bottom -->
-  <div class="col-sm-12">
+  <div class="col-sm-12 login-card-bottom">
     <div class="card">
       <div class="card-body">
         <!-- title -->

@@ -668,6 +668,32 @@ footer {
   .cards-container {
     justify-content: center;
   }
+
+  /**
+    * ADMIN
+    */
+  .login-card-top {
+    margin-top: 1.5rem !important;
+  }
+  .login-card-top .card-body {
+    padding: 10px !important;
+  }
+  .login-card-top .card-title.font-23 {
+    font-size: 18px !important;
+  }
+  .login-card-top .card-title.font-25 {
+    margin-bottom: 20px;
+  }
+  .login-card-top .card-text {
+    font-size: 14px !important;
+  }
+
+  #login-logo-1 {
+    left: 0px !important;
+    display: block !important;
+    margin: auto !important;
+    padding: 0px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
