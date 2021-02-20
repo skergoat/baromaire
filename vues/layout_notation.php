@@ -48,7 +48,7 @@
                             <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
                         </div>
                         <?php if(isset($_GET['admin'])) { 
-                            if($_GET['admin'] == 'sign') { ?>
+                            if($_GET['admin'] != 'login') { ?>
                                 <!-- edit button -->
                             <div  class="col-2 p-0 icon-edit-2">
                                 <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-responsive" data-toggle="popover-2" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
@@ -137,12 +137,21 @@
                     </div>
                 </div>
                 <ul class="sidebar-left_nav">
+                <?php if(!isset($_GET['admin'])) { ?>
                     <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
                     <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
                     <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
                     <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Votre quartier</a></li>
                     <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
                     <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
+                <?php } else { ?>
+                    <li class="pl-2"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
+                    <li class="pl-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
+                    <li class="pl-2"><a href="/?admin=action"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
+                    <li class="pl-2"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
+                    <!-- <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li> -->
+                    <li class="pl-2"><a href="/"><i class="fas fa-sign-in-alt mr-3"></i>Accueil</a></li>
+                <?php } ?>
                 </ul>
                 <!-- alert -->
                 <?php if(isset($_GET['admin'])) { ?>
@@ -158,7 +167,8 @@
             </div>
              <!-- sidebar right -->
             <div class="col-2 sidebar-right d-flex flex-column p-0" style="height:100%;position:relative;">
-                <div style="position:fixed;" class="d-none d-sm-none d-lg-block">
+                <!-- <div style="position:fixed;" class="d-none d-sm-none d-lg-block"> -->
+                <div class="d-none d-sm-none d-lg-block"> 
                 <!-- progress bar -->
                 <!-- see : Model/Widget -->
                 <?= $widget; ?>

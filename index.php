@@ -42,15 +42,22 @@ else if(isset($_GET['login'])) {
 else if(isset($_GET['admin']) && $_GET['admin'] == 'sign') {
     require('vues/backend/sign.php');
 }
+else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
+    require('vues/backend/dashboard.php');
+}
 else if(isset($_GET['admin']) && $_GET['admin'] == 'engagement') {
     require('vues/backend/engagement.php');
 }  
+else if(isset($_GET['admin']) && $_GET['admin'] == 'quartier') {
+    require('vues/backend/quartier.php');
+} 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'action') {
-    require('vues/backend/action.php');
-}  
-else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
-    require('vues/backend/dashboard.php');
-}  
+    require('vues/backend/domaine_action.php');
+} 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'cadre') {
+    require('vues/backend/cadre_de_vie.php');
+}   
+
 // HOMEPAGE 
 else {
     // require('vues/frontend/baromaire_home/create.php');

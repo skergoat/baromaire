@@ -144,6 +144,7 @@ ob_start(); ?>
                             <div class="form-group col-lg-4 pl-0 pr-0">
                                 <label for="exampleFormControlSelect1" class="w-900">Domaine d'action</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>_</option>
                                     <?php foreach($cards->create() as $domaine) { ?>
                                         <option><?= $domaine['title'] ?></option>
                                     <?php } ?>
@@ -153,6 +154,7 @@ ob_start(); ?>
                             <div class="form-group col-lg-4 pr-0">
                                 <label for="exampleFormControlSelect1" class="w-900">Quartier</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>_</option>
                                     <?php foreach($cards->quartier() as $quartier) { ?>
                                         <option><?= $quartier['title'] ?></option>
                                     <?php } ?>
