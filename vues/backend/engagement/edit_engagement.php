@@ -10,7 +10,7 @@ $subtitle_baromaire = "Entreprendre et Réussir";
 $widget = $progress->create(false, 30, 0, [0, 0 ,0]);
 
 ob_start(); ?>
-DOMAINE
+EDIT
 <!-- sidebar menu .active -->
 <script>var child = 6;</script>
 

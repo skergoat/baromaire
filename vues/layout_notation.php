@@ -150,7 +150,7 @@
                     <li class="pl-2"><a href="/?admin=action"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
                     <li class="pl-2"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
                     <!-- <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li> -->
-                    <li class="pl-2"><a href="/"><i class="fas fa-sign-in-alt mr-3"></i>Accueil</a></li>
+                    <li class="pl-2"><a href="/?progres"><i class="fas fa-sign-in-alt mr-3"></i>Accueil</a></li>
                 <?php } ?>
                 </ul>
                 <!-- alert -->

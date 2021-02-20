@@ -45,18 +45,35 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'sign') {
 else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
     require('vues/backend/dashboard.php');
 }
+
+// engagements
 else if(isset($_GET['admin']) && $_GET['admin'] == 'engagement') {
-    require('vues/backend/engagement.php');
+    require('vues/backend/engagement/engagement.php');
 }  
-else if(isset($_GET['admin']) && $_GET['admin'] == 'quartier') {
-    require('vues/backend/quartier.php');
+else if(isset($_GET['admin']) && $_GET['admin'] == 'edit') {
+    require('vues/backend/engagement/edit_engagement.php');
 } 
+
+// action
 else if(isset($_GET['admin']) && $_GET['admin'] == 'action') {
-    require('vues/backend/domaine_action.php');
+    require('vues/backend/engagement/actions/action.php');
+} 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'edit-action') {
+    require('vues/backend/engagement/actions/edit_action.php');
+} 
+
+// domaine d'action 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'domaine') {
+    require('vues/backend/domaines_action/domaine_action.php');
 } 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'cadre') {
-    require('vues/backend/cadre_de_vie.php');
-}   
+    require('vues/backend/domaines_action/cadre_de_vie.php');
+} 
+
+// quartiers 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'quartier') {
+    require('vues/backend/quartier.php');
+}  
 
 // HOMEPAGE 
 else {

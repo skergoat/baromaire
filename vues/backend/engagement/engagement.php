@@ -145,9 +145,10 @@ ob_start(); ?>
                                 <label for="exampleFormControlSelect1" class="w-900">Domaine d'action</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                         <option>_</option>
+                                    <?php if(isset($_GET['reload'])) { ?>
                                     <?php foreach($cards->create() as $domaine) { ?>
                                         <option><?= $domaine['title'] ?></option>
-                                    <?php } ?>
+                                    <?php } } ?>
                                 </select>
                             </div>
                             <!-- quartier -->
@@ -155,9 +156,10 @@ ob_start(); ?>
                                 <label for="exampleFormControlSelect1" class="w-900">Quartier</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                         <option>_</option>
+                                    <?php if(isset($_GET['reload'])) { ?>
                                     <?php foreach($cards->quartier() as $quartier) { ?>
                                         <option><?= $quartier['title'] ?></option>
-                                    <?php } ?>
+                                    <?php } } ?>
                                 </select>
                             </div>
                         </div>
@@ -176,7 +178,10 @@ ob_start(); ?>
                 <div class="col-12 p-0">
                     <div class="row justify-content-lg-center align-items-sm-center">
                         <button class="btn btn-primary col-md-7 mb-md-1" id="submit-1"><i class="fas fa-redo-alt mr-1"></i> Enregistrer et ajouter un engagement</button>
+                        <!-- add this button only when there are already "domaines d'action" -->
+                        <?php if(isset($_GET['reload'])) { ?>
                         <button class="btn btn-primary col-md-7 mb-md-1" id="submit-2"><i class="fas fa-plus mr-1"></i> Ajouter une action</button>
+                        <?php } ?>
                         <button class="btn btn-primary col-md-7 mb-md-1" id="submit-3"><i class="fas fa-directions mr-1"></i> Enregistrer et quitter</button>
                     </div>
                 </div>
@@ -188,7 +193,9 @@ ob_start(); ?>
 <!-- reirect provisoire -->
 <script>
   $('#submit-1').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement&reload"});
+  <?php if(isset($_GET['reload'])) { ?>
   $('#submit-2').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=action"});
+  <?php } ?>
   $('#submit-3').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=dashboard"});
 </script> 
 <!-- sidebar menu .active -->
