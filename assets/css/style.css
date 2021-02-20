@@ -579,7 +579,7 @@ footer {
 }
 
 .open-content {
-  height: 100% !important;
+  height: auto !important;
 }
 
 .badge-secondary {
@@ -629,7 +629,7 @@ footer {
     padding-bottom: 0px !important;
   }
   .accordeon_body--content {
-    padding: 10px 0px 25px 0px;
+    padding: 10px 0px 10px 0px;
   }
 
   .description-content {
@@ -645,6 +645,11 @@ footer {
     margin: 0px;
   }
 
+  .accordeons .badge {
+    display: flex !important;
+    margin-top: 7px;
+    justify-content: flex-end !important;
+  }
   .accordeons .badges {
     display: none !important;
   }
@@ -657,6 +662,7 @@ footer {
     margin-bottom: 0px !important;
     margin-top: 0px !important;
     text-align: right !important;
+    padding: 0px !important;
   }
   .accordeons .accordeon_body--content .row {
     flex-direction: column !important;
@@ -883,6 +889,13 @@ footer {
   }
   .card-header .danger {
     font-size: 17px !important;
+  }
+
+  .accordeons .accordeon_body--title {
+    font-size: 13px !important;
+  }
+  .accordeons .accordeon_body--title .icon-open-close {
+    font-size: 14px !important;
   }
 }
 

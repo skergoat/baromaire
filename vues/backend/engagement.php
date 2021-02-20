@@ -61,6 +61,12 @@ ob_start(); ?>
                                     <!-- content -->
                                     <div class="content col-md-9">
                                         <?php echo $accordeons['content']; ?>
+                                        <!-- badges -->
+                                        <div class="col-md-12 p-0 text-md-right badge d-md-none d-flex justify-content-start">
+                                            <?php foreach($accordeons['badges'] as $badges) { ?>
+                                            <div><span class="badge badge-secondary ml-2"><?= $badges ?></span></div>
+                                            <?php } ?>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

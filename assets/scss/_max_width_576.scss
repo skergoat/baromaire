@@ -64,4 +64,13 @@
       font-size: 17px !important;
     }
   }
+  // add engagements page
+  .accordeons {
+    & .accordeon_body--title {
+      font-size: 13px !important;
+      & .icon-open-close {
+        font-size: 14px !important;
+      }
+    }
+  }
 }
