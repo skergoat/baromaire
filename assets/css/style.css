@@ -570,6 +570,7 @@ footer {
 }
 .accordeon.accordeons {
   border-radius: 0px !important;
+  box-shadow: 0 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .close-content {
