@@ -45,9 +45,9 @@ ob_start(); ?>
                                 <div class="row">
                                     <div class="col-md-9 p-0">
                                         <!-- title -->
-                                        <div class="accordeon_body--title font-13 text-left pr-3 pt-1 bold black"><?= $loads['title'] ?></div>
+                                        <div class="description-title font-13 text-left pr-md-3 pt-1 bold black"><?= $loads['title'] ?></div>
                                         <!-- content -->
-                                        <div class="accordeon_body--title font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
+                                        <div class="description-content font-12 text-left pr-md-3 pt-1"><?= $loads['content'] ?></div>
                                     </div>
                                     <div class="col-md-3 p-0">
                                         <div class="progresses progresses-3 mb-2">

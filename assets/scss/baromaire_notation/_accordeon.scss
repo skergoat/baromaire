@@ -42,15 +42,21 @@
   .accordeon {
     padding: 15px !important;
     &_body--title {
-      margin-top: 7px !important;
+      margin-top: 10px !important;
       margin-bottom: 15px;
       text-align: center !important;
+      font-size: 17px !important;
     }
     &_body {
       padding-bottom: 0px !important;
       &--content {
         padding: 10px 0px 25px 0px;
       }
+    }
+  }
+  .description {
+    &-content {
+      margin-bottom: 10px;
     }
   }
   .badges {
