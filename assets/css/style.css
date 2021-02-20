@@ -368,6 +368,38 @@ footer {
   background-image: url("../../../assets/img/placeholder.png");
 }
 
+@media all and (max-width: 991px) {
+  .sidebar-responsive-bottom {
+    margin-top: 1rem !important;
+  }
+
+  #hamburger-button {
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 999;
+    width: 55px;
+    height: 55px;
+    border-left: 1px solid #2d4e9d !important;
+    border-bottom: 1px solid #2d4e9d !important;
+    border-top: 1px solid #2d4e9d !important;
+    background-color: #2d4e9d !important;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #hamburger-button div {
+    width: 30px;
+    height: 5px;
+    background-color: #2d4e9d !important;
+    background-color: white !important;
+    margin-bottom: 6px;
+  }
+}
 .progresses {
   position: relative;
   width: 95px;
@@ -655,12 +687,12 @@ footer {
 }
 .icon-edit {
   top: -40px;
-  left: 80%;
+  left: 500% !important;
 }
 
 .icon-edit.icon-edit-picture {
   top: 70px;
-  left: 80%;
+  left: 80% !important;
 }
 
 .arrow::before,

@@ -47,7 +47,7 @@ class Progress
 
        // widget bottom
         $widget.= '
-        <div class="card p-3 mt-5">
+        <div class="card p-3 mt-5 sidebar-responsive-bottom">
             <div class="card_numbers font-15 d-flex">
                 <div class="nb nb-success font-25 mr-2">'.$numbers[0].'</div> 
                 <div class="mt-2">Engagements respectés</div>

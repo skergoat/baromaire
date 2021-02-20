@@ -55,3 +55,38 @@
     background-image: url("../../../assets/img/placeholder.png");
   }
 }
+// button toggle widgets
+@media all and (max-width: 991px) {
+  .sidebar-responsive {
+    &-bottom {
+      margin-top: 1rem !important;
+    }
+  }
+  #hamburger-button {
+    position: fixed;
+    top: 25%;
+    right: 0;
+    z-index: 999;
+    // display: block !important;
+    width: 55px;
+    height: 55px;
+    border-left: 1px solid #2d4e9d !important;
+    border-bottom: 1px solid #2d4e9d !important;
+    border-top: 1px solid #2d4e9d !important;
+    background-color: #2d4e9d !important;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & div {
+      width: 30px;
+      height: 5px;
+      background-color: #2d4e9d !important;
+      background-color: white !important;
+      margin-bottom: 6px;
+    }
+  }
+}
