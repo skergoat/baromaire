@@ -55,15 +55,15 @@
                         <div class="image image-placeholder img-thumbnail mx-auto mb-3"></div>
                     </div>
                     <div class="row">
-                        <div class="<?php if(isset($_GET['admin'])) { ?> col-10 <?php } else { ?>col-12<?php } ?> p-0">
+                        <div class="col-12 p-0">
                             <h5 class="diviber_first_title text-center primary">Robert <span class="uppercase">Dupont</span></h5>
                             <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
                         </div>
                         <?php if(isset($_GET['admin'])) { 
                             if($_GET['admin'] == 'sign') { ?>
                                 <!-- edit button -->
-                            <div  class="col-2 p-0">
-                                <div class="icon-edit btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
+                            <div  class="col-2 p-0 icon-edit">
+                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } else { ?>
                                 <!-- edit button -->
