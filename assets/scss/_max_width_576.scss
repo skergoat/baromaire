@@ -52,4 +52,15 @@
   /*
   * ADMIN
   */
+  // sign page
+  .main-content .alert-success {
+    margin-top: 1.5rem;
+  }
+
+  .card-header {
+    font-size: 15px !important;
+    & .danger {
+      font-size: 17px !important;
+    }
+  }
 }

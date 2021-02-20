@@ -23,23 +23,23 @@ ob_start(); ?>
         <!-- head -->
         <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 1 :</span> renseigner vos dates de mandat</div>
         <!-- body -->
-        <div class="card-body pt-5 pb-4">
+        <div class="card-body pt-lg-5 pb-4">
         <!-- form -->
             <form>
-                <div class="form-group row justify-content-center">
-                    <label for="debut" class="col-sm-3 col-form-label text-left pr-0 w-900">Début de mandat : </label>
-                    <div class="col-sm-3 pl-0">
+                <div class="form-group row justify-content-center align-items-md-center">
+                    <label for="debut" class="col-md-12 col-lg-4 col-form-label text-left pr-0 w-900">Début de mandat : </label>
+                    <div class="col-sm-12 col-lg-4  pl-0">
                         <input type="date" class="form-control" id="debut" placeholder="Password">
                     </div>
                 </div><br>
-                <div class="form-group row justify-content-center pb-4">
-                    <label for="fin" class="col-sm-3 col-form-label text-left pr-0 w-900">Fin de mandat : </label>
-                    <div class="col-sm-3 pl-0">
+                <div class="form-group row justify-content-center align-items-md-center pb-4">
+                    <label for="fin" class="col-md-12 col-lg-4 col-form-label text-left pr-0 w-900">Fin de mandat : </label>
+                    <div class="col-sm-12 col-lg-4  pl-0">
                         <input type="date" class="form-control" id="fin" placeholder="Password">
                     </div>
                 </div>
-                <div class="form-group row justify-content-center">
-                    <button type="submit" class="btn btn-primary mb-2" id="submit">Enregistrer et passer à l'étape suivante <i class="fas fa-angle-right font-17" style="position:relative;top:1.5px;left:3px;"></i></button>
+                <div class="form-group row justify-content-center align-items-md-center">
+                    <button type="submit" class="btn btn-primary mb-2 col-md-12 col-lg-7" id="submit">Enregistrer et passer à l'étape suivante <i class="fas fa-angle-right font-17" style="position:relative;top:1.5px;left:3px;"></i></button>
                 </div>
             </form>
         </div>

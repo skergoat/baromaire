@@ -21,3 +21,9 @@
     border-bottom-color: $secondary !important;
   }
 }
+
+@media all and (max-width: 991px) {
+  .popover {
+    display: none !important;
+  }
+}

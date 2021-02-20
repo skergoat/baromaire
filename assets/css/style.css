@@ -675,6 +675,11 @@ footer {
   border-bottom-color: #2d4e9d !important;
 }
 
+@media all and (max-width: 991px) {
+  .popover {
+    display: none !important;
+  }
+}
 .custom-file-label::after {
   font-family: "Font Awesome 5 Free";
   content: "";
@@ -738,6 +743,16 @@ footer {
   /*
   * ADMIN
   */
+  .main-content .alert-success {
+    margin-top: 1.5rem;
+  }
+
+  .card-header {
+    font-size: 15px !important;
+  }
+  .card-header .danger {
+    font-size: 17px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
