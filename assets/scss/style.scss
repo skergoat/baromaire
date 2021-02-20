@@ -39,6 +39,18 @@ img {
   text-transform: uppercase !important;
 }
 
+.back-transparent {
+  background: transparent !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  overflow: hidden !important;
+}
+
 // xxl
 @media all and (min-width: 1440px) {
   .container-baromaire {

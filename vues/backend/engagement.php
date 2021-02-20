@@ -26,7 +26,7 @@ ob_start(); ?>
         foreach($accordeon->create() as $accordeons) {
         ?>
         <!-- accordeon -->
-        <div class="mt-2" style="background:transparent;">
+        <div class="mt-2 back-transparent">
             <div class="row">
                 <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                     <div class="w-900 font-18"><?= $accordeons['id'] ?></div>
@@ -37,17 +37,17 @@ ob_start(); ?>
                             <!-- title -->
                             <div class="row">
                                 <!-- badges -->
-                                <div class="col-md-4 p-0 text-md-right badges d-flex justify-content-start">
+                                <div class="col-md-4 p-0 text-md-right badges d-flex justify-content-start hidden">
                                     <?php foreach($accordeons['badges'] as $badges) { ?>
                                     <div><span class="badge badge-secondary"><?= $badges ?></span></div>
                                     <?php } ?>
                                 </div>
                                 <!-- title -->
-                                <div class="accordeon_body--title font-17 text-right p-0 col-7"><?= $accordeons['title'] ?></div>
-                                <!-- button -->
-                                <div class="open-accordion col-1 d-flex justify-content-center align-items-center font-18" data-url="<?= $accordeons['id'] ?>" style="cursor:pointer;">
-                                    <div><i class="fas fa-chevron-down icon-open-close position-relative" id="icon-<?= $accordeons['id'] ?>" style="top:3px;"></i></div>
-                                </div>   
+                                <div class="accordeon_body--title font-17 text-right col-md-8">
+                                    <?= $accordeons['title'] ?>
+                                    <!-- button -->
+                                    <i class="fas fa-chevron-down icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="<?= $accordeons['id'] ?>" id="icon-<?= $accordeons['id'] ?>"></i>
+                                </div>
                             </div>
                             <!-- divider -->
                             <div class="divider_second d-none mb-2 mt-2 pl-3 pr-3" id="divider-<?= $accordeons['id'] ?>"></div>
@@ -55,11 +55,11 @@ ob_start(); ?>
                             <div class="close-content accordeon_body--content font-15 primary text-justify" id="content-<?= $accordeons['id'] ?>">
                                 <div class="row p-2">
                                     <!-- image -->
-                                    <div class="col-3 pt-2">
+                                    <div class="col-md-3 pt-2">
                                         <img src="assets/img/engagements/<?= $accordeons['image'] ?>" alt="image engagements" class="d-block mx-auto" style="max-width:130px;"/>
                                     </div>
                                     <!-- content -->
-                                    <div class="content col-9">
+                                    <div class="content col-md-9">
                                         <?php echo $accordeons['content']; ?>
                                     </div>
                                 </div>

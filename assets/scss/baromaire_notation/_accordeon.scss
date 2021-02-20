@@ -79,4 +79,30 @@
   .badge-secondary {
     margin: 0px;
   }
+  // add engagements page
+  .accordeons {
+    & .badges {
+      display: none !important;
+    }
+    & .accordeon_body {
+      padding-top: 5px !important;
+      padding-bottom: 5px !important;
+    }
+    & .accordeon_body--title {
+      font-size: 16px !important;
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+      text-align: right !important;
+    }
+    & .accordeon_body--content .row {
+      flex-direction: column !important;
+    }
+    & .accordeon_body--content .col-md-3 {
+      padding-bottom: 1.5rem;
+      padding-top: 0px !important;
+    }
+  }
+  .accordeon.accordeons {
+    padding: 3px !important;
+  }
 }

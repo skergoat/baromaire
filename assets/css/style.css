@@ -218,6 +218,18 @@ img {
   text-transform: uppercase !important;
 }
 
+.back-transparent {
+  background: transparent !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  overflow: hidden !important;
+}
+
 @media all and (min-width: 1440px) {
   .container-baromaire {
     max-width: 90%;
@@ -631,6 +643,31 @@ footer {
 
   .badge-secondary {
     margin: 0px;
+  }
+
+  .accordeons .badges {
+    display: none !important;
+  }
+  .accordeons .accordeon_body {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+  .accordeons .accordeon_body--title {
+    font-size: 16px !important;
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+    text-align: right !important;
+  }
+  .accordeons .accordeon_body--content .row {
+    flex-direction: column !important;
+  }
+  .accordeons .accordeon_body--content .col-md-3 {
+    padding-bottom: 1.5rem;
+    padding-top: 0px !important;
+  }
+
+  .accordeon.accordeons {
+    padding: 3px !important;
   }
 }
 /*admin*/
