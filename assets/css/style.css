@@ -242,10 +242,9 @@ footer {
 #hamburger {
   display: none !important;
 }
-
 #hamburger-button {
   text-align: center !important;
-  font-size: 40px !important;
+  font-size: 30px !important;
 }
 #hamburger-button .fas.fa-bars, #hamburger-button .fas.fa-times {
   color: white;
@@ -703,14 +702,14 @@ footer {
     margin-bottom: 30px;
   }
 }
-.icon-edit {
-  top: -40px;
-  left: 500% !important;
-}
-
-.icon-edit.icon-edit-picture {
+.icon-edit-1 {
   top: 70px;
   left: 80% !important;
+}
+
+.icon-edit-2 {
+  top: -40px;
+  left: 500% !important;
 }
 
 .arrow::before,
@@ -733,6 +732,22 @@ footer {
 @media all and (max-width: 991px) {
   .popover {
     display: none !important;
+  }
+
+  .icon-edit-1 {
+    top: 60px;
+    left: 57% !important;
+  }
+
+  .icon-edit-2 {
+    top: -40px;
+    left: 57% !important;
+  }
+}
+@media all and (max-width: 650px) {
+  .icon-edit-2 {
+    top: -40px;
+    left: 65% !important;
   }
 }
 .custom-file-label::after {

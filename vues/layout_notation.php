@@ -27,7 +27,7 @@
 </head>
 <body id="page-top">
     <!-- menu responsive -->      
-    <div id="nav-responsive" class="col-12 pb-5 pt-5 d-none">
+    <div id="nav-responsive" class="col-12 pb-5 pt-5 d-none d-lg-none">
         <div class="pt-sm-5 pt-lg-4">
             <!-- sidebar left -->
             <div class="card p-3 col-12 d-lg-none d-lg-block" style="height:100%;">
@@ -35,7 +35,7 @@
                     <div class="position-relative">
                         <?php if(isset($_GET['admin'])) { ?>
                         <!-- edit button -->
-                        <div class="icon-edit icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
                         <?php } ?>
                         <!-- img mayor -->
                         <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
@@ -50,13 +50,13 @@
                         <?php if(isset($_GET['admin'])) { 
                             if($_GET['admin'] == 'sign') { ?>
                                 <!-- edit button -->
-                            <div  class="col-2 p-0 icon-edit">
+                            <div  class="col-2 p-0 icon-edit-2">
                                 <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } else { ?>
                                 <!-- edit button -->
-                                <div  class="col-2 p-0">
-                                <div class="icon-edit btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                                <div  class="col-2 p-0 icon-edit-2">
+                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } } ?>
                     </div>
@@ -87,9 +87,6 @@
     </div>
     <!-- hamburger -->
     <div class="d-lg-none mx-auto" id="hamburger-buttons">
-        <!-- <div></div>
-        <div></div>
-        <div></div> -->
         <i class="fas fa-bars"></i>
     </div>
     <div class="container-baromaire mb-5 pr-sm-2 pl-sm-2">
@@ -113,7 +110,7 @@
                     <div class="position-relative">
                         <?php if(isset($_GET['admin'])) { ?>
                         <!-- edit button -->
-                        <div class="icon-edit icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
                         <?php } ?>
                         <!-- img mayor -->
                         <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
@@ -128,13 +125,13 @@
                         <?php if(isset($_GET['admin'])) { 
                             if($_GET['admin'] == 'sign') { ?>
                                 <!-- edit button -->
-                            <div  class="col-2 p-0 icon-edit">
+                            <div  class="col-2 p-0 icon-edit-2">
                                 <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } else { ?>
                                 <!-- edit button -->
                                 <div  class="col-2 p-0">
-                                <div class="icon-edit btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                                <div class="icon-edit-2 btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } } ?>
                     </div>
