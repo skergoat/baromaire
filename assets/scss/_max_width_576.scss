@@ -5,6 +5,7 @@
 @media all and (max-width: 576px) {
   /**
     * NOTATION
+    * for larger screen, watch baromaire_notation > .scss files 
     */
   .header_baromaire {
     flex-direction: column !important;
@@ -51,12 +52,12 @@
   }
   /*
   * ADMIN
+  * for larger screen, watch baromaire_admin > .scss files 
   */
   // sign page
   .main-content .alert-success {
     margin-top: 1.5rem;
   }
-
   .card-header {
     font-size: 15px !important;
     & .danger {

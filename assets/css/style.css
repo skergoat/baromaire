@@ -691,10 +691,20 @@ footer {
   padding-left: 20px;
 }
 
+@media all and (max-width: 991px) {
+  #form-sign input {
+    margin-bottom: 0px !important;
+  }
+
+  #submit-1, #submit-2, #submit-3 {
+    margin-bottom: 5px !important;
+  }
+}
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   /**
     * NOTATION
+    * for larger screen, watch baromaire_notation > .scss files 
     */
   .header_baromaire {
     flex-direction: column !important;
@@ -742,6 +752,7 @@ footer {
 
   /*
   * ADMIN
+  * for larger screen, watch baromaire_admin > .scss files 
   */
   .main-content .alert-success {
     margin-top: 1.5rem;
