@@ -572,12 +572,18 @@ footer {
   }
 }
 /*admin*/
-#login-logo-2 {
+#login-logo-2,
+#login-logo-3 {
   max-width: 30px;
   height: 25px;
   position: relative;
   left: -5%;
   top: -3px;
+}
+
+#login-logo-3 {
+  left: 0;
+  margin: auto;
 }
 
 #login-logo-1 {
@@ -587,6 +593,66 @@ footer {
   left: 20px;
 }
 
+.login-card-bottom .card-title {
+  margin-bottom: 30px;
+}
+
+@media all and (max-width: 991px) {
+  /**
+    * ADMIN
+    */
+  .login-card-top {
+    margin-top: 1.5rem !important;
+  }
+  .login-card-top .card-body {
+    padding: 10px !important;
+  }
+  .login-card-top .card-title.font-23 {
+    font-size: 18px !important;
+  }
+  .login-card-top .card-title.font-25 {
+    margin-bottom: 20px;
+  }
+  .login-card-top .card-text {
+    font-size: 14px !important;
+  }
+
+  #login-logo-1 {
+    left: 0px !important;
+    display: block !important;
+    margin: auto !important;
+    padding: 0px !important;
+  }
+  #login-logo-2 {
+    display: none !important;
+  }
+  #login-logo-p-3 {
+    display: block !important;
+  }
+
+  .col-form-label,
+.form-group .col-sm-9,
+.form-group .col-lg-9,
+.form-check {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .col-form-label.text-right {
+    text-align: left !important;
+  }
+
+  form .row {
+    flex-direction: column !important;
+  }
+  form .row .form-group {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  form .row .form-group input {
+    margin-bottom: 30px;
+  }
+}
 .icon-edit-picture {
   bottom: 40%;
   left: 70%;
@@ -669,31 +735,9 @@ footer {
     justify-content: center;
   }
 
-  /**
-    * ADMIN
-    */
-  .login-card-top {
-    margin-top: 1.5rem !important;
-  }
-  .login-card-top .card-body {
-    padding: 10px !important;
-  }
-  .login-card-top .card-title.font-23 {
-    font-size: 18px !important;
-  }
-  .login-card-top .card-title.font-25 {
-    margin-bottom: 20px;
-  }
-  .login-card-top .card-text {
-    font-size: 14px !important;
-  }
-
-  #login-logo-1 {
-    left: 0px !important;
-    display: block !important;
-    margin: auto !important;
-    padding: 0px !important;
-  }
+  /*
+  * ADMIN
+  */
 }
 
 /*# sourceMappingURL=style.css.map */
