@@ -67,12 +67,12 @@
                     <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
                     <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Votre quartier</a></li>
                     <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
-                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
+                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Se connecter</a></li>
                 </ul>
                 <!-- alert -->
                 <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
-                <div class="alert alert-danger" role="alert">
-                Mode : <a href="#" class="alert-link">Gestion</a>
+                <div class="alert alert-danger text-center" role="alert">
+                Connecté comme : <a href="#" class="alert-link">Administrateur</a>
                 </div>
                 <?php } ?>
             </div>
@@ -136,21 +136,21 @@
                     </div>
                 </div>
                 <ul class="sidebar-left_nav">
-                    <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
-                    <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
-                    <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
-                    <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Votre quartier</a></li>
-                    <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
+                    <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-2"></i>Suivre les progrès</a></li>
+                    <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-2"></i>Notre démarche</a></li>
+                    <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-2"></i>Nos engagements</a></li>
+                    <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-2"></i>Votre quartier</a></li>
+                    <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-2"></i>Me Contacter</a></li>
                     <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
-                    <li class="pl-2"><a href="/?admin=dashboard"><i class="fas fa-sign-in-alt mr-3"></i>Admin</a></li>
+                    <li class="pl-2"><a href="/?admin=dashboard"><i class="fas fa-sign-in-alt mr-2"></i>Admin</a></li>
                     <?php } else { ?>
-                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
+                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-2"></i>Se connecter</a></li>
                     <?php } ?>
                 </ul>
                 <!-- alert -->
                 <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
-                <div class="alert alert-danger" role="alert">
-                Mode : <a href="#" class="alert-link">Gestion</a>
+                <div class="alert alert-danger text-center" role="alert">
+                <a href="#" class="alert-link">Administrateur</a>
                 </div>
                 <?php } ?>
             </div>
