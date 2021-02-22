@@ -15,4 +15,4 @@ EDIT ACTION
 <script>var child = 6;</script>
 
 <?php $content = ob_get_clean(); ?>
-<?php require('vues/layout_notation.php'); ?>
+<?php require('vues/layout_admin.php'); ?>

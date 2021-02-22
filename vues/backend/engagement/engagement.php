@@ -181,6 +181,8 @@ ob_start(); ?>
                         <!-- add this button only when there are already "domaines d'action" -->
                         <?php if(isset($_GET['reload'])) { ?>
                         <button class="btn btn-primary col-md-7 mb-md-1" id="submit-2"><i class="fas fa-plus mr-1"></i> Ajouter une action</button>
+                        <?php } else { ?>
+                        <button class="btn btn-primary col-md-7 mb-md-1" id="submit-2-disabled" data-toggle="popover-3" data-placement="top"><i class="fas fa-plus mr-1"></i> Ajouter une action</button>
                         <?php } ?>
                         <button class="btn btn-primary col-md-7 mb-md-1" id="submit-3"><i class="fas fa-directions mr-1"></i> Enregistrer et quitter</button>
                     </div>
@@ -201,4 +203,4 @@ ob_start(); ?>
 <!-- sidebar menu .active -->
 <script>var child = 6;</script>
 <?php $content = ob_get_clean(); ?>
-<?php require('vues/layout_notation.php'); ?>
+<?php require('vues/layout_admin.php'); ?>

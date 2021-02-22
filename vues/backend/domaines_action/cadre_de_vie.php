@@ -108,4 +108,4 @@ ob_start(); ?>
 </script>
 
 <?php $content = ob_get_clean(); ?>
-<?php require('vues/layout_notation.php'); ?>
+<?php require('vues/layout_admin.php'); ?>

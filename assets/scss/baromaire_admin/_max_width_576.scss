@@ -1,0 +1,76 @@
+// style for mobile < 576 px
+// for larger screen, see inside .scss files
+
+/*hearders and footers*/
+@media all and (max-width: 576px) {
+  /**
+      * NOTATION
+      * for larger screen, watch baromaire_notation > .scss files 
+      */
+  .header_baromaire {
+    flex-direction: column !important;
+    justify-content: center !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .logo-notation {
+    width: 90% !important;
+    display: block;
+    margin: auto;
+  }
+  // header
+  .titles {
+    margin-top: 20px;
+  }
+  .title_baromaire {
+    text-align: center !important;
+    font-size: 27px !important;
+  }
+
+  .subtitle_baromaire {
+    text-align: center !important;
+    font-size: 24px !important;
+  }
+  // content
+  .main-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-right: 5px !important;
+    padding-left: 5px !important;
+    & h4 {
+      font-size: 22px;
+      margin-top: 30px !important;
+      margin-bottom: 30px !important;
+      text-align: center !important;
+    }
+  }
+  // cards
+  .cards {
+    &-container {
+      justify-content: center;
+    }
+  }
+  /*
+    * ADMIN
+    * for larger screen, watch baromaire_admin > .scss files 
+    */
+  // sign page
+  .main-content .alert-success {
+    margin-top: 1.5rem;
+  }
+  .card-header {
+    font-size: 15px !important;
+    & .danger {
+      font-size: 17px !important;
+    }
+  }
+  // add engagements page
+  .accordeons {
+    & .accordeon_body--title {
+      font-size: 13px !important;
+      & .icon-open-close {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
