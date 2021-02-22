@@ -29,7 +29,7 @@
     <div class="container-baromaire-fluid p-0">
         <div class="row pt-0">
             <!-- sidebar left -->
-            <div class="card sidebar-left p-0 col">
+            <div class="card sidebar-left p-0 col" id="sidebar-admin">
                 <div class="logo-admin pl-1 pr-1">
                     <a href="/">
                         <img class="" src="assets/img/logo_baromaire_admin.jpg" alt="">

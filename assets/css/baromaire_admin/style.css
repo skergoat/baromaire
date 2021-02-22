@@ -751,6 +751,10 @@ footer {
   display: none;
 }
 
+.main-content {
+  height: 100vh !important;
+}
+
 @media all and (max-width: 1150px) {
   .sidebar-left {
     position: absolute;
@@ -762,7 +766,6 @@ footer {
   .main-content {
     width: 100% !important;
     min-width: 100% !important;
-    height: 100vh;
   }
 
   .overlay {

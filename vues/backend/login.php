@@ -3,12 +3,6 @@
 * Page : Admin Login
 */
 
-// header title and subtitle
-$title_baromaire = "Ville de Beaubourg";
-$subtitle_baromaire = "Entreprendre et Réussir";
-// change widget and percentage here
-$widget = $progress->create(false, 100, 30, [6, 3 ,2]);
-
 ob_start(); ?>
 
 <div class="row">

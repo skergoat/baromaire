@@ -2,20 +2,9 @@
 /**
 * Page : Create Account 
 */
-
-// header title and subtitle
-$title_baromaire = "Ville de Beaubourg";
-$subtitle_baromaire = "Entreprendre et Réussir";
-// change widget and percentage here
-$widget = $progress->create(false, 0, 0, [0, 0 ,0]);
-
 ob_start(); ?>
 
 <div class="mb-4">
-    <!-- alert -->
-    <!-- <div class="alert alert-success" role="alert">
-    Bravo ! Vous êtes connecté comme administrateur de la ville de <a href="#" class="alert-link">Beaubourg</a>.
-    </div> -->
     <!-- title -->
     <h4 class="mb-4 mt-4">Créez votre Baromaire</h4>
     <!-- card -->

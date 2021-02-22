@@ -41,3 +41,14 @@ $(window).on('resize', function() {
     $('[data-toggle="popover"]').popover('hide');
     $('[data-toggle="popover-2"]').popover('hide');
 });
+
+/****
+ * ADMIN
+ */ 
+$('#hamburger-buttons-admin').on('click', function() {
+    $('#sidebar-admin').toggleClass('d-none');
+});
+
+$('.overlay').on('click', function() {
+    $('#sidebar-admin').toggleClass('d-none');
+});
