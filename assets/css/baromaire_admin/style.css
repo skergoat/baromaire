@@ -744,6 +744,7 @@ footer {
   bottom: 0;
   right: 0;
   z-index: 9999;
+  display: none;
 }
 
 @media all and (max-width: 1150px) {
@@ -751,12 +752,16 @@ footer {
     position: absolute;
     top: 0;
     z-index: 999999;
-    left: -100%;
+    left: 0;
   }
 
   .main-content {
     width: 100% !important;
     min-width: 100% !important;
+  }
+
+  .overlay {
+    display: block;
   }
 }
 #login-logo-2,

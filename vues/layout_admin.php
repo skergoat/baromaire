@@ -29,23 +29,23 @@
     <div class="container-baromaire-fluid p-0">
         <div class="row pt-0">
             <!-- sidebar left -->
-            <div class="card sidebar-left p-0 col-lg-2">
+            <div class="card sidebar-left p-0 col">
                 <div class="logo-admin pl-1 pr-1">
                     <a href="/">
                         <img class="" src="assets/img/logo_baromaire_admin.jpg" alt="">
                     </a>
                 </div>
                 <ul class="sidebar-left_nav">
-                    <li class="pl-2 mb-2"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
-                    <li class="pl-2 mb-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
-                    <li class="pl-2 mb-2"><a href="/?admin=action"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
-                    <li class="pl-2 mb-2"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
-                    <li class="pl-2 mb-2"><a href="/?progres"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
+                    <li class="pl-3 mb-2"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
+                    <li class="pl-3 mb-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
+                    <li class="pl-3 mb-2"><a href="/?admin=action"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
+                    <li class="pl-3 mb-2"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
+                    <li class="pl-3 mb-2"><a href="/?progres"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
                 </ul>
             </div>
             <!-- content right -->
-            <div class="main-content col-lg-10 col-12 p-0 position-relative"> 
-                <div class="overlay d-none"></div>
+            <div class="main-content col p-0 position-relative"> 
+                <div class="overlay"></div>
                 <!-- navbar top -->
                 <nav class="navbar-admin navbar-light bg-light">
                     <div class="row">
