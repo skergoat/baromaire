@@ -75,6 +75,10 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'quartier') {
     require('vues/backend/quartier.php');
 }  
 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'profil') {
+    require('vues/backend/profil.php');
+}  
+
 // HOMEPAGE 
 else {
     // require('vues/frontend/baromaire_home/create.php');

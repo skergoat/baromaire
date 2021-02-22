@@ -186,17 +186,9 @@
     <script>
         // popover 
         $(function () {
+            // put on admin when user connected 
             $('[data-toggle="popover"]').popover('show');
             $('[data-toggle="popover-2"]').popover();
-            $('#submit-2-disabled').on('click', function(e) {
-                e.preventDefault();
-
-                $('[data-toggle="popover-3"]').popover({
-                    html:true,
-                    title:"Ajouter une action",
-                    content: "Avant d'ajouter une action, vous devez ajouter des <a href='/?admin=domaine&redirect'>Domaines d\'action</a>",
-                });
-            });
         })
     </script>
     <script src="assets/js/nav.js"></script>

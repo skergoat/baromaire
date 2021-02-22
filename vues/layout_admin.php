@@ -66,8 +66,8 @@
                         </div>
                         <!-- profile button -->
                         <div class="col-10">
-                            <div class="profile-button">
-                                PROFILE
+                            <div class="profile-button d-flex justify-content-end pointer">
+                                <div class="image image-placeholder img-thumbnail d-block" id="popover-desktop" data-toggle="profile" data-placement="bottom"></div>
                             </div>
                         </div>
                     </div>
@@ -97,8 +97,6 @@
     <script>
         // popover 
         $(function () {
-            $('[data-toggle="popover"]').popover('show');
-            $('[data-toggle="popover-2"]').popover();
             $('#submit-2-disabled').on('click', function(e) {
                 e.preventDefault();
 
@@ -108,6 +106,11 @@
                     content: "Avant d'ajouter une action, vous devez ajouter des <a href='/?admin=domaine&redirect'>Domaines d\'action</a>",
                 });
             });
+            // popover admin profile 
+            $('[data-toggle="profile"]').popover({
+                html:true,
+                content: "<div class='p-2 pl-3 pr-3 pointer' style='border-bottom:1px solid black'><a href='/?admin=profil'>Profil</a></div><div class='p-2 pl-3 pr-3 pointer'><a href='/?login'>Déconnexion</a></div>",
+             });
         })
     </script>
     <script src="assets/js/nav.js"></script>
