@@ -6,12 +6,12 @@
 body {
   top: 0;
   left: 0;
-  background: #f6f6f6 0 0 no-repeat padding-box;
+  background: #ebede4 0 0 no-repeat padding-box;
   opacity: 1;
   font-family: Arial, sans-serif; /*provisoire*/
   // position: relative; /*footer bottom*/
   // min-height: 100vh; /*footer bottom*/
-  padding-top: 20px;
+  // padding-top: 20px;
   min-height: 100vh;
 }
 
@@ -51,6 +51,11 @@ img {
   overflow: hidden !important;
 }
 
+.container-baromaire-fluid {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
 // xxl
 @media all and (min-width: 1440px) {
   .container-baromaire {
@@ -78,6 +83,9 @@ img {
 @import "../baromaire_notation/accordeon";
 
 /*admin*/
+@import "header";
+@import "footer";
+@import "sidebar";
 @import "login";
 @import "icon";
 @import "forms";

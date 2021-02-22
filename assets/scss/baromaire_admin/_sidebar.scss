@@ -1,0 +1,27 @@
+.sidebar-left {
+  height: 100vh !important;
+  min-height: 100vh;
+  background: #303c54 !important;
+  border-radius: 0px !important;
+  & ul li a {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  & ul li:hover {
+    background: #3c4b64 !important;
+  }
+  & ul li a > .fas::before {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  &_nav {
+    margin-top: 50px !important;
+  }
+}
+
+.logo-admin {
+  padding: 0.5rem 1rem;
+  background: #262f42 !important;
+  & img {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+}

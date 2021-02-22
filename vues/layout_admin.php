@@ -26,163 +26,64 @@
     <script src="assets/js/progress_bar.js"></script>
 </head>
 <body id="page-top">
-    <!-- menu responsive -->      
-    <div id="nav-responsive" class="col-12 pb-5 pt-4 d-none d-lg-none">
-        <div class="pt-sm-5 pt-lg-4">
+    <div class="container-baromaire-fluid p-0">
+        <div class="row pt-0">
             <!-- sidebar left -->
-            <div class="card p-3 col-12 d-lg-none d-lg-block" style="height:100%;">
-                <div class="divider_first pb-3 mb-3">
-                    <div class="position-relative">
-                        <?php if(isset($_GET['admin'])) { ?>
-                        <!-- edit button -->
-                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
-                        <?php } ?>
-                        <!-- img mayor -->
-                        <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
-                        <!-- img placeholder -->
-                        <div class="image image-placeholder img-thumbnail mx-auto mb-3"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 p-0">
-                            <h5 class="diviber_first_title text-center primary">Robert <span class="uppercase">Dupont</span></h5>
-                            <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
-                        </div>
-                        <?php if(isset($_GET['admin'])) { 
-                            if($_GET['admin'] != 'login') { ?>
-                                <!-- edit button -->
-                            <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-responsive" data-toggle="popover-2" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
-                            </div>
-                        <?php } else { ?>
-                                <!-- edit button -->
-                                <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
-                            </div>
-                        <?php } } ?>
-                    </div>
+            <div class="card sidebar-left p-0 col-2 d-none d-sm-none d-lg-block">
+                <div class="logo-admin pl-1 pr-1">
+                    <a href="/">
+                        <img class="" src="assets/img/logo_baromaire.png" alt="">
+                    </a>
                 </div>
                 <ul class="sidebar-left_nav">
-                    <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
-                    <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
-                    <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
-                    <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Votre quartier</a></li>
-                    <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
-                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
+                    <li class="pl-2 mb-2"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
+                    <li class="pl-2 mb-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
+                    <li class="pl-2 mb-2"><a href="/?admin=action"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
+                    <li class="pl-2 mb-2"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
+                    <li class="pl-2 mb-2"><a href="/?progres"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
                 </ul>
-                <!-- alert -->
-                <?php if(isset($_GET['admin'])) { ?>
-                <div class="alert alert-danger" role="alert">
-                Mode : <a href="#" class="alert-link">Gestion</a>
-                </div>
-                <?php } ?>
             </div>
-            <!-- sidebar right -->
-            <div class="d-lg-none d-lg-block mt-3">
-                <!-- progress bar -->
-                <!-- see : Model/Widget -->
-                <?= $widget; ?>
-                <!-- card bottom -->
-            </div>
-        </div>
-    </div>
-    <!-- hamburger -->
-    <div class="d-lg-none mx-auto" id="hamburger-buttons">
-        <i class="fas fa-bars"></i>
-    </div>
-    <div class="container-baromaire mb-5 pr-sm-2 pl-sm-2">
-        <!-- header -->
-        <header class="header_baromaire row align-items-lg-center justify-content-sm-center justify-content-lg-between">
-            <div class="logo-block mb-sm-3 mb-lg-0">
-                <a href="/">
-                    <img class="logo logo-notation" src="assets/img/logo_baromaire.png" alt="">
-                </a>
-            </div>
-            <div class="titles">
-                <div class="title_baromaire font-50 text-sm-center text-lg-right"><?= $title_baromaire ?></div>
-                <div class="subtitle_baromaire font-30 text-sm-center text-lg-right"><?= $subtitle_baromaire ?></div>
-            </div>
-        </header>
-        <!-- sidebars -->
-        <div class="row pt-sm-5 pt-lg-4">
-            <!-- sidebar left -->
-            <div class="card p-3 col-2 d-none d-sm-none d-lg-block" style="height:100%;">
-                <div class="divider_first pb-3 mb-3">
-                    <div class="position-relative">
-                        <?php if(isset($_GET['admin'])) { ?>
-                        <!-- edit button -->
-                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
-                        <?php } ?>
-                        <!-- img mayor -->
-                        <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
-                        <!-- img placeholder -->
-                        <div class="image image-placeholder img-thumbnail mx-auto mb-3"></div>
-                    </div>
+            <!-- content right -->
+            <div class="main-content col-sm-12 col-lg-10 p-0 position-relative"> 
+                <!-- navbar top -->
+                <nav class="navbar-admin navbar-light bg-light">
                     <div class="row">
-                        <div class="col-12 p-0">
-                            <h5 class="diviber_first_title text-center primary">Robert <span class="uppercase">Dupont</span></h5>
-                            <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
+                        <div class="col-2 b-blue p-0">
+                            <div class="row">
+                                <!-- hamburger -->
+                                <div class="mx-auto b-blue col-6" id="hamburger-buttons">
+                                    <div class="nav-item">
+                                        <i class="fas fa-bars nav-link"></i>
+                                    </div>
+                                </div>
+                                <ul class="navbar-nav b-red col-6">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/?progres">Accueil <span class="sr-only">(current)</span></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <?php if(isset($_GET['admin'])) { 
-                            if($_GET['admin'] != 'login') { ?>
-                                <!-- edit button -->
-                            <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
+                        <!-- profile button -->
+                        <div class="col-10 b-red">
+                            <div class="profile-button">
+                                PROFILE
                             </div>
-                        <?php } else { ?>
-                                <!-- edit button -->
-                                <div  class="col-2 p-0">
-                                <div class="icon-edit-2 btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
-                            </div>
-                        <?php } } ?>
+                        </div>
                     </div>
+                </nav>
+                <!-- content -->
+                <div class="col-12">
+                    <?= $content; ?>
                 </div>
-                <ul class="sidebar-left_nav">
-                <?php if(!isset($_GET['admin'])) { ?>
-                    <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
-                    <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
-                    <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
-                    <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Votre quartier</a></li>
-                    <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
-                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
-                <?php } else { ?>
-                    <li class="pl-2"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
-                    <li class="pl-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
-                    <li class="pl-2"><a href="/?admin=action"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
-                    <li class="pl-2"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
-                    <!-- <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li> -->
-                    <li class="pl-2"><a href="/?progres"><i class="fas fa-sign-in-alt mr-3"></i>Accueil</a></li>
-                <?php } ?>
-                </ul>
-                <!-- alert -->
-                <?php if(isset($_GET['admin'])) { ?>
-                <div class="alert alert-danger" role="alert">
-                Mode : <a href="#" class="alert-link">Gestion</a>
-                </div>
-                <?php } ?>
-            </div>
-            <!-- </div> -->
-            <!-- content -->
-            <div class="main-content col-sm-12 col-lg-8 pl-sm-5 pr-sm-5"> 
-                <?= $content; ?>
-            </div>
-             <!-- sidebar right -->
-            <div class="col-2 sidebar-right d-flex flex-column p-0" style="height:100%;position:relative;">
-                <!-- <div style="position:fixed;" class="d-none d-sm-none d-lg-block"> -->
-                <div class="d-none d-sm-none d-lg-block"> 
-                <!-- progress bar -->
-                <!-- see : Model/Widget -->
-                <?= $widget; ?>
-                <!-- card bottom -->
-                </div>  
+                <!-- footer -->
+                <footer class="text-white row justify-content-center align-items-center position-absolute">
+                    <div>
+                        <div class="mx-auto font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div>
+                    </div>
+                </footer>
             </div>
         </div>
     </div>
-    <!-- footer -->
-    <footer class="text-white row justify-content-center align-items-center position-relative">
-        <div>
-            <div class="mx-auto font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div>
-        </div>
-    </footer>
     <script>
         // popover 
         $(function () {

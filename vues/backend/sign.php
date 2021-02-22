@@ -13,9 +13,9 @@ ob_start(); ?>
 
 <div class="mb-4">
     <!-- alert -->
-    <div class="alert alert-success" role="alert">
+    <!-- <div class="alert alert-success" role="alert">
     Bravo ! Vous êtes connecté comme administrateur de la ville de <a href="#" class="alert-link">Beaubourg</a>.
-    </div>
+    </div> -->
     <!-- title -->
     <h4 class="mb-4 mt-4">Créez votre Baromaire</h4>
     <!-- card -->
