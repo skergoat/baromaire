@@ -2,3 +2,9 @@ footer {
   bottom: 0 !important;
   background: white !important;
 }
+
+@media all and (max-width: 567px) {
+  footer.position-absolute {
+    position: relative !important;
+  }
+}

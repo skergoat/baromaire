@@ -69,6 +69,31 @@
     z-index: 999;
     height: 100vh;
     overflow-x: scroll;
+    & li {
+      list-style-type: none;
+      line-height: 2.25rem;
+    }
+    & li a {
+      width: 100%;
+      display: block;
+    }
+    & li a > i::before {
+      color: black;
+    }
+    & li:hover,
+    & li.active {
+      background: #f6f6f6;
+      cursor: pointer;
+    }
+    & li:hover a,
+    & li:hover a > i::before {
+      color: #2d4e9d;
+    }
+    & li.active a,
+    & li.active a > i::before {
+      color: #2d4e9d;
+      font-weight: 600;
+    }
   }
   .sidebar-responsive {
     &-bottom {

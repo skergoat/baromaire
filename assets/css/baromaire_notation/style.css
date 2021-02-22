@@ -399,6 +399,28 @@ footer {
     height: 100vh;
     overflow-x: scroll;
   }
+  #nav-responsive li {
+    list-style-type: none;
+    line-height: 2.25rem;
+  }
+  #nav-responsive li a {
+    width: 100%;
+    display: block;
+  }
+  #nav-responsive li a > i::before {
+    color: black;
+  }
+  #nav-responsive li:hover, #nav-responsive li.active {
+    background: #f6f6f6;
+    cursor: pointer;
+  }
+  #nav-responsive li:hover a, #nav-responsive li:hover a > i::before {
+    color: #2d4e9d;
+  }
+  #nav-responsive li.active a, #nav-responsive li.active a > i::before {
+    color: #2d4e9d;
+    font-weight: 600;
+  }
 
   .sidebar-responsive-bottom {
     margin-top: 1rem !important;

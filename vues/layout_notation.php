@@ -61,7 +61,7 @@
                         <?php } ?>
                     </div>
                 </div>
-                <ul>
+                <ul class="col-md-6 col-12 mx-auto text-center">
                     <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
                     <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
                     <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
@@ -71,7 +71,7 @@
                 </ul>
                 <!-- alert -->
                 <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
-                <div class="alert alert-danger text-center" role="alert">
+                <div class="alert alert-danger text-center col-12 col-md-6 mx-auto" role="alert">
                 Connecté comme : <a href="#" class="alert-link">Administrateur</a>
                 </div>
                 <?php } ?>

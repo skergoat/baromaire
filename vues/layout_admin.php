@@ -49,15 +49,15 @@
                 <!-- navbar top -->
                 <nav class="navbar-admin navbar-light bg-light">
                     <div class="row">
-                        <div class="col-2 p-0">
+                        <div class="col-sm-2 col-6 p-0">
                             <div class="row">
                                 <!-- hamburger -->
-                                <div class="mx-auto col-6" id="hamburger-buttons-admin">
+                                <div class="mx-auto col-sm-6 col-4" id="hamburger-buttons-admin">
                                     <div class="nav-item pointer">
                                         <i class="fas fa-bars nav-link d-block font-18"></i>
                                     </div>
                                 </div>
-                                <ul class="navbar-nav col-6">
+                                <ul class="navbar-nav col-sm-6 col-8">
                                     <li class="nav-item">
                                         <a class="nav-link" href="/?progres">Accueil <span class="sr-only">(current)</span></a>
                                     </li>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <!-- profile button -->
-                        <div class="col-10">
+                        <div class="col-sm-10 col-6">
                             <div class="profile-button d-flex justify-content-end pointer">
                                 <div class="image image-placeholder img-thumbnail d-block" id="popover-desktop" data-toggle="profile" data-placement="bottom"></div>
                             </div>
