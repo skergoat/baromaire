@@ -29,10 +29,10 @@
     <div class="container-baromaire-fluid p-0">
         <div class="row pt-0">
             <!-- sidebar left -->
-            <div class="card sidebar-left p-0 col-2 d-none d-sm-none d-lg-block">
+            <div class="card sidebar-left p-0 col-lg-2">
                 <div class="logo-admin pl-1 pr-1">
                     <a href="/">
-                        <img class="" src="assets/img/logo_baromaire.png" alt="">
+                        <img class="" src="assets/img/logo_baromaire_admin.jpg" alt="">
                     </a>
                 </div>
                 <ul class="sidebar-left_nav">
@@ -44,41 +44,51 @@
                 </ul>
             </div>
             <!-- content right -->
-            <div class="main-content col-sm-12 col-lg-10 p-0 position-relative"> 
+            <div class="main-content col-lg-10 col-12 p-0 position-relative"> 
+                <div class="overlay d-none"></div>
                 <!-- navbar top -->
                 <nav class="navbar-admin navbar-light bg-light">
                     <div class="row">
-                        <div class="col-2 b-blue p-0">
+                        <div class="col-2 p-0">
                             <div class="row">
                                 <!-- hamburger -->
-                                <div class="mx-auto b-blue col-6" id="hamburger-buttons">
-                                    <div class="nav-item">
-                                        <i class="fas fa-bars nav-link"></i>
+                                <div class="mx-auto col-6" id="hamburger-buttons-admin">
+                                    <div class="nav-item pointer">
+                                        <i class="fas fa-bars nav-link d-block font-18"></i>
                                     </div>
                                 </div>
-                                <ul class="navbar-nav b-red col-6">
+                                <ul class="navbar-nav col-6">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/?progres">Accueil <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="/?login">Accueil <span class="sr-only">(current)</span></a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <!-- profile button -->
-                        <div class="col-10 b-red">
+                        <div class="col-10">
                             <div class="profile-button">
                                 PROFILE
                             </div>
                         </div>
                     </div>
                 </nav>
+                <?php if(isset($breadcrumb)) { ?>
+                <nav aria-label="navbar-admin breadcrumb">
+                    <ol class="breadcrumb">
+                        <!-- <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Library</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Data</li> -->
+                    </ol>
+                </nav>
+                <?php } ?>
                 <!-- content -->
                 <div class="col-12">
                     <?= $content; ?>
                 </div>
                 <!-- footer -->
-                <footer class="text-white row justify-content-center align-items-center position-absolute">
+                <footer class="text-black row justify-content-center align-items-center position-absolute">
                     <div>
-                        <div class="mx-auto font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div>
+                        <div class="mx-auto font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-black"></i></sup> 2021</div>
                     </div>
                 </footer>
             </div>
