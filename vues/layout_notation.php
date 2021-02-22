@@ -26,14 +26,14 @@
     <script src="assets/js/progress_bar.js"></script>
 </head>
 <body id="page-top">
-    <!-- menu responsive -->      
+    <!-- menu responsive -->  
     <div id="nav-responsive" class="col-12 pb-5 pt-4 d-none d-lg-none">
         <div class="pt-sm-5 pt-lg-4">
-            <!-- sidebar left -->
+            <!-- sidebar left  -->
             <div class="card p-3 col-12 d-lg-none d-lg-block" style="height:100%;">
                 <div class="divider_first pb-3 mb-3">
                     <div class="position-relative">
-                        <?php if(isset($_SESSION['admin'])) { ?>
+                        <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
                         <!-- edit button -->
                         <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
                         <?php } ?>
@@ -47,7 +47,7 @@
                             <h5 class="diviber_first_title text-center primary">Robert <span class="uppercase">Dupont</span></h5>
                             <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
                         </div>
-                        <?php if(isset($_SESSION['admin'])) { ?>
+                        <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
                                 <!-- edit button -->
                             <div  class="col-2 p-0 icon-edit-2">
                                 <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-responsive" data-toggle="popover-2" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
@@ -55,12 +55,13 @@
                         <?php } else { ?>
                             <div>
                                 <!-- edit button -->
-                                <div  class="col-2 p-0 icon-edit-2">
+                                <div  class="col-2 p-0 icon-edit-2"></div>
                                 <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
                             </div>
                         <?php } ?>
                     </div>
                 </div>
+                <ul>
                     <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-3"></i>Suivre les progrès</a></li>
                     <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
                     <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
@@ -69,7 +70,7 @@
                     <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Login</a></li>
                 </ul>
                 <!-- alert -->
-                <?php if(isset($_SESSION['admin'])) { ?>
+                <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
                 <div class="alert alert-danger" role="alert">
                 Mode : <a href="#" class="alert-link">Gestion</a>
                 </div>
@@ -83,7 +84,7 @@
                 <!-- card bottom -->
             </div>
         </div>
-    </div>
+    </div> 
     <!-- hamburger -->
     <div class="d-lg-none mx-auto" id="hamburger-buttons">
         <i class="fas fa-bars"></i>
@@ -126,7 +127,7 @@
                             <div  class="col-2 p-0 icon-edit-2">
                                 <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
                             </div>
-                        <?php } else { ?>
+                        <?php } else if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
                                 <!-- edit button -->
                                 <div  class="col-2 p-0">
                                 <div class="icon-edit-2 btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
