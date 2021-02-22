@@ -2,17 +2,12 @@
 /**
 * Page : Créer Premier engagement 
 */
-
+$title = "Vos engagements";
 ob_start(); ?>
+    <!-- edit alert -->
+    <?php if(isset($_GET['reload'])) { $alert = "engagement ajouté !"; } ?>
 
-<div class="mb-4">
-    <?php if(isset($_GET['reload'])) { ?>
-    <div class="alert alert-success" id="alert-remove" role="alert"> 
-    Engagement Ajouté !
-    </div>
-    <?php } ?>
     <!-- title 1 -->
-    <h4 class="mb-4">Vos engagements</h4>
     <?php if(isset($_GET['reload'])) { ?>
     <!-- liste d'engagements -->
     <div class="mb-4 ">
@@ -74,10 +69,10 @@ ob_start(); ?>
     <?php } ?>
     <!-- title 2 -->
     <?php if(isset($_GET['reload'])) { ?>
-    <h4 class="mb-4">Votre nouvel engagement</h4>
+    <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Ajouter un engagement</h4>
     <?php } ?>
     <!-- card -->
-    <div class="card p-0">
+    <div class="card p-0 card-admin">
         <?php if(isset($_GET['sign'])) { ?>
         <!-- head -->
         <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 2 :</span> Enregistrez vos premiers engagements</div>
@@ -184,7 +179,6 @@ ob_start(); ?>
             </form>
         </div>
     </div>
-</div>
 
 <!-- reirect provisoire -->
 <script>

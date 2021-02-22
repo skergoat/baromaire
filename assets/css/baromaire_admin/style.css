@@ -730,6 +730,7 @@ footer {
 footer {
   bottom: 0 !important;
   background: white !important;
+  border-top: 1px solid #d8dbe0;
 }
 
 @media all and (max-width: 567px) {
@@ -738,7 +739,6 @@ footer {
   }
 }
 .sidebar-left {
-  height: 100vh !important;
   min-height: 100vh;
   max-width: 250px !important;
   background: #303c54 !important;
@@ -779,7 +779,7 @@ footer {
 }
 
 .main-content {
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 @media all and (max-width: 1150px) {
@@ -908,6 +908,10 @@ footer {
     margin-bottom: 5px !important;
   }
 }
+.card-admin {
+  margin-bottom: 100px !important;
+}
+
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   /**

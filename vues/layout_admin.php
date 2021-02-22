@@ -83,6 +83,12 @@
                 <?php } ?>
                 <!-- content -->
                 <div class="col-12">
+                    <!-- title -->
+                    <h4 class="mb-4 mt-4 w-900 font-30 pt-3 pb-3 text-center"><?= $title ?></h4>
+                    <!-- edit alert -->
+                    <?php if(isset($alert)) { ?>
+                        <div class="alert alert-success mb-4" id="alert-remove" role="alert"><?= $alert ?></div>
+                    <?php } ?>
                     <?= $content; ?>
                 </div>
                 <!-- footer -->
