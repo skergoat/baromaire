@@ -75,7 +75,7 @@ ob_start(); ?>
     <div class="card p-0 card-admin">
         <?php if(isset($_GET['sign'])) { ?>
         <!-- head -->
-        <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 2 :</span> Enregistrez vos premiers engagements</div>
+        <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 3 :</span> Enregistrez vos premiers engagements</div>
         <?php } else { ?>
         <!-- head -->
         <div class="card-header w-900 font-20 danger"> Enregistrez vos engagements</div>

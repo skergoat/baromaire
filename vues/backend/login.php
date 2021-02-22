@@ -2,6 +2,9 @@
 /**
 * Page : Admin Login
 */
+// header title and subtitle
+$title_baromaire = "Ville de Beaubourg";
+$subtitle_baromaire = "Entreprendre et Réussir";
 
 ob_start(); ?>
 

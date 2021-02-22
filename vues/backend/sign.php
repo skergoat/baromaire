@@ -11,7 +11,7 @@ ob_start(); ?>
     <div class="row">
         <div class="card p-0 col-12 col-lg-6 mx-auto mt-3">
             <!-- head -->
-            <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 1 :</span> Votre Mandat</div>
+            <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 1 :</span> Informations sur votre mandat</div>
             <!-- body -->
             <div class="card-body pt-lg-4 pb-4">
             <!-- form -->
@@ -55,7 +55,8 @@ ob_start(); ?>
 
 <!-- reirect provisoire -->
 <script>
-  $('#submit').on('click', function(e) {e.preventDefault(); window.location.href="?admin=engagement&sign"});
+//   $('#submit').on('click', function(e) {e.preventDefault(); window.location.href="?admin=engagement&sign"});
+$('#submit').on('click', function(e) {e.preventDefault(); window.location.href="?admin=infos"});
 </script> 
 <!-- sidebar menu .active -->
 <script>var child = 6;</script>

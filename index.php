@@ -47,6 +47,9 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'sign') {
     $_SESSION['admin'] = true;
     require('vues/backend/sign.php');
 }
+else if(isset($_GET['admin']) && $_GET['admin'] == 'infos') {
+    require('vues/backend/infos.php');
+}
 else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
     require('vues/backend/dashboard.php');
 }
