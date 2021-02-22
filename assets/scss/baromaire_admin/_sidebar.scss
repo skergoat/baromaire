@@ -22,8 +22,6 @@
   padding: 0.5rem 1rem;
   background: #262f42 !important;
   & img {
-    // padding-top: 0.3125rem;
-    // padding-bottom: 0.3125rem;
     padding: 0.5rem 1rem;
   }
 }
@@ -51,6 +49,7 @@
   .main-content {
     width: 100% !important;
     min-width: 100% !important;
+    height: 100vh;
   }
   .overlay {
     display: block;

@@ -190,7 +190,6 @@ body {
   opacity: 1;
   font-family: Arial, sans-serif;
   /*provisoire*/
-  min-height: 100vh;
 }
 
 a,
@@ -758,6 +757,7 @@ footer {
   .main-content {
     width: 100% !important;
     min-width: 100% !important;
+    height: 100vh;
   }
 
   .overlay {
