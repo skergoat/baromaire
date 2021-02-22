@@ -1,4 +1,5 @@
 <?php 
+
 /***
  * Layout : Backend
  */
@@ -59,7 +60,7 @@
                                 </div>
                                 <ul class="navbar-nav col-6">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/?login">Accueil <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link" href="/?progres">Accueil <span class="sr-only">(current)</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -109,7 +110,7 @@
             // popover admin profile 
             $('[data-toggle="profile"]').popover({
                 html:true,
-                content: "<div class='p-2 pl-3 pr-3 pointer' style='border-bottom:1px solid black'><a href='/?admin=profil'>Profil</a></div><div class='p-2 pl-3 pr-3 pointer'><a href='/?login'>Déconnexion</a></div>",
+                content: "<div class='p-2 pl-3 pr-3 pointer' style='border-bottom:1px solid black'><a href='/?admin=profil'>Profil</a></div><div class='p-2 pl-3 pr-3 pointer'><a href='/?admin=logout'>Déconnexion</a></div>",
              });
         })
     </script>

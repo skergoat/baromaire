@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 // debug
 function dd($data) {
     return var_dump($data);die;
@@ -40,6 +43,8 @@ else if(isset($_GET['login'])) {
     require('vues/backend/login.php');
 }
 else if(isset($_GET['admin']) && $_GET['admin'] == 'sign') {
+    // create user session 
+    $_SESSION['admin'] = true;
     require('vues/backend/sign.php');
 }
 else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
@@ -77,8 +82,14 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'quartier') {
 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'profil') {
     require('vues/backend/profil.php');
-}  
+} 
 
+// logout 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'logout') {
+    // delete user session 
+    unset($_SESSION['admin']);
+    header('Location: /?progres');
+}
 // HOMEPAGE 
 else {
     // require('vues/frontend/baromaire_home/create.php');
