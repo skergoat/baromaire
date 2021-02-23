@@ -62,4 +62,7 @@
     background-color: #f6f6f6 !important;
     font-weight: bold;
   }
+  & a.danger:hover {
+    color: $danger;
+  }
 }

@@ -899,6 +899,9 @@ footer {
   background-color: #f6f6f6 !important;
   font-weight: bold;
 }
+.popover .popover-body a.danger:hover {
+  color: #f62340;
+}
 
 .custom-file-label::after {
   font-family: "Font Awesome 5 Free";
