@@ -38,7 +38,7 @@
                     </div>
                     <ul class="sidebar-left_nav">
                         <li class="pl-3 pb-1 pt-1"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
-                        <li class="pl-3 pb-1 pt-1"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
+                        <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
                         <li class="pl-3 pb-1 pt-1"><a href="/?admin=domaine"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
                         <li class="pl-3 pb-1 pt-1"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
                         <li class="pl-3 pb-1 pt-1"><a href="/?admin=user"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
@@ -84,9 +84,19 @@
                 </nav>
                 <?php } ?>
                 <!-- content -->
-                <div class="col-12">
-                    <!-- title -->
-                    <h4 class="mb-4 mt-4 w-900 font-30 pt-3 pb-3 text-center"><?= $title ?></h4>
+                <div class="col-12 mt-4 col-lg-10 mx-auto">
+                    <div class="row flex-column-reverse flex-md-row pb-4 pt-4">
+                        <!-- ajouter -->
+                        <?php 
+                            if(isset($button)) {
+                                echo $button;
+                            }
+                        ?>
+                        <!-- title -->
+                        <div class="col-12 col-lg-11">
+                            <h4 class="w-900 font-30 text-center mr-lg-5"><?= $title ?></h4>
+                        </div> 
+                    </div>
                     <!-- edit alert -->
                     <?php if(isset($alert)) { ?>
                         <div class="alert alert-success mb-4 col-12 col-lg-10 mx-auto" id="alert-remove" role="alert"><?= $alert ?></div>
@@ -105,19 +115,11 @@
     <script>
         // popover 
         $(function () {
-            $('#submit-2-disabled').on('click', function(e) {
-                e.preventDefault();
-
-                $('[data-toggle="popover-3"]').popover({
-                    html:true,
-                    title:"Ajouter une action",
-                    content: "Avant d'ajouter une action, vous devez ajouter des <a href='/?admin=domaine&redirect'>Domaines d\'action</a>",
-                });
-            });
             // popover admin profile 
             $('[data-toggle="profile"]').popover({
                 html:true,
-                content: "<div class='p-2 pl-4 pr-4 pointer' style='border-bottom:1px solid black'><a href='/?admin=profil'>Profil</a></div><div class='p-2 pl-4 pr-4 pointer'><a href='/?admin=logout' class='danger'>Déconnexion</a></div>",
+                title:"<div><a href='/?admin=profil'><div class='pl-2 pr-2 pointer white'>Profil</div></a></div>",
+                content: "<div><a href='/?admin=logout' class='danger'><div class='p-2 pl-4 pr-4 pointer'>Déconnexion</div></a></div>",
             });
         })
     </script>
@@ -125,5 +127,6 @@
     <script src="assets/js/accordeon.js"></script>
     <script src="assets/js/sidebar.js"></script>
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/popover_admin.js"></script>
 </body>
 </html>

@@ -91,9 +91,7 @@ ob_start(); ?>
                     <!-- button -->
                     <div class="col-12 p-0">
                         <div class="row justify-content-lg-center align-items-sm-center">
-                            <button class="btn btn-primary col-md-7 mb-md-1" id="submit-1"><i class="fas fa-redo-alt mr-1"></i> Enregistrer et ajouter un engagement</button>
-                            <button class="btn btn-primary col-md-7 mb-md-1 pointer" id="submit-2" data-toggle="connexion-4"><i class="fas fa-plus mr-1"></i> Ajouter une action</button>
-                            <button class="btn btn-primary col-md-7 mb-md-1" id="submit-3"><i class="fas fa-directions mr-1"></i> Enregistrer et quitter</button>
+                            <button class="btn btn-primary col-md-7 mb-md-1" id="submit-1">Enregistrer</button>
                         </div>
                     </div>
                 </form>
@@ -123,20 +121,12 @@ ob_start(); ?>
             title: "Les quartiers",
             content:"<a href='/?admin=quartier'>Ajoutez des quartiers</a> pour localiser votre engagement",
         }).popover('show');
-
-        $('[data-toggle="connexion-4"]').popover({
-            placement:"left",
-            title: "Les actions",
-            content:"Les actions sont les moyens par lesquels vous réalisez concrètement vos engagements",
-        }).popover('show');
     });
 </script>
 
 <!-- redirect provisoire -->
 <script>
-$('#submit-1').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement&reload"});
-$('#submit-2').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=action"});
-$('#submit-3').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=dashboard"});
+$('#submit-1').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement"});
 </script>
 
 <?php $content = ob_get_clean(); ?>

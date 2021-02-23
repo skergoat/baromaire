@@ -19,3 +19,15 @@
     border-bottom-color: $secondary !important;
   }
 }
+
+.bs-popover-left > .arrow::before,
+.bs-popover-left > .arrow::after {
+  border-bottom-color: transparent !important;
+}
+
+.bs-popover-left {
+  & .bs-popover-left,
+  & .bs-popover-left {
+    border-bottom-color: transparent !important;
+  }
+}

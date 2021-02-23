@@ -1,68 +1,31 @@
-// .icon-edit-1 {
-//     top: 70px;
-//     left: 80% !important;
-//   }
-//   .icon-edit-2 {
-//     top: -40px;
-//     left: 75% !important;
-//   }
+.popover {
+  z-index: 100000000 !important;
+}
 
-// #popover-responsive {
-//   display: none !important;
-// }
-
-// .arrow::before,
-// .arrow::after {
-//   border-bottom-color: $secondary !important;
-// }
-
-// .popover {
-//   box-shadow: 0 3px 6px 0px rgb(0 0 0 / 30%);
-//   & h3 {
-//     color: white !important;
-//     font-weight: bold;
-//     background: $secondary !important;
-//   }
-//   &-header::before {
-//     border-bottom-color: $secondary !important;
-//   }
-// }
-
-//   @media all and (max-width: 991px) {
-// #popover-responsive {
-//   display: block !important;
-// }
-// #popover-desktop {
-//   display: none !important;
-// }
-// #popover-responsive {
-//   display: block !important;
-// }
-
-//     .icon-edit-1 {
-//       top: 60px;
-//       left: 57% !important;
-//     }
-//     .icon-edit-2 {
-//       top: -40px;
-//       left: 57% !important;
-//     }
-//   }
-
-//   @media all and (max-width: 650px) {
-//     .icon-edit-2 {
-//       top: -40px;
-//       left: 65% !important;
-//     }
-//   }
-
-.popover .popover-body {
+.bs-popover-bottom .popover-body {
   padding: 0px !important;
   & div:hover {
     background-color: #f6f6f6 !important;
-    font-weight: bold;
+    // font-weight: bold;
   }
   & a.danger:hover {
     color: $danger;
   }
+}
+
+.popover {
+  box-shadow: 0 3px 6px 0px rgb(0 0 0 / 30%);
+  & h3 {
+    color: white !important;
+    font-weight: bold;
+    background: $secondary !important;
+  }
+  &-header::before {
+    border-bottom-color: $secondary !important;
+  }
+}
+
+.popover .arrow::before,
+.popover .arrow::after {
+  border-bottom-color: $secondary !important;
 }

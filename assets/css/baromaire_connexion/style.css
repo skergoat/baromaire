@@ -739,15 +739,20 @@ footer {
   }
 }
 .sidebar-left {
+  height: 100vh !important;
   min-height: 100vh;
   max-width: 250px !important;
   background: #303c54 !important;
   border-radius: 0px !important;
+  z-index: 99999;
 }
 .sidebar-left ul li a {
   color: rgba(255, 255, 255, 0.8) !important;
 }
 .sidebar-left ul li:hover {
+  background: #3c4b64 !important;
+}
+.sidebar-left_nav li.active {
   background: #3c4b64 !important;
 }
 .sidebar-left ul li a > .fas::before {
@@ -766,8 +771,9 @@ footer {
 }
 
 .overlay {
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  height: 100% !important;
+  min-height: 100vh;
   width: 100vw;
   background: rgba(0, 0, 0, 0.5);
   top: 0;
@@ -779,15 +785,19 @@ footer {
 }
 
 .main-content {
+  min-height: 100% !important;
   min-height: 100vh !important;
+  height: 100% !important;
 }
 
 @media all and (max-width: 1150px) {
   .sidebar-left {
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 999999;
     left: 0;
+    min-height: 100vh !important;
+    height: 100% !important;
   }
 
   .main-content {
@@ -887,6 +897,9 @@ footer {
   background-color: #f6f6f6 !important;
   font-weight: bold;
 }
+.popover .popover-body a.danger:hover {
+  color: #f62340;
+}
 
 .custom-file-label::after {
   font-family: "Font Awesome 5 Free";
@@ -922,6 +935,9 @@ footer {
 }
 .card-admin {
   margin-bottom: 100px !important;
+}
+.card-admin-bottom {
+  height: 100% !important;
 }
 
 /*hearders and footers*/
@@ -1016,6 +1032,15 @@ footer {
 }
 .popover-header::before {
   border-bottom-color: #2d4e9d !important;
+}
+
+.bs-popover-left > .arrow::before,
+.bs-popover-left > .arrow::after {
+  border-bottom-color: transparent !important;
+}
+
+.bs-popover-left .bs-popover-left, .bs-popover-left .bs-popover-left {
+  border-bottom-color: transparent !important;
 }
 
 /*# sourceMappingURL=style.css.map */
