@@ -89,8 +89,12 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'quartier') {
     require('vues/backend/quartier.php');
 }  
 
+// user
 else if(isset($_GET['admin']) && $_GET['admin'] == 'profil') {
-    require('vues/backend/profil.php');
+    require('vues/backend/user/profil.php');
+} 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'user') {
+    require('vues/backend/user/user.php');
 } 
 
 // logout 

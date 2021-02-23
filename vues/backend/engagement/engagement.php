@@ -197,6 +197,6 @@ ob_start(); ?>
   $('#submit-3').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=dashboard"});
 </script> 
 <!-- sidebar menu .active -->
-<script>var child = 6;</script>
+<script>var child = 2;</script>
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_admin.php'); ?>

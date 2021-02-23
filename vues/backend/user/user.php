@@ -1,10 +1,10 @@
 <?php 
 /**
-* Page : Add Action
+* Page : Create user 
 */
-$title = "Quartiers";
+$title = "User";
 ob_start(); ?>
 
-<script>var child = 4;</script>
+<script>var child = 5;</script>
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_admin.php'); ?>
