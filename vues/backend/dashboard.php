@@ -5,7 +5,7 @@
 $title = "Tableau de Bord";
 $widget = $progress->createAdmin(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
-<div class="mb-5 pt-4">
+<div class="mb-5 pt-4 card-admin">
     <!-- top -->
     <div class="row">
         <!-- widget -->
@@ -108,69 +108,83 @@ ob_start(); ?>
         <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos catégories</h4>
         <!-- categories -->
         <div class="row">
-            <div class="col-6">
-                <table class="table">
+            <div class="col-12 col-lg-6  mb-lg-0 mb-4">
+                <table class="table table-bordered bg-white">
                     <thead class="thead-dark">
                         <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                            <th colspan="8" class="text-center">Les Domaines d'Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                        <?php $i = 1; 
+                            foreach($cards->create() as $domaine) { ?>
+                        <tr>    
+                            <th scope="row"><?= $i++ ?></th>
+                            <td><?= $domaine['title'] ?></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
+                <div class="row justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="col-6">
-                <table class="table">
+            <div class="col-12 col-lg-6">
+                <table class="table table-bordered bg-white">
                     <thead class="thead-light">
                         <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">First</th>
-                            <th scope="col">Last</th>
-                            <th scope="col">Handle</th>
+                            <th colspan="8" class="text-center">Les Quartiers</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                        <?php $i = 1; 
+                            foreach($cards->quartier() as $quartier) { ?>
+                        <tr>    
+                            <th scope="row"><?= $i++ ?></th>
+                            <td><?= $quartier['title'] ?></td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
+                <div class="row justify-content-center">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>

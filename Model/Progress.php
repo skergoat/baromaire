@@ -98,7 +98,7 @@ class Progress
        if(!$page) {
         // model 1 
         $widget = '
-        <div class="col-12 col-lg-4">
+        <div class="col-12 col-lg-4 mb-4 mb-lg-0">
         <div class="card">
             <div class="progresses">
                 <div class="barOverflow">
