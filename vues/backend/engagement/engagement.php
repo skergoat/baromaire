@@ -2,12 +2,11 @@
 /**
 * Page : Créer Premier engagement 
 */
-$button = '<a href="/?admin=edit" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>';
-$title = '<h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4>';
+$button = '<a href="/?admin=edit&create" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>';
+$title = '<div class="col-12 col-lg-11"><h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4></div>';
 ob_start(); ?>
     <!-- edit alert -->
     <?php if(isset($_GET['reload'])) { $alert = "engagement ajouté !"; } ?>
-
     <!-- liste d'engagements -->
     <div class="mb-4">
         <?php foreach($accordeon->create() as $accordeons) { ?>

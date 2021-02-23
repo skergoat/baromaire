@@ -2,7 +2,7 @@
 /**
 * Page : Admin Dashboard 
 */
-$title = "Tableau de Bord";
+$title = '<div class="col-12 "><h4 class="w-900 font-30 text-center m-0">Tableau de Bord</h4></div>';
 $widget = $progress->createAdmin(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
 <div class="mb-5 pt-4 card-admin">

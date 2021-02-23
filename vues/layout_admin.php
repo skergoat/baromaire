@@ -93,9 +93,7 @@
                             }
                         ?>
                         <!-- title -->
-                        <div class="col-12 col-lg-11">
-                            <?= $title ?>
-                        </div> 
+                        <?= $title ?>
                     </div>
                     <!-- edit alert -->
                     <?php if(isset($alert)) { ?>
