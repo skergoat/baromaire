@@ -6,11 +6,17 @@ $breadcrumb =
 '<li class="breadcrumb-item"><a href="#">Admin</a></li>
 <li class="breadcrumb-item"><a href="#">Engagements</a></li>';
 
-$button = '<a href="/?admin=edit&create" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>';
-$title = '<div class="col-12 col-lg-11"><h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4></div>';
 ob_start(); ?>
     <!-- edit alert -->
     <?php if(isset($_GET['reload'])) { $alert = "engagement ajouté !"; } ?>
+    <?php if(isset($_GET['delete'])) { $alert = "engagement supprimé !"; } ?>
+
+    <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
+        <!-- ajouter -->    
+        <a href="/?admin=edit&create" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>
+        <!-- title -->
+        <div class="col-12 col-lg-11"><h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4></div>
+    </div>
     <!-- liste d'engagements -->
     <div class="mb-4">
         <?php foreach($accordeon->create() as $accordeons) { ?>

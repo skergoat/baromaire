@@ -82,21 +82,12 @@
                 </nav>
                 <?php } ?>
                 <!-- content -->
-                <div class="col-12 mt-4 p-0 p-lg-2 col-lg-10 mx-auto">
-                    <div class="row flex-column-reverse flex-md-row pb-4 pt-4">
-                        <!-- ajouter -->
-                        <?php 
-                            if(isset($button)) {
-                                echo $button;
-                            }
-                        ?>
-                        <!-- title -->
-                        <?= $title ?>
-                    </div>
+                <div class="col-12 mt-lg-4 p-0 p-lg-2 col-lg-10 mx-auto">
                     <!-- edit alert -->
-                    <?php if(isset($alert)) { ?>
-                        <div class="alert alert-success mb-4 col-12 col-lg-10 mx-auto" id="alert-remove" role="alert"><?= $alert ?></div>
-                    <?php } ?>
+                        <?php if(isset($alert)) { ?>
+                            <div class="alert alert-success mb-4 col-12 col-lg-10 mx-auto" id="alert-remove" role="alert"><?= $alert ?></div>
+                        <?php } ?>
+                    <!-- card -->
                     <?= $content; ?>
                 </div>
                 <!-- footer -->

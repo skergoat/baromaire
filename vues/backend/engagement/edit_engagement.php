@@ -8,25 +8,40 @@ if(isset($_GET['create'])) {
     <li class="breadcrumb-item"><a href="#">Engagements</a></li>
     <li class="breadcrumb-item"><a href="#">Ajouter</a></li>';
 
-    $title = '<div class="col-12 pb-4"><h4 class="w-900 font-30 text-center m-0">Ajouter un Engagement</h4></div>';
+    $title = '<div class="col-12 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Ajouter un Engagement</h4></div>';
 }
 else {
     $breadcrumb = 
     '<li class="breadcrumb-item"><a href="#">Admin</a></li>
     <li class="breadcrumb-item"><a href="#">Engagements</a></li>
     <li class="breadcrumb-item"><a href="#">Modifier</a></li>';
-
-    $title = '<div class="col-12 pb-4"><h4 class="w-900 font-30 text-center m-0">Aménagement du nouveau mobilier urbain</h4></div>';
 }
 ob_start(); ?>
     <!-- edit alert -->
     <?php if(isset($_GET['reload'])) { $alert = "Action ajoutée !"; } ?>
-    <!-- card -->
-    <div class="card p-0 <?php if(isset($_GET['create'])) { ?> card-admin <?php } ?> col-12 col-lg-9 mx-auto">
-        <!-- body -->
-        <div class="card-body pt-5 pb-5">
-        <!-- form -->
-            <form id="form-sign">
+
+    <!-- start form -->
+    <form id="form-sign">
+
+        <!-- buttons -->
+        <div class="col-12 col-lg-9 mx-auto p-0">
+            <div class="row justify-content-end">
+                <?php if(!isset($_GET['create'])) { ?>
+                <a href="/?admin=engagement&delete" class="col-2 d-block btn btn-danger mr-2">Supprimer</a>
+                <?php } ?>
+                <button class="btn btn-primary col-2" id="submit-1">Enregistrer</button>
+            </div><br>
+        </div>
+    <!-- title -->
+        <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
+            <div class="col-12 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Aménagement du nouveau mobilier urbain</h4></div>
+        </div>
+        
+        <div class="card p-0 <?php if(isset($_GET['create'])) { ?> card-admin <?php } ?> col-12 col-lg-9 mx-auto">
+            <!-- body -->
+            <div class="card-body pt-5 pb-5">
+            <!-- form -->
+                <!-- <form id="form-sign"> -->
                 <div class="row">
                     <div class="col-12 p-0 mb-3">
                         <!-- row 1 -->
@@ -41,15 +56,15 @@ ob_start(); ?>
                             </div>
                         </div>
                     </div> 
-                    <div class="col-12 p-0">
+                    <div class="col-12 p-0 mb-3 mb-lg-0">
                         <div class="row">
                             <!-- order -->
-                            <div class="form-group col-6 pl-0 pr-0">
+                            <div class="form-group col-12 col-lg-6 pl-0 pr-0">
                                 <label for="order" class="w-900">Ordre</label>
                                 <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" <?php if(!isset($_GET['create'])) { ?> value="1" <?php } ?> >
                                 <div class="invalid-feedback">Chiffre invalide</div>
                             </div>
-                            <div class="form-group col-6 pr-0">
+                            <div class="form-group  col-12 col-lg-6 pr-0">
                                 <!-- realisation -->
                                 <label for="realisation" class="w-900">Réalisation</label>
                                 <div class="input-group">
@@ -65,7 +80,7 @@ ob_start(); ?>
                     <div class="col-12 p-0 mb-3">
                         <div class="row">
                             <!-- domaine -->
-                            <div class="form-group pl-0 pr-0 col-6">
+                            <div class="form-group pl-0 pr-0 col-12 col-lg-6">
                                 <label for="exampleFormControlSelect1" class="w-900">Domaine d'action</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <?php foreach($cards->create() as $domaine) { ?>
@@ -74,7 +89,7 @@ ob_start(); ?>
                                 </select>
                             </div>
                             <!-- quartier -->
-                            <div class="form-group pr-0 col-6">
+                            <div class="form-group pr-0 col-12 col-lg-6">
                                 <label for="exampleFormControlSelect1" class="w-900">Quartier</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <?php foreach($cards->quartier() as $quartier) { ?>
@@ -97,7 +112,7 @@ ob_start(); ?>
                 </div>
                 <div class="col-12 p-0 pb-4">
                     <!-- photo -->
-                    <div class="form-group col-lg-6 pl-0">
+                    <div class="form-group col-lg-6 p-0">
                         <label for="order" class="w-900">Photo</label>
                             <!-- image -->
                             <div class="col-12 pb-1 p-0">
@@ -117,46 +132,49 @@ ob_start(); ?>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 p-0">
-                    <div class="row justify-content-lg-center align-items-sm-center">
-                        <button class="btn btn-primary col-md-4 mb-md-1" id="submit-1">Enregistrer</button>
-                        <!-- <button class="btn btn-primary col-md-7 mb-md-1" id="submit-2-disabled" data-toggle="popover-3" data-placement="top"><i class="fas fa-plus mr-1"></i> Ajouter une action</button>
-                        <button class="btn btn-primary col-md-7 mb-md-1" id="submit-3"><i class="fas fa-directions mr-1"></i> Enregistrer et quitter</button> -->
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <?php if(!isset($_GET['create'])) { ?>
-    <div class="mt-5 card-admin">
-        <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos Actions</h4>
-        <div>
-            <?php // description
-            foreach($accordeon->open() as $loads){ ?>
-            <div class="mt-md-4 mb-md-4">
-                <div class="row">
-                    <div class="col-md-9 p-0">
-                        <!-- title -->
-                        <div class="description-title font-13 text-left pr-3 pt-1 bold black"><?= $loads['title'] ?></div>
-                        <!-- content -->
-                        <div class="description-content font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
-                    </div>
-                    <div class="col-md-3 p-0">
-                        <div class="progresses progresses-3 mb-2">
-                            <div class="barOverflow barOverflow-3">
-                                <div class="success-bar bar bar-third"></div>
-                            </div>
-                            <span>60</span>%
-                        </div>
-                    </div>
-                </div>
-                <!-- divider -->
-                <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
             </div>
-            <?php } ?>
         </div>
-    </div>
-    <?php } ?>
+        <?php if(!isset($_GET['create'])) { ?>
+        <div class="mt-5 card-admin">
+            <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos Actions</h4>
+            <div>
+                <div class="card p-0 <?php if(isset($_GET['create'])) { ?> card-admin <?php } ?> col-12 col-lg-9 mx-auto">
+                    <!-- body -->
+                    <div class="card-body pt-5 pb-5">  
+                    <?php // description
+                    foreach($accordeon->open() as $loads){ ?>
+                        <div class="mt-md-4 mb-md-4">
+                            <div class="row">
+                                <div class="col-md-9 p-0">
+                                    <!-- title -->
+                                    <div class="description-title font-13 text-left pr-3 pt-1 bold black">
+                                        <a href='/?admin=action' class="underline" title="modifier">
+                                        <?= $loads['title'] ?>
+                                        </a>
+                                    </div>
+                                    <!-- content -->
+                                    <div class="description-content font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
+                                </div>
+                                <div class="col-md-3 p-0">
+                                    <div class="progresses progresses-3 mb-2">
+                                        <div class="barOverflow barOverflow-3">
+                                            <div class="success-bar bar bar-third"></div>
+                                        </div>
+                                        <span>60</span>%
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- divider -->
+                            <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
+                        </div> 
+                    <?php } ?>
+                    <a href="/?admin=action" class="btn btn-primary d-block col-12 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+    </form>
 <!-- reirect provisoire -->
 <script>
   $('#submit-1').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement&reload"});
