@@ -15,7 +15,7 @@ ob_start(); ?>
         foreach($accordeon->create() as $accordeons) {
         ?>
         <!-- accordeon -->
-        <div class="mt-2 back-transparent">
+        <div class="mt-2 back-transparent col-12 col-lg-10 mx-auto">
             <div class="row">
                 <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                     <div class="w-900 font-18"><?= $accordeons['id'] ?></div>
@@ -62,6 +62,14 @@ ob_start(); ?>
                         </div>
                     </div>
                 </div>
+                <!-- edit button -->
+                <div  class="col-1 icon-edit-2 pt-1 pb-1">
+                    <a href="/?admin=profil">
+                        <div class="btn btn-primary" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <?php } ?>
@@ -72,7 +80,7 @@ ob_start(); ?>
     <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Ajouter un engagement</h4>
     <?php } ?>
     <!-- card -->
-    <div class="card p-0 card-admin">
+    <div class="card p-0 card-admin col-12 col-lg-8 mx-auto">
         <?php if(isset($_GET['sign'])) { ?>
         <!-- head -->
         <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 3 :</span> Enregistrez vos premiers engagements</div>

@@ -87,7 +87,7 @@
                     <h4 class="mb-4 mt-4 w-900 font-30 pt-3 pb-3 text-center"><?= $title ?></h4>
                     <!-- edit alert -->
                     <?php if(isset($alert)) { ?>
-                        <div class="alert alert-success mb-4" id="alert-remove" role="alert"><?= $alert ?></div>
+                        <div class="alert alert-success mb-4 col-12 col-lg-10 mx-auto" id="alert-remove" role="alert"><?= $alert ?></div>
                     <?php } ?>
                     <?= $content; ?>
                 </div>
