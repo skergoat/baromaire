@@ -917,6 +917,10 @@ footer {
   border-bottom-color: transparent !important;
 }
 
+.btn.btn-danger {
+  color: white !important;
+}
+
 .custom-file-label::after {
   font-family: "Font Awesome 5 Free";
   content: "";

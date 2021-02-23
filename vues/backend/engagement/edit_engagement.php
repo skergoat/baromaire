@@ -179,6 +179,9 @@ ob_start(); ?>
                                     Entrez au moins 2 lettres svp
                                     </div>
                                 </div>
+                                <div class="row justify-content-end" title="supprimer">
+                                    <a class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></a>
+                                </div>
                                 <!-- divider -->
                                 <div class="divider_second mb-5 mt-5 pl-3 pr-3"></div>
                             </div> 
@@ -216,6 +219,9 @@ ob_start(); ?>
                                     <div class="invalid-feedback">
                                     Entrez au moins 2 lettres svp
                                     </div>
+                                </div>
+                                <div class="row justify-content-end" title="supprimer">
+                                    <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
                                 </div>
                                 <!-- divider -->
                                 <div class="divider_second mb-5 mt-5 pl-3 pr-3"></div>
