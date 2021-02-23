@@ -33,10 +33,14 @@
             <div class="card p-3 col-12 d-lg-none d-lg-block" style="height:100%;">
                 <div class="divider_first pb-3 mb-3">
                     <div class="position-relative">
+                        <a href="/?admin=profil">
                         <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
                         <!-- edit button -->
-                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute">
+                            <i class="fas fa-pencil-alt"></i>
+                        </div>
                         <?php } ?>
+                        </a>
                         <!-- img mayor -->
                         <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
                         <!-- img placeholder -->
@@ -50,13 +54,11 @@
                         <?php if(isset($_SESSION['admin']) && $_SESSION['admin'] == true) { ?>
                                 <!-- edit button -->
                             <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-responsive" data-toggle="popover-2" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
-                            </div>
-                        <?php } else { ?>
-                            <div>
-                                <!-- edit button -->
-                                <div  class="col-2 p-0 icon-edit-2"></div>
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                                <a href="/?admin=profil">
+                                    <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-responsive" data-toggle="popover-2" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </div>
+                                </a>
                             </div>
                         <?php } ?>
                     </div>
@@ -100,6 +102,14 @@
             <div class="titles">
                 <div class="title_baromaire font-50 text-sm-center text-lg-right"><?= $title_baromaire ?></div>
                 <div class="subtitle_baromaire font-30 text-sm-center text-lg-right"><?= $subtitle_baromaire ?></div>
+                <!-- edit button -->
+                <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
+                <a href="/?admin=profil">
+                    <div class="icon-edit-3 icon-edit-title btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                </a>
+                <?php } ?>
             </div>
         </header>
         <!-- sidebars -->
@@ -110,7 +120,11 @@
                     <div class="position-relative">
                         <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
                         <!-- edit button -->
-                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                        <div class="icon-edit-1 icon-edit-picture btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute">
+                            <a href="/?admin=profil">
+                                <i class="fas fa-pencil-alt"></i>
+                            </a>
+                        </div>
                         <?php } ?>
                         <!-- img mayor -->
                         <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
@@ -123,16 +137,16 @@
                             <h5 class="divider_first_subtitle text-center primary">Le Maire</h5>
                         </div>
                         <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
-                                <!-- edit button -->
+                            <!-- edit button -->
                             <div  class="col-2 p-0 icon-edit-2">
-                                <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton"><i class="fas fa-pencil-alt"></i></div>
-                            </div>
-                        <?php } else if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
-                                <!-- edit button -->
-                                <div  class="col-2 p-0">
-                                <div class="icon-edit-2 btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute"><i class="fas fa-pencil-alt"></i></div>
+                                <a href="/?admin=profil">
+                                    <div class="btn btn-primary pr-2 pl-2 pt-1 pb-1 position-absolute" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </div>
+                                </a>
                             </div>
                         <?php }  ?>
+                        </a>
                     </div>
                 </div>
                 <ul class="sidebar-left_nav">
@@ -180,8 +194,15 @@
     <script>
         // popover 
         $(function () {
-            // put on admin when user connected 
-            $('[data-toggle="popover"]').popover('show');
+            var width = $(window).width();
+            if(width < 1200) {
+                $('[data-toggle="popover"]').popover('hide');
+            }
+            else {
+                // put on admin when user connected 
+                $('[data-toggle="popover"]').popover('show');
+            }
+            
             $('[data-toggle="popover-2"]').popover();
         })
     </script>

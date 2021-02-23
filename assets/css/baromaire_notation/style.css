@@ -708,6 +708,17 @@ footer {
   left: 75% !important;
 }
 
+.icon-edit-3 {
+  top: 130px;
+  left: 65% !important;
+}
+
+.icon-edit-1 a,
+.icon-edit-2 a,
+.icon-edit-3 a {
+  color: white !important;
+}
+
 @media all and (max-width: 991px) {
   .icon-edit-1 {
     top: 60px;
@@ -718,11 +729,21 @@ footer {
     top: -40px;
     left: 57% !important;
   }
+
+  .icon-edit-3 {
+    top: 210px;
+    left: 50% !important;
+  }
 }
 @media all and (max-width: 650px) {
   .icon-edit-2 {
     top: -40px;
     left: 65% !important;
+  }
+
+  .icon-edit-3 {
+    top: 190px;
+    left: 50% !important;
   }
 }
 /*admin*/

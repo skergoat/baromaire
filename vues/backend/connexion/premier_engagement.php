@@ -10,7 +10,7 @@ ob_start(); ?>
     <!-- card -->
     <div class="row">
         <!-- card -->
-        <div class="card col-6 p-0 mx-auto">
+        <div class="card col-12 col-lg-6 p-0 mx-auto">
             <div class="card-header w-900 font-20 pointer" data-toggle="connexion-1"><span class="font-22 danger">Etape 3 :</span> Ajoutez votre premier engagement</div>
             <!-- body -->
             <div class="card-body pt-4 pb-4">
@@ -125,7 +125,7 @@ ob_start(); ?>
         }).popover('show');
 
         $('[data-toggle="connexion-4"]').popover({
-            placement:"right",
+            placement:"left",
             title: "Les actions",
             content:"Les actions sont les moyens par lesquels vous réalisez concrètement vos engagements",
         }).popover('show');
