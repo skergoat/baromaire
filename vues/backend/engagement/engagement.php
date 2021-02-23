@@ -13,7 +13,7 @@ ob_start(); ?>
 
     <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
         <!-- ajouter -->    
-        <a href="/?admin=edit&create" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>
+        <a href="/?admin=edit_engagement&create" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>
         <!-- title -->
         <div class="col-12 col-lg-11"><h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4></div>
     </div>
@@ -39,7 +39,7 @@ ob_start(); ?>
                                 </div>
                                 <!-- title -->
                                 <div class="accordeon_body--title font-17 text-right col-md-8">
-                                    <a href='/?admin=edit' class="underline" title="modifier"><?= $accordeons['title'] ?></a>
+                                    <a href='/?admin=edit_engagement' class="underline" title="modifier"><?= $accordeons['title'] ?></a>
                                     <!-- button -->
                                     <i class="fas fa-chevron-down icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="<?= $accordeons['id'] ?>" id="icon-<?= $accordeons['id'] ?>"></i>
                                 </div>

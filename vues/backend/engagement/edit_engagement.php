@@ -33,10 +33,14 @@ ob_start(); ?>
         </div>
     <!-- title -->
         <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
+            <?php if(!isset($_GET['create'])) { ?>
             <div class="col-12 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Aménagement du nouveau mobilier urbain</h4></div>
+            <?php } else { ?>
+            <div class="col-12 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Ajouter un engagement</h4></div>
+            <?php } ?>
         </div>
         
-        <div class="card p-0 <?php if(isset($_GET['create'])) { ?> card-admin <?php } ?> col-12 col-lg-9 mx-auto">
+        <div class="card p-0 col-12 col-lg-9 mx-auto">
             <!-- body -->
             <div class="card-body pt-5 pb-5">
             <!-- form -->
@@ -135,46 +139,48 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
-        <?php if(!isset($_GET['create'])) { ?>
         <div class="mt-5 card-admin">
             <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos Actions</h4>
             <div>
-                <div class="card p-0 <?php if(isset($_GET['create'])) { ?> card-admin <?php } ?> col-12 col-lg-9 mx-auto">
+                <div class="card p-0 card-admin col-12 col-lg-9 mx-auto">
                     <!-- body -->
-                    <div class="card-body pt-5 pb-5">  
-                    <?php // description
-                    foreach($accordeon->open() as $loads){ ?>
-                        <div class="mt-md-4 mb-md-4">
-                            <div class="row">
-                                <div class="col-md-9 p-0">
-                                    <!-- title -->
-                                    <div class="description-title font-13 text-left pr-3 pt-1 bold black">
-                                        <a href='/?admin=action' class="underline" title="modifier">
-                                        <?= $loads['title'] ?>
-                                        </a>
-                                    </div>
-                                    <!-- content -->
-                                    <div class="description-content font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
-                                </div>
-                                <div class="col-md-3 p-0">
-                                    <div class="progresses progresses-3 mb-2">
-                                        <div class="barOverflow barOverflow-3">
-                                            <div class="success-bar bar bar-third"></div>
+                    <div class="card-body pt-3 pb-3"> 
+                    <?php if(!isset($_GET['create'])) { ?> 
+                        <?php // description
+                        foreach($accordeon->open() as $loads){ ?>
+                            <div class="mt-md-4 mb-md-4">
+                                <div class="row">
+                                    <div class="col-md-9 p-0">
+                                        <!-- title -->
+                                        <div class="description-title font-13 text-left pr-3 pt-1 bold black">
+                                            <a href='/?admin=action' class="underline" title="modifier">
+                                            <?= $loads['title'] ?>
+                                            </a>
                                         </div>
-                                        <span>60</span>%
+                                        <!-- content -->
+                                        <div class="description-content font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
+                                    </div>
+                                    <div class="col-md-3 p-0">
+                                        <div class="progresses progresses-3 mb-2">
+                                            <div class="barOverflow barOverflow-3">
+                                                <div class="success-bar bar bar-third"></div>
+                                            </div>
+                                            <span>60</span>%
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- divider -->
-                            <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
-                        </div> 
+                                <!-- divider -->
+                                <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
+                            </div> 
+                        <?php } ?>
+                    <?php } else { ?>
+                    <div class="col-12 col-lg-5 mx-auto p-0 text-center pt-3">Aucune action pour le moment</div>
                     <?php } ?>
-                    <a href="/?admin=action" class="btn btn-primary d-block col-12 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
+                    <a href="/?admin=edit_engagement&action" class="btn btn-primary d-block col-12 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
                     </div>
                 </div>
             </div>
         </div>
-        <?php } ?>
     </form>
 <!-- reirect provisoire -->
 <script>

@@ -64,7 +64,7 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
 else if(isset($_GET['admin']) && $_GET['admin'] == 'engagement') {
     require('vues/backend/engagement/engagement.php');
 }   
-else if(isset($_GET['admin']) && $_GET['admin'] == 'edit') {
+else if(isset($_GET['admin']) && $_GET['admin'] == 'edit_engagement') {
     require('vues/backend/engagement/edit_engagement.php');
 } 
 
