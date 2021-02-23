@@ -21,7 +21,7 @@ $(function () {
             placement:"bottom",
             html:true,
             title: "Utilisateur",
-            content:"<div class='p-3 black'>Ajoutez un utilisateur et attribuez-lui un rôle</div>",
+            content:"<div class='black'>Ajoutez un utilisateur et attribuez-lui un rôle</div>",
         }).popover('show');
     }
 })

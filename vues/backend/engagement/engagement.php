@@ -83,7 +83,7 @@ $(function () {
             placement:"right",
             html:true,
             title: "Engagements",
-            content:"<div class='p-3 black'>Indiquez ici vos engagement pour la commune</div>",
+            content:"<div class='black'>Indiquez ici vos engagement pour la commune</div>",
         }).popover('show');
     }
 })

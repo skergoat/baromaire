@@ -22,7 +22,7 @@ $(function () {
             placement:"right",
             html:true,
             title: "Domaine d'action",
-            content:"<div class='p-3 black'>Les domaines d'action sont les thématiques de vos engagements</div>",
+            content:"<div class='black'>Les domaines d'action sont les thématiques de vos engagements</div>",
         }).popover('show');
     }
 })

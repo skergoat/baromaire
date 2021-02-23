@@ -204,7 +204,7 @@ $(function () {
             placement:"right",
             html:true,
             title: "Tableau de bord",
-            content:"<div class='p-3 black'>Une vision d'ensemble de votre mandat</div>",
+            content:"<div class='black'>Une vision d'ensemble de votre mandat</div>",
         }).popover('show');
     }
 })

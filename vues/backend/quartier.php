@@ -22,7 +22,7 @@ $(function () {
             placement:"right",
             html:true,
             title: "Quartier",
-            content:"<div class='p-3 black'>Ajoutez les quartiers que vous pourrez relier à vos engagements</div>",
+            content:"<div class='black'>Ajoutez les quartiers que vous pourrez relier à vos engagements</div>",
         }).popover('show');
     }
 })
