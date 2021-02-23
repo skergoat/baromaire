@@ -116,7 +116,7 @@
             $('[data-toggle="profile"]').popover({
                 html:true,
                 content: "<div class='p-2 pl-3 pr-3 pointer' style='border-bottom:1px solid black'><a href='/?admin=profil'>Profil</a></div><div class='p-2 pl-3 pr-3 pointer'><a href='/?admin=logout'>Déconnexion</a></div>",
-             });
+            });
         })
     </script>
     <script src="assets/js/nav.js"></script>

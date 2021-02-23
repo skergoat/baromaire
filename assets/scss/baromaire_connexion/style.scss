@@ -1,0 +1,94 @@
+/*debug*/
+@import "../vars";
+@import "../mixins";
+
+/*general*/
+body {
+  top: 0;
+  left: 0;
+  background: #f6f6f6 0 0 no-repeat padding-box;
+  opacity: 1;
+  font-family: Arial, sans-serif; /*provisoire*/
+}
+
+a,
+a:hover {
+  color: $primary;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+img {
+  width: 100% !important;
+}
+
+.row {
+  margin: 0px !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.back-transparent {
+  background: transparent !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.hidden {
+  overflow: hidden !important;
+}
+
+.container-baromaire-fluid {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+// xxl
+@media all and (min-width: 1440px) {
+  .container-baromaire {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+// xl
+@media all and (max-width: 1440px) {
+  .container-baromaire {
+    max-width: 1300px;
+    margin: auto;
+  }
+}
+
+/*home*/
+@import "../baromaire_home/footer";
+
+/*notation*/
+@import "../baromaire_notation/header";
+@import "../baromaire_notation/sidebar";
+@import "../baromaire_notation/progress";
+@import "../baromaire_notation/card";
+@import "../baromaire_notation/numbers";
+@import "../baromaire_notation/accordeon";
+
+/*admin*/
+@import "../baromaire_admin/navbar";
+@import "../baromaire_admin/header";
+@import "../baromaire_admin/footer";
+@import "../baromaire_admin/sidebar";
+@import "../baromaire_admin/login";
+@import "../baromaire_admin/icon";
+@import "../baromaire_admin/forms";
+@import "../baromaire_admin/card";
+
+// responsive
+@import "../baromaire_admin/max_width_576";
+
+@import "icon";

@@ -39,17 +39,23 @@ else if(isset($_GET['quartier'])) {
     require('vues/frontend/baromaire_notation/quartier.php');
 }
 // ADMIN
+// connexion 
 else if(isset($_GET['login'])) {
-    require('vues/backend/login.php');
+    require('vues/backend/connexion/login.php');
 }
 else if(isset($_GET['admin']) && $_GET['admin'] == 'sign') {
     // create user session 
     $_SESSION['admin'] = true;
-    require('vues/backend/sign.php');
+    require('vues/backend/connexion/sign.php');
 }
 else if(isset($_GET['admin']) && $_GET['admin'] == 'infos') {
-    require('vues/backend/infos.php');
+    require('vues/backend/connexion/profil.php');
 }
+else if(isset($_GET['admin']) && $_GET['admin'] == 'premier_engagement') {
+    require('vues/backend/connexion/premier_engagement.php');
+}
+
+// dashboard 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'dashboard') {
     require('vues/backend/dashboard.php');
 }
@@ -64,10 +70,10 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'edit') {
 
 // action
 else if(isset($_GET['admin']) && $_GET['admin'] == 'action') {
-    require('vues/backend/engagement/actions/action.php');
+    require('vues/backend/actions/action.php');
 } 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'edit-action') {
-    require('vues/backend/engagement/actions/edit_action.php');
+    require('vues/backend/actions/edit_action.php');
 } 
 
 // domaine d'action 
@@ -91,10 +97,9 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'profil') {
 else if(isset($_GET['admin']) && $_GET['admin'] == 'logout') {
     // delete user session 
     unset($_SESSION['admin']);
-    header('Location: /?progres');
+    header('Location: /?login');
 }
 // HOMEPAGE 
 else {
-    // require('vues/frontend/baromaire_home/create.php');
     require('vues/frontend/baromaire_home/home.php');
 } 
