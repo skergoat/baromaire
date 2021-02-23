@@ -24,28 +24,32 @@ ob_start(); ?>
     <!-- card -->
     <div class="card p-0 <?php if(isset($_GET['create'])) { ?> card-admin <?php } ?> col-12 col-lg-9 mx-auto">
         <!-- body -->
-        <div class="card-body pt-4 pb-4">
+        <div class="card-body pt-5 pb-5">
         <!-- form -->
             <form id="form-sign">
                 <div class="row">
                     <div class="col-12 p-0 mb-3">
                         <!-- row 1 -->
                         <div class="row">
-                            <!-- order -->
-                            <div class="form-group col-lg-2 pl-0">
-                                <label for="order" class="w-900">Ordre</label>
-                                <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" <?php if(!isset($_GET['create'])) { ?> value="1" <?php } ?> >
-                                <div class="invalid-feedback">Chiffre invalide</div>
-                            </div>
                             <!-- engagement -->
-                            <div class="form-group col-lg-7 pl-0 pr-0">
-                                <label for="engagement" class="w-900">Engagement</label>
+                            <div class="form-group col-12 pl-0 pr-0">
+                                <label for="engagement" class="w-900">Titre de l'engagement</label>
                                 <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." <?php if(!isset($_GET['create'])) { ?> value="Aménagement du nouveau mobilier urbain" <?php } ?>>
                                 <div class="invalid-feedback">
                                 Entrez au moins 2 lettres svp
                                 </div>
                             </div>
-                            <div class="form-group col-lg-3 pr-0">
+                        </div>
+                    </div> 
+                    <div class="col-12 p-0">
+                        <div class="row">
+                            <!-- order -->
+                            <div class="form-group col-6 pl-0 pr-0">
+                                <label for="order" class="w-900">Ordre</label>
+                                <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" <?php if(!isset($_GET['create'])) { ?> value="1" <?php } ?> >
+                                <div class="invalid-feedback">Chiffre invalide</div>
+                            </div>
+                            <div class="form-group col-6 pr-0">
                                 <!-- realisation -->
                                 <label for="realisation" class="w-900">Réalisation</label>
                                 <div class="input-group">
@@ -56,24 +60,12 @@ ob_start(); ?>
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                     <!-- row 2 -->
                     <div class="col-12 p-0 mb-3">
                         <div class="row">
-                            <!-- photo -->
-                            <div class="form-group col-lg-4 pl-0">
-                                <label for="order" class="w-900">Photo</label>
-                                <div class="input-group">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="file1">
-                                        <label class="custom-file-label" for="file1">
-                                        fichier.jpg
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- domaine -->
-                            <div class="form-group col-lg-4 pl-0 pr-0">
+                            <div class="form-group pl-0 pr-0 col-6">
                                 <label for="exampleFormControlSelect1" class="w-900">Domaine d'action</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <?php foreach($cards->create() as $domaine) { ?>
@@ -82,7 +74,7 @@ ob_start(); ?>
                                 </select>
                             </div>
                             <!-- quartier -->
-                            <div class="form-group col-lg-4 pr-0">
+                            <div class="form-group pr-0 col-6">
                                 <label for="exampleFormControlSelect1" class="w-900">Quartier</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <?php foreach($cards->quartier() as $quartier) { ?>
@@ -100,6 +92,28 @@ ob_start(); ?>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"><?php if(!isset($_GET['create'])) { ?>Le nouveau mobilier urbain a été mis en place selon le calendrier prévu. L'inauguration a eu lieu le XX mars en présence du Président de la Region. Fourmies est la première ville de France à avoir installé du mobilier urbain entièrement fabriqué sur le territoire à partir de matériaux renouvelables.<?php } ?></textarea>
                         <div class="invalid-feedback">
                         Entrez au moins 2 lettres svp
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 p-0 pb-4">
+                    <!-- photo -->
+                    <div class="form-group col-lg-6 pl-0">
+                        <label for="order" class="w-900">Photo</label>
+                            <!-- image -->
+                            <div class="col-12 pb-1 p-0">
+                                <?php if(isset($_GET['create'])) { ?>
+                                <img src="assets/img/placeholder.png" alt="image engagements"/>
+                                <?php } else { ?>
+                                <img src="assets/img/engagements/image_19.jpg" alt="image engagements"/>
+                                <?php } ?>
+                            </div>
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="file1">
+                                <label class="custom-file-label" for="file1">
+                                fichier.jpg
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
