@@ -9,6 +9,10 @@ $breadcrumb =
 $title = '<div class="col-12 "><h4 class="w-900 font-30 text-center m-0">Tableau de Bord</h4></div>';
 $widget = $progress->createAdmin(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
+<div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
+    <!-- title -->
+    <div class="col-12"><h4 class="w-900 font-30 text-center m-0 mr-lg-5">Tableau de bord</h4></div>
+</div>
 <div class="mb-5 pt-4 card-admin">
     <!-- top -->
     <div class="row">

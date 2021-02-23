@@ -68,14 +68,6 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'edit_engagement') {
     require('vues/backend/engagement/edit_engagement.php');
 } 
 
-// action
-else if(isset($_GET['admin']) && $_GET['admin'] == 'action') {
-    require('vues/backend/actions/action.php');
-} 
-else if(isset($_GET['admin']) && $_GET['admin'] == 'edit-action') {
-    require('vues/backend/actions/edit_action.php');
-} 
-
 // domaine d'action 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'domaine') {
     require('vues/backend/domaines_action/domaine_action.php');
