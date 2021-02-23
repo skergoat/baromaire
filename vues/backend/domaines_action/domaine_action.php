@@ -3,6 +3,10 @@
 * Page : Add Action
 */
 
+$breadcrumb = 
+'<li class="breadcrumb-item"><a href="#">Admin</a></li>
+<li class="breadcrumb-item"><a href="#">Domaines d\'action</a></li>';
+
 $title = "Domaine d'action";
 
 ob_start(); ?>

@@ -3,9 +3,19 @@
 * Page : Créer Premier engagement 
 */
 if(isset($_GET['create'])) {
+    $breadcrumb = 
+    '<li class="breadcrumb-item"><a href="#">Admin</a></li>
+    <li class="breadcrumb-item"><a href="#">Engagements</a></li>
+    <li class="breadcrumb-item"><a href="#">Ajouter</a></li>';
+
     $title = '<div class="col-12 pb-4"><h4 class="w-900 font-30 text-center m-0">Ajouter un Engagement</h4></div>';
 }
 else {
+    $breadcrumb = 
+    '<li class="breadcrumb-item"><a href="#">Admin</a></li>
+    <li class="breadcrumb-item"><a href="#">Engagements</a></li>
+    <li class="breadcrumb-item"><a href="#">Modifier</a></li>';
+
     $title = '<div class="col-12 pb-4"><h4 class="w-900 font-30 text-center m-0">Aménagement du nouveau mobilier urbain</h4></div>';
 }
 ob_start(); ?>

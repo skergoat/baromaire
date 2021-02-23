@@ -2,6 +2,10 @@
 /**
 * Page : Admin Dashboard 
 */
+$breadcrumb = 
+'<li class="breadcrumb-item"><a href="#">Admin</a></li>
+<li class="breadcrumb-item"><a href="#">Dashboard</a></li>';
+
 $title = '<div class="col-12 "><h4 class="w-900 font-30 text-center m-0">Tableau de Bord</h4></div>';
 $widget = $progress->createAdmin(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
@@ -29,7 +33,7 @@ ob_start(); ?>
                     </div>
                     <div class="accordeon_body col-md-9 p-0 pl-md-3 pb-2">
                         <!-- title -->
-                        <div class="accordeon_body--title font-20 text-right pr-md-3 pt-md-1" id="accordeon-title-<?= $accordeons['id'] ?>"><?= $accordeons['title'] ?></div>
+                        <div class="accordeon_body--title font-20 text-right pr-md-3 pt-md-1" id="accordeon-title-<?= $accordeons['id'] ?>"><a href="/?admin=edit"  class="underline" title="modifier"><?= $accordeons['title'] ?></a></div>
                         <!-- divider -->
                         <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
                         <!-- content -->

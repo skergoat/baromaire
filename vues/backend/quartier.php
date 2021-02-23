@@ -2,7 +2,13 @@
 /**
 * Page : Add Action
 */
+
+$breadcrumb = 
+'<li class="breadcrumb-item"><a href="#">Admin</a></li>
+<li class="breadcrumb-item"><a href="#">Quartiers</a></li>';
+
 $title = "Quartiers";
+
 ob_start(); ?>
 
 <script>

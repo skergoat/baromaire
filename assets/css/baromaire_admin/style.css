@@ -967,6 +967,16 @@ footer {
   height: 100% !important;
 }
 
+.breadcrumb {
+  background: white !important;
+  border-bottom: 1px solid #d8dbe0 !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.breadcrumb-item:first-child {
+  padding-left: 1rem !important;
+}
+
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   /**

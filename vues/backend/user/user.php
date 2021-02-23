@@ -2,7 +2,12 @@
 /**
 * Page : Create user 
 */
+$breadcrumb = 
+'<li class="breadcrumb-item"><a href="#">Admin</a></li>
+<li class="breadcrumb-item"><a href="#">Utilisateurs</a></li>';
+
 $title = "User";
+
 ob_start(); ?>
 
 <script>
