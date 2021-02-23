@@ -19,7 +19,7 @@ ob_start(); ?>
         <?php foreach($accordeon->create() as $accordeons) {
             ?>
             <!-- accordeon -->
-            <div class="accordeon mt-4">
+            <div class="accordeon mt-4 shadow">
                 <div class="row">
                     <!-- image -->
                     <div class="accordeon_image col-md-3 p-0 pl-md-3 d-flex align-items-center justify-content-center position-relative">
@@ -108,8 +108,8 @@ ob_start(); ?>
         <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos catégories</h4>
         <!-- categories -->
         <div class="row">
-            <div class="col-12 col-lg-6  mb-lg-0 mb-4">
-                <table class="table table-bordered bg-white">
+            <div class="col-12 col-lg-6 pl-0 mb-lg-0 mb-4">
+                <table class="table table-bordered bg-white shadow">
                     <thead class="thead-dark">
                         <tr>
                             <th colspan="8" class="text-center">Les Domaines d'Action</th>
@@ -147,8 +147,8 @@ ob_start(); ?>
                     </nav>
                 </div>
             </div>
-            <div class="col-12 col-lg-6">
-                <table class="table table-bordered bg-white">
+            <div class="col-12 col-lg-6 pr-0">
+                <table class="table table-bordered bg-white shadow">
                     <thead class="thead-light">
                         <tr>
                             <th colspan="8" class="text-center">Les Quartiers</th>

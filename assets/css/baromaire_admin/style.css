@@ -186,7 +186,7 @@
 body {
   top: 0;
   left: 0;
-  background: #f6f6f6 0 0 no-repeat padding-box;
+  background: #ebedef 0 0 no-repeat padding-box;
   opacity: 1;
   font-family: Arial, sans-serif;
   /*provisoire*/
@@ -231,6 +231,10 @@ img {
 .container-baromaire-fluid {
   max-width: 100% !important;
   width: 100% !important;
+}
+
+.shadow {
+  box-shadow: 0 3px 6px 0px rgba(0, 0, 0, 0.3) !important;
 }
 
 @media all and (min-width: 1440px) {
