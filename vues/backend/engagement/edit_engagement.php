@@ -17,9 +17,6 @@ else {
     <li class="breadcrumb-item"><a href="#">Modifier</a></li>';
 }
 ob_start(); ?>
-    <!-- edit alert -->
-    <?php if(isset($_GET['reload'])) { $alert = "Action ajoutée !"; } ?>
-
     <!-- start form -->
     <form>
         <!-- buttons -->
@@ -146,31 +143,82 @@ ob_start(); ?>
                     <!-- body -->
                     <div class="card-body pt-3 pb-3"> 
                     <?php if(!isset($_GET['create'])) { ?> 
-                        <?php // description
+                        <?php // description 
+                        $i = 1;
                         foreach($accordeon->open() as $loads){ ?>
                             <div class="mt-md-4 mb-md-4">
                                 <div class="row">
-                                    <div class="col-md-9 p-0">
-                                        <!-- title -->
-                                        <div class="description-title font-13 text-left pr-3 pt-1 bold black">
-                                            <a href='/?admin=action' class="underline" title="modifier">
-                                            <?= $loads['title'] ?>
-                                            </a>
-                                        </div>
-                                        <!-- content -->
-                                        <div class="description-content font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
+                                    <!-- order -->
+                                    <div class="form-group col-12 col-lg-2 pl-0 pr-0">
+                                        <label for="order" class="w-900">Ordre</label>
+                                        <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $i++ ?>">
+                                        <div class="invalid-feedback">Chiffre invalide</div>
                                     </div>
-                                    <div class="col-md-3 p-0">
-                                        <div class="progresses progresses-3 mb-2">
-                                            <div class="barOverflow barOverflow-3">
-                                                <div class="success-bar bar bar-third"></div>
+                                    <div class="form-group col-8 pr-0">
+                                        <label for="engagement" class="w-900">Titre de l'action</label>
+                                        <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="<?= $loads['title'] ?>">
+                                        <div class="invalid-feedback">
+                                        Entrez au moins 2 lettres svp
+                                        </div>
+                                    </div>
+                                    <div class="form-group  col-12 col-lg-2 pr-0">
+                                        <!-- realisation -->
+                                        <label for="realisation" class="w-900">Réalisation</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="input-percent" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2" value="60">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">%</span>
                                             </div>
-                                            <span>60</span>%
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1" class="w-900">Description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"><?= $loads['content'] ?></textarea>
+                                    <div class="invalid-feedback">
+                                    Entrez au moins 2 lettres svp
+                                    </div>
+                                </div>
                                 <!-- divider -->
-                                <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
+                                <div class="divider_second mb-5 mt-5 pl-3 pr-3"></div>
+                            </div> 
+                        <?php } ?>
+                        <?php if(isset($_GET['action'])) { ?>
+                            <div class="mt-md-4 mb-md-4">
+                                <div class="row">
+                                    <!-- order -->
+                                    <div class="form-group col-12 col-lg-2 pl-0 pr-0">
+                                        <label for="order" class="w-900">Ordre</label>
+                                        <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $i++ ?>">
+                                        <div class="invalid-feedback">Chiffre invalide</div>
+                                    </div>
+                                    <div class="form-group col-8 pr-0">
+                                        <label for="engagement" class="w-900">Titre de l'action</label>
+                                        <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="">
+                                        <div class="invalid-feedback">
+                                        Entrez au moins 2 lettres svp
+                                        </div>
+                                    </div>
+                                    <div class="form-group  col-12 col-lg-2 pr-0">
+                                        <!-- realisation -->
+                                        <label for="realisation" class="w-900">Réalisation</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="input-percent" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2" value="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text" id="basic-addon2">%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1" class="w-900">Description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                    <div class="invalid-feedback">
+                                    Entrez au moins 2 lettres svp
+                                    </div>
+                                </div>
+                                <!-- divider -->
+                                <div class="divider_second mb-5 mt-5 pl-3 pr-3"></div>
                             </div> 
                         <?php } ?>
                     <?php } else { ?>
@@ -182,15 +230,21 @@ ob_start(); ?>
             </div>
         </div>
     </form>
-<!-- reirect provisoire -->
+
+<!-- scroll bottom when click on "+ Ajouter" -->
+<?php if(isset($_GET['action'])) { ?>
+<script>
+    $("html, body").animate({ scrollTop: $(document).height() }, 1);
+</script>
+<?php } ?>
+
+<!-- redirect -->
 <script>
   $('#submit-1').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement&reload"});
-  <?php if(isset($_GET['reload'])) { ?>
-  $('#submit-2').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=action"});
-  <?php } ?>
-  $('#submit-3').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=dashboard"});
 </script> 
+
 <!-- sidebar menu .active -->
 <script>var child = 2;</script>
+
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_admin.php'); ?>
