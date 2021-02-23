@@ -84,7 +84,7 @@
                 </nav>
                 <?php } ?>
                 <!-- content -->
-                <div class="col-12 mt-4 col-lg-10 mx-auto">
+                <div class="col-12 mt-4 p-0 p-lg-2 col-lg-10 mx-auto">
                     <div class="row flex-column-reverse flex-md-row pb-4 pt-4">
                         <!-- ajouter -->
                         <?php 
@@ -94,7 +94,7 @@
                         ?>
                         <!-- title -->
                         <div class="col-12 col-lg-11">
-                            <h4 class="w-900 font-30 text-center mr-lg-5"><?= $title ?></h4>
+                            <?= $title ?>
                         </div> 
                     </div>
                     <!-- edit alert -->

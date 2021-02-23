@@ -6,16 +6,7 @@ $(function () {
          /****
          * Engagement
          */
-        // popover pencil 
-        $('[data-toggle="engagement-1"]').popover({
-            placement:"top",
-            html:true,
-            title: "Modifications",
-            content:"Cliquez ici pour modifier votre engagement",
-        }).popover('show');
-
-        // popover sidebar
-        $('[data-toggle="sidebar-2"]').popover({
+        $('[data-toggle="'+popover+'"]').popover({
             placement:"bottom",
             html:true,
             title: "Engagements",

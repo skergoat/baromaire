@@ -3,18 +3,16 @@
 * Page : Créer Premier engagement 
 */
 $button = '<a href="/?admin=edit" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>';
-$title = "Vos engagements";
+$title = '<h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4>';
 ob_start(); ?>
     <!-- edit alert -->
     <?php if(isset($_GET['reload'])) { $alert = "engagement ajouté !"; } ?>
 
     <!-- liste d'engagements -->
     <div class="mb-4">
-        <?php $i = 1;
-        foreach($accordeon->create() as $accordeons) {
-        ?>
+        <?php foreach($accordeon->create() as $accordeons) { ?>
         <!-- accordeon -->
-        <div class="mt-2 back-transparent col-12 p-0 mx-auto">
+        <div class="mt-2 back-transparent col-12 p-1 p-lg-0 mx-auto">
             <div class="row">
                 <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                     <div class="w-900 font-18"><?= $accordeons['id'] ?></div>
@@ -32,7 +30,7 @@ ob_start(); ?>
                                 </div>
                                 <!-- title -->
                                 <div class="accordeon_body--title font-17 text-right col-md-8">
-                                    <?= $accordeons['title'] ?>
+                                    <a href='/?admin=edit' class="underline" title="modifier"><?= $accordeons['title'] ?></a>
                                     <!-- button -->
                                     <i class="fas fa-chevron-down icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="<?= $accordeons['id'] ?>" id="icon-<?= $accordeons['id'] ?>"></i>
                                 </div>
@@ -61,18 +59,13 @@ ob_start(); ?>
                         </div>
                     </div>
                 </div>
-                <!-- edit button -->
-                <div  class="col-1 icon-edit-2 pt-1 pb-1" data-toggle="engagement-<?= $i++ ?>">
-                    <a href="/?admin=edit">
-                        <div class="btn btn-primary" id="popover-desktop" data-toggle="popover" data-placement="bottom" title="Modifier un Elément" data-content="Modifiez directement les éléments en cliquant sur ce bouton">
-                            <i class="fas fa-pencil-alt"></i>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
         <?php } ?>
     </div>
-<script>var child = 2;</script>
+<script>
+var child = 2;
+var popover = "sidebar-2";
+</script>
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_admin.php'); ?>

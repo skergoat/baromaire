@@ -18,6 +18,10 @@ a:hover {
   background-color: transparent;
 }
 
+a.underline:hover {
+  border-bottom: 1px solid $primary !important;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;

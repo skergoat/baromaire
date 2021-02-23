@@ -199,6 +199,10 @@ a:hover {
   background-color: transparent;
 }
 
+a.underline:hover {
+  border-bottom: 1px solid #707070 !important;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -737,11 +741,6 @@ footer {
   border-top: 1px solid #d8dbe0;
 }
 
-@media all and (max-width: 567px) {
-  footer.position-absolute {
-    position: relative !important;
-  }
-}
 .sidebar-left {
   height: 100vh !important;
   min-height: 100vh;
@@ -1000,8 +999,8 @@ footer {
   .main-content {
     width: 100% !important;
     max-width: 100% !important;
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+    height: 100% !important;
+    min-height: 100vh !important;
   }
   .main-content h4 {
     font-size: 22px;
@@ -1034,6 +1033,14 @@ footer {
   }
   .accordeons .accordeon_body--title .icon-open-close {
     font-size: 14px !important;
+  }
+
+  .overlay {
+    display: none !important;
+  }
+
+  .sidebar-left {
+    display: none !important;
   }
 }
 
