@@ -183,7 +183,7 @@ ob_start(); ?>
                                     <a class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></a>
                                 </div>
                                 <!-- divider -->
-                                <div class="divider_second mb-5 mt-5 pl-3 pr-3"></div>
+                                <div class="divider_second mb-3 mt-5 pl-3 pr-3"></div>
                             </div> 
                         <?php } ?>
                         <?php if(isset($_GET['action'])) { ?>
@@ -224,7 +224,7 @@ ob_start(); ?>
                                     <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
                                 </div>
                                 <!-- divider -->
-                                <div class="divider_second mb-5 mt-5 pl-3 pr-3"></div>
+                                <div class="divider_second mb-3 mt-5 pl-3 pr-3"></div>
                             </div> 
                         <?php } ?>
                     <?php } else { ?>
