@@ -106,7 +106,31 @@ ob_start(); ?>
     <?php if(!isset($_GET['create'])) { ?>
     <div class="mt-5 card-admin">
         <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos Actions</h4>
-
+        <div>
+            <?php // description
+            foreach($accordeon->open() as $loads){ ?>
+            <div class="mt-md-4 mb-md-4">
+                <div class="row">
+                    <div class="col-md-9 p-0">
+                        <!-- title -->
+                        <div class="description-title font-13 text-left pr-3 pt-1 bold black"><?= $loads['title'] ?></div>
+                        <!-- content -->
+                        <div class="description-content font-12 text-left pr-3 pt-1"><?= $loads['content'] ?></div>
+                    </div>
+                    <div class="col-md-3 p-0">
+                        <div class="progresses progresses-3 mb-2">
+                            <div class="barOverflow barOverflow-3">
+                                <div class="success-bar bar bar-third"></div>
+                            </div>
+                            <span>60</span>%
+                        </div>
+                    </div>
+                </div>
+                <!-- divider -->
+                <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
+            </div>
+            <?php } ?>
+        </div>
     </div>
     <?php } ?>
 <!-- reirect provisoire -->

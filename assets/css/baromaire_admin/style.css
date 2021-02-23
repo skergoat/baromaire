@@ -924,6 +924,10 @@ footer {
   border-bottom-color: #2d4e9d !important;
 }
 
+.popover.bs-popover-right .arrow::before, .popover.bs-popover-right .arrow::after {
+  border-bottom-color: transparent !important;
+}
+
 .custom-file-label::after {
   font-family: "Font Awesome 5 Free";
   content: "";

@@ -63,8 +63,20 @@ ob_start(); ?>
         <?php } ?>
     </div>
 <script>
+// sidebar active 
 var child = 2;
-var popover = "sidebar-2";
+// popover 
+$(function () {
+    var width = $(window).width();
+    if(width >= 991) {
+        $('[data-toggle="sidebar-2"').popover({
+            placement:"right",
+            html:true,
+            title: "Engagements",
+            content:"<div class='p-3 black'>Indiquez ici vos engagement pour la commune</div>",
+        }).popover('show');
+    }
+})
 </script>
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_admin.php'); ?>

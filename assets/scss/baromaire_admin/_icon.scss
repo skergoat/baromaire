@@ -29,3 +29,10 @@
 .popover .arrow::after {
   border-bottom-color: $secondary !important;
 }
+
+.popover.bs-popover-right {
+  & .arrow::before,
+  & .arrow::after {
+    border-bottom-color: transparent !important;
+  }
+}

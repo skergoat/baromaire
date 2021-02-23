@@ -189,6 +189,21 @@ ob_start(); ?>
         </div>
     </div>
 </div>
-<script>var child = 1;</script>
+<script>
+// sidebar active 
+var child = 1;
+// popover 
+$(function () {
+    var width = $(window).width();
+    if(width >= 991) {
+        $('[data-toggle="sidebar-1"').popover({
+            placement:"right",
+            html:true,
+            title: "Tableau de bord",
+            content:"<div class='p-3 black'>Une vision d'ensemble de votre mandat</div>",
+        }).popover('show');
+    }
+})
+</script>
 <?php $content = ob_get_clean(); ?>
 <?php require('vues/layout_admin.php'); ?>

@@ -37,11 +37,11 @@
                         </a>
                     </div>
                     <ul class="sidebar-left_nav">
-                        <li class="pl-3 pb-1 pt-1"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
+                        <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-1"><a href="/?admin=dashboard"><i class="fas fa-tachometer-alt mr-3"></i>Tableau de bord</a></li>
                         <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
-                        <li class="pl-3 pb-1 pt-1"><a href="/?admin=domaine"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
-                        <li class="pl-3 pb-1 pt-1"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
-                        <li class="pl-3 pb-1 pt-1"><a href="/?admin=user"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
+                        <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-3"><a href="/?admin=domaine"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
+                        <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-4"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
+                        <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-5"><a href="/?admin=user"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
                     </ul>
                 </div>
             </div>
@@ -119,12 +119,15 @@
                 title:"<div><a href='/?admin=profil'><div class='pl-2 pr-2 pointer white'>Profil</div></a></div>",
                 content: "<div><a href='/?admin=logout' class='danger'><div class='p-2 pl-4 pr-4 pointer'>Déconnexion</div></a></div>",
             });
+
+            $('.popover').on('click', function() {
+                $(this).hide();
+            });
         })
     </script>
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/accordeon.js"></script>
     <script src="assets/js/sidebar.js"></script>
     <script src="assets/js/form.js"></script>
-    <script src="assets/js/popover_admin.js"></script>
 </body>
 </html>
