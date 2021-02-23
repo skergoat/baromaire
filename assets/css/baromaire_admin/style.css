@@ -923,6 +923,9 @@ footer {
 .card-admin {
   margin-bottom: 100px !important;
 }
+.card-admin-bottom {
+  height: 100% !important;
+}
 
 /*hearders and footers*/
 @media all and (max-width: 576px) {

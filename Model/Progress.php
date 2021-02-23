@@ -91,4 +91,53 @@ class Progress
             </div>';
         return $widget;
    }
+   // dashboard admin 
+   public function createAdmin($page, $precent1, $precent2, $numbers)
+   {
+       // widget progress bar
+       if(!$page) {
+        // model 1 
+        $widget = '
+        <div class="col-12 col-lg-4">
+        <div class="card">
+            <div class="progresses">
+                <div class="barOverflow">
+                    <div class="warning-bar bar"></div>
+                </div>
+                <span>'.$precent1.'</span>%
+            </div>
+            <p class="progress-p text-center font-12 m-0">Mandature</p>
+            <div class="divider_second mb-2 mt-2"></div>
+            <div class="progresses">
+                <div class="barOverflow">
+                    <div class="success-bar bar"></div>
+                </div>
+                <span>'.$precent2.'</span>%
+            </div>
+            <p class="progress-p font-12 text-center">Respect des Engagements</p>
+        </div></div>';
+       } 
+
+       // widget bottom
+        $widget.= '
+        <div class="col-12 col-lg-4">
+        <div class="card card-admin-bottom">
+            <div class="card_numbers font-15 d-flex justify-content-center">
+                <div class="nb nb-success font-25 mr-2">'.$numbers[0].'</div> 
+                <div class="mt-2">Engagements respectés</div>
+            </div>
+            <div class="divider_second mb-2 mt-2"></div>
+            <div class="card_numbers font-15 d-flex justify-content-center">
+                <div class="nb nb-warning font-25 mr-2">'.$numbers[1].'</div> 
+                <div class="mt-2">Engagements en cours</div>
+            </div>
+            <div class="divider_second mb-2 mt-2"></div>
+            <div class="card_numbers font-15 d-flex justify-content-center">
+                <div class="nb nb-danger font-25 mr-2">'.$numbers[2].'</div> 
+                <div class="mt-2">Engagements à respecter</div>
+            </div>
+        </div></div>';
+
+       return $widget;
+   }
 }

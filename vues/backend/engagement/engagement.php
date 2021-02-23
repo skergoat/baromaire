@@ -80,7 +80,7 @@ ob_start(); ?>
     <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Ajouter un engagement</h4>
     <?php } ?>
     <!-- card -->
-    <div class="card p-0 card-admin col-12 col-lg-8 mx-auto">
+    <div class="card p-0 card-admin col-12 col-lg-9 mx-auto">
         <?php if(isset($_GET['sign'])) { ?>
         <!-- head -->
         <div class="card-header w-900 font-20"><span class="font-22 danger">Etape 3 :</span> Enregistrez vos premiers engagements</div>
