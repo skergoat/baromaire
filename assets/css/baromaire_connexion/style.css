@@ -733,11 +733,6 @@ footer {
   border-top: 1px solid #d8dbe0;
 }
 
-@media all and (max-width: 567px) {
-  footer.position-absolute {
-    position: relative !important;
-  }
-}
 .sidebar-left {
   height: 100vh !important;
   min-height: 100vh;
@@ -878,17 +873,6 @@ footer {
   .col-form-label.text-right {
     text-align: left !important;
   }
-
-  form .row {
-    flex-direction: column !important;
-  }
-  form .row .form-group {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  form .row .form-group input {
-    margin-bottom: 30px;
-  }
 }
 .popover {
   z-index: 100000000 !important;
@@ -919,6 +903,10 @@ footer {
 .popover .arrow::before,
 .popover .arrow::after {
   border-bottom-color: #2d4e9d !important;
+}
+
+.popover.bs-popover-right .arrow::before, .popover.bs-popover-right .arrow::after {
+  border-bottom-color: transparent !important;
 }
 
 .custom-file-label::after {
@@ -996,8 +984,8 @@ footer {
   .main-content {
     width: 100% !important;
     max-width: 100% !important;
-    padding-right: 5px !important;
-    padding-left: 5px !important;
+    height: 100% !important;
+    min-height: 100vh !important;
   }
   .main-content h4 {
     font-size: 22px;
@@ -1031,6 +1019,14 @@ footer {
   .accordeons .accordeon_body--title .icon-open-close {
     font-size: 14px !important;
   }
+
+  .overlay {
+    display: none !important;
+  }
+
+  .sidebar-left {
+    display: none !important;
+  }
 }
 .popover .popover-body {
   padding: 0.5rem 0.75rem !important;
@@ -1061,6 +1057,31 @@ footer {
 
 .bs-popover-left .bs-popover-left, .bs-popover-left .bs-popover-left {
   border-bottom-color: transparent !important;
+}
+
+.custom-file-label.custom-file-label-assistant::after {
+  font-family: "Arial";
+  content: "Modifier";
+}
+
+.image.image-placeholder.img-placeholder-assistant {
+  max-width: 170px !important;
+  max-height: 170px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media all and (max-width: 576px) {
+  .row-profil {
+    flex-direction: column !important;
+  }
+
+  .image.image-placeholder.img-placeholder-assistant {
+    max-width: 170px !important;
+    min-height: 170px !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

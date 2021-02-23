@@ -74,14 +74,14 @@
     text-align: left !important;
   }
 
-  form .row {
-    flex-direction: column !important;
-    & .form-group {
-      padding-left: 0px !important;
-      padding-right: 0px !important;
-      input {
-        margin-bottom: 30px;
-      }
-    }
-  }
+  // form .row {
+  //   flex-direction: column !important;
+  //   & .form-group {
+  //     padding-left: 0px !important;
+  //     padding-right: 0px !important;
+  //     input {
+  //       margin-bottom: 30px;
+  //     }
+  //   }
+  // }
 }

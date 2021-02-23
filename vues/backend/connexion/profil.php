@@ -15,12 +15,12 @@ ob_start(); ?>
             <!-- body -->
             <div class="card-body pt-lg-4 pb-4">
             <!-- form -->
-                <form class="row">
+                <form class="row row-profil">
                     <!-- file -->
-                    <div class="form-group col-6 pl-0">
+                    <div class="form-group col-12 mb-4 mb-lg-0 col-lg-6 p-0 pr-lg-2">
                         <label for="order" class="w-900 text-center w-100 font-18">Photo de profil</label>
                         <div class="image image-placeholder img-placeholder-assistant img-thumbnail mx-auto mb-4"></div>
-                        <div class="input-group col-9 mx-auto">
+                        <div class="input-group col-12 col-lg-9 mx-auto">
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input" id="file1">
                                 <label class="custom-file-label custom-file-label-assistant" for="file1">
@@ -30,7 +30,7 @@ ob_start(); ?>
                         </div>
                     </div>
                     <!-- name -->
-                    <div class="col-6 mb-4">
+                    <div class="col-12 col-lg-6 mb-4 p-0 pr-lg-2">
                         <div class="form-group col-12 p-0">
                             <label for="debut" class="col-form-label text-left w-900">Votre Nom</label>
                             <input type="text" class="form-control" id="debut" placeholder="Dupont">

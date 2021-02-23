@@ -102,25 +102,28 @@ ob_start(); ?>
 <!-- popover -->
 <script>
     $(document).ready(function() {
-        $('[data-toggle="connexion-1"]').popover({
-            placement:"top",
-            title: "Les Engagements" ,
-            content:"Ajoutez des engagements pour rappeler les grandes lignes de votre programme",
-        }).popover('show');
-        
-        $('[data-toggle="connexion-2"]').popover({
-            placement:"left",
-            html:true,
-            title: "Les Domaines d'action",
-            content:"<a href='/?admin=domaine'>Ajoutez des domaines</a> d'action comme 'Centre Ville' ou 'Equipement' par ex. pour qualifier votre engagement",
-        }).popover('show');
+        var width = $(window).width();
+        if(width >= 991) {
+            $('[data-toggle="connexion-1"]').popover({
+                placement:"top",
+                title: "Les Engagements" ,
+                content:"Ajoutez des engagements pour rappeler les grandes lignes de votre programme",
+            }).popover('show');
+            
+            $('[data-toggle="connexion-2"]').popover({
+                placement:"left",
+                html:true,
+                title: "Les Domaines d'action",
+                content:"<a href='/?admin=domaine'>Ajoutez des domaines</a> d'action comme 'Centre Ville' ou 'Equipement' par ex. pour qualifier votre engagement",
+            }).popover('show');
 
-        $('[data-toggle="connexion-3"]').popover({
-            placement:"bottom",
-            html:true,
-            title: "Les quartiers",
-            content:"<a href='/?admin=quartier'>Ajoutez des quartiers</a> pour localiser votre engagement",
-        }).popover('show');
+            $('[data-toggle="connexion-3"]').popover({
+                placement:"bottom",
+                html:true,
+                title: "Les quartiers",
+                content:"<a href='/?admin=quartier'>Ajoutez des quartiers</a> pour localiser votre engagement",
+            }).popover('show');
+        }
     });
 </script>
 

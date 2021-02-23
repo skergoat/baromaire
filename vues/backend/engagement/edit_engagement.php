@@ -21,16 +21,15 @@ ob_start(); ?>
     <?php if(isset($_GET['reload'])) { $alert = "Action ajoutée !"; } ?>
 
     <!-- start form -->
-    <form id="form-sign">
-
+    <form>
         <!-- buttons -->
-        <div class="col-12 col-lg-9 mx-auto p-0">
-            <div class="row justify-content-end">
+        <div class="col-12 col-lg-9 mx-auto p-0 mb-4 mt-5 mt-lg-0">
+            <div class="row flex-column flex-lg-row justify-content-lg-end align-items-center">
                 <?php if(!isset($_GET['create'])) { ?>
-                <a href="/?admin=engagement&delete" class="col-2 d-block btn btn-danger mr-2">Supprimer</a>
+                <a href="/?admin=engagement&delete" class="col-6 col-lg-3 d-block btn btn-danger mr-lg-2 mb-2 mb-lg-0">Supprimer</a>
                 <?php } ?>
-                <button class="btn btn-primary col-2" id="submit-1">Enregistrer</button>
-            </div><br>
+                <button class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</button>
+            </div>
         </div>
     <!-- title -->
         <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">

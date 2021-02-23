@@ -1,0 +1,24 @@
+.custom-file-label.custom-file-label-assistant::after {
+  font-family: "Arial";
+  content: "Modifier";
+}
+
+.image.image-placeholder.img-placeholder-assistant {
+  max-width: 170px !important;
+  max-height: 170px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media all and (max-width: 576px) {
+  .row-profil {
+    flex-direction: column !important;
+  }
+
+  .image.image-placeholder.img-placeholder-assistant {
+    max-width: 170px !important;
+    min-height: 170px !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

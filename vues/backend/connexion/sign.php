@@ -18,7 +18,7 @@ ob_start(); ?>
                 <form class="row flex-column align-items-center">
                     <div class="col-12 col-lg-9 p-0">
                         <div class="row">
-                            <div class="form-group col-12 col-lg-6 pl-0">
+                            <div class="form-group col-12 col-lg-6 pl-0 pr-0 pr-lg-2">
                                 <label for="debut" class="col-form-label text-left w-900">Début de mandat : </label>
                                 <div class="pl-0">
                                     <input type="date" class="form-control" id="debut" placeholder="Password">
@@ -45,7 +45,7 @@ ob_start(); ?>
                             </small>
                         </div>
                     </div>
-                    <div class="col-10">
+                    <div class="col-12 col-lg-10 p-0">
                         <button type="submit" class="btn btn-primary mb-2 col-12 mx-auto" id="submit">Enregistrer et passer à l'étape suivante <i class="fas fa-angle-right font-17" style="position:relative;top:1.5px;left:3px;"></i></button>
                     </div>
                 </form>
