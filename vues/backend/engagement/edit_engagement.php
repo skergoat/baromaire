@@ -111,22 +111,24 @@ ob_start(); ?>
                 </div>
                 <div class="col-12 p-0 pb-4">
                     <!-- photo -->
-                    <div class="form-group col-lg-6 p-0">
+                    <div class="form-group col-lg-12 p-0">
                         <label for="order" class="w-900">Photo</label>
-                            <!-- image -->
-                            <div class="col-12 pb-1 p-0">
+                        <!-- image -->
+                        <div class="row align-items-center">
+                            <div class="vol-12 col-lg-6 pb-1 p-0">
                                 <?php if(isset($_GET['create'])) { ?>
                                 <img src="assets/img/placeholder.png" alt="image engagements"/>
                                 <?php } else { ?>
                                 <img src="assets/img/engagements/image_19.jpg" alt="image engagements"/>
                                 <?php } ?>
                             </div>
-                        <div class="input-group">
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="file1">
-                                <label class="custom-file-label" for="file1">
-                                fichier.jpg
-                                </label>
+                            <div class="input-group col-12 col-lg-6 p-0 pl-lg-2 mt-3 mt-lg-0">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="file1">
+                                    <label class="custom-file-label" for="file1">
+                                    fichier.jpg
+                                    </label>
+                                </div>
                             </div>
                         </div>
                     </div>
