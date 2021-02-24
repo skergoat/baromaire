@@ -46,18 +46,21 @@ class Accordeon
    {
        $array = [
            [
+               'id' => 1,
                'title' => 'Installation de nouveaux bancs',
                'content' => 'Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops 
                cum liberis uxor alitur',
                'jauge' => 60,
            ],
            [
+                'id' => 2,
                 'title' => 'Installation de parcs à vélo',
                 'content' => 'Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops 
                 cum liberis uxor alitur',
                 'jauge' => 60,
             ],
             [
+                'id' => 3,
                 'title' => 'Installation de nouvelles poubelles',
                 'content' => 'Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops 
                 cum liberis uxor alitur',

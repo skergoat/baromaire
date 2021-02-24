@@ -136,107 +136,157 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
-        <div class="mt-5 card-admin">
+        <div class="mt-5 mb-4 card-admin">
             <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos Actions</h4>
-            <div>
-                <div class="card p-0 card-admin col-12 col-lg-9 mx-auto">
-                    <!-- body -->
-                    <div class="card-body pt-3 pb-3"> 
-                    <?php if(!isset($_GET['create'])) { ?> 
-                        <?php // description 
-                        $i = 1;
-                        foreach($accordeon->open() as $loads){ ?>
-                            <div class="mt-md-4 mb-md-4">
+            <!-- liste d'engagements -->
+            <?php $i = 1;
+            if(!empty($accordeon->open())) {
+                foreach($accordeon->open() as $loads){ 
+            ?>
+            <!-- accordeon -->
+            <div class="mt-2 back-transparent col-9 p-1 p-lg-0 mx-auto">
+                <div class="row">
+                    <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
+                        <div class="w-900 font-18"><?= $loads['id'] ?></div>
+                    </div>
+                    <div class="col p-0 accordeon accordeons back-white">
+                        <div class="row">
+                            <div class="accordeon_body col-md-12 p-0 pb-2 pt-2">
+                                <!-- title -->
                                 <div class="row">
-                                    <!-- order -->
-                                    <div class="form-group col-12 col-lg-2 pl-0 pr-0">
-                                        <label for="order" class="w-900">Ordre</label>
-                                        <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $i++ ?>">
-                                        <div class="invalid-feedback">Chiffre invalide</div>
+                                    <!-- title -->
+                                    <div class="accordeon_body--title font-17 text-right col-12">
+                                        <?= $loads['title'] ?>
+                                        <!-- button -->
+                                        <i class="fas fa-chevron-down icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="<?= $loads['id'] ?>" id="icon-<?= $loads['id'] ?>"></i>
                                     </div>
-                                    <div class="form-group col-8 pr-0">
-                                        <label for="engagement" class="w-900">Titre de l'action</label>
-                                        <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="<?= $loads['title'] ?>">
-                                        <div class="invalid-feedback">
-                                        Entrez au moins 2 lettres svp
-                                        </div>
-                                    </div>
-                                    <div class="form-group  col-12 col-lg-2 pr-0">
-                                        <!-- realisation -->
-                                        <label for="realisation" class="w-900">Réalisation</label>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" id="input-percent" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2" value="60">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text" id="basic-addon2">%</span>
+                                </div>
+                                <!-- divider -->
+                                <div class="divider_second d-none mb-2 mt-2 pl-3 pr-3" id="divider-<?= $loads['id'] ?>"></div>
+                                <!-- content -->
+                                <div class="close-content accordeon_body--content font-15 primary text-justify" id="content-<?= $loads['id'] ?>">
+                                    <div class="row p-2">
+                                        <!-- content -->
+                                        <div class="content col-md-12">
+                                            <div class="row">
+                                                <!-- order -->
+                                                <div class="form-group col-12 col-lg-2 pl-0 pr-0">
+                                                    <label for="order" class="w-900">Ordre</label>
+                                                    <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $loads['id'] ?>">
+                                                    <div class="invalid-feedback">Chiffre invalide</div>
+                                                </div>
+                                                <div class="form-group col-8 pr-0">
+                                                    <label for="engagement" class="w-900">Titre de l'action</label>
+                                                    <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="<?= $loads['title'] ?>">
+                                                    <div class="invalid-feedback">
+                                                    Entrez au moins 2 lettres svp
+                                                    </div>
+                                                </div>
+                                                <div class="form-group  col-12 col-lg-2 pr-0">
+                                                    <!-- realisation -->
+                                                    <label for="realisation" class="w-900">Réalisation</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="input-percent" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2" value="60">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text" id="basic-addon2">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1" class="w-900">Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"><?= $loads['content'] ?></textarea>
+                                                <div class="invalid-feedback">
+                                                Entrez au moins 2 lettres svp
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-end" title="supprimer">
+                                                <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1" class="w-900">Description</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"><?= $loads['content'] ?></textarea>
-                                    <div class="invalid-feedback">
-                                    Entrez au moins 2 lettres svp
-                                    </div>
-                                </div>
-                                <div class="row justify-content-end" title="supprimer">
-                                    <a class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></a>
-                                </div>
-                                <!-- divider -->
-                                <div class="divider_second mb-3 mt-5 pl-3 pr-3"></div>
-                            </div> 
-                        <?php } ?>
-                        <?php if(isset($_GET['action'])) { ?>
-                            <div class="mt-md-4 mb-md-4">
-                                <div class="row">
-                                    <!-- order -->
-                                    <div class="form-group col-12 col-lg-2 pl-0 pr-0">
-                                        <label for="order" class="w-900">Ordre</label>
-                                        <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $i++ ?>">
-                                        <div class="invalid-feedback">Chiffre invalide</div>
-                                    </div>
-                                    <div class="form-group col-8 pr-0">
-                                        <label for="engagement" class="w-900">Titre de l'action</label>
-                                        <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="">
-                                        <div class="invalid-feedback">
-                                        Entrez au moins 2 lettres svp
-                                        </div>
-                                    </div>
-                                    <div class="form-group  col-12 col-lg-2 pr-0">
-                                        <!-- realisation -->
-                                        <label for="realisation" class="w-900">Réalisation</label>
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" id="input-percent" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2" value="">
-                                            <div class="input-group-append">
-                                                <span class="input-group-text" id="basic-addon2">%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1" class="w-900">Description</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                    <div class="invalid-feedback">
-                                    Entrez au moins 2 lettres svp
-                                    </div>
-                                </div>
-                                <div class="row justify-content-end" title="supprimer">
-                                    <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
-                                </div>
-                                <!-- divider -->
-                                <div class="divider_second mb-3 mt-5 pl-3 pr-3"></div>
-                            </div> 
-                        <?php } ?>
-                    <?php } else { ?>
-                    <div class="col-12 col-lg-5 mx-auto p-0 text-center pt-3">Aucune action pour le moment</div>
-                    <?php } ?>
-                    <a href="/?admin=edit_engagement&action" class="btn btn-primary d-block col-12 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <?php }  ?>
+            <?php } else { ?>
+            <div class="alert alert-warning col-12 col-lg-5 text-center d-block mx-auto">Aucune action pour le moment</div>
+            <?php }  ?>
+            <!-- ajouter une action -->
+            <?php if(isset($_GET['action'])) { ?>
+            <div class="mt-2 back-transparent col-9 p-1 p-lg-0 mx-auto">
+                <div class="row">
+                    <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
+                        <div class="w-900 font-18">4</div>
+                    </div>
+                    <div class="col p-0 accordeon accordeons back-white">
+                        <div class="row">
+                            <div class="accordeon_body col-md-12 p-0 pb-2 pt-2">
+                                <!-- title -->
+                                <div class="row">
+                                    <!-- title -->
+                                    <div class="accordeon_body--title font-17 text-right col-12">
+                                        <!-- button -->
+                                        <i class="fas fa-chevron-up icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="4" id="icon-4"></i>
+                                    </div>
+                                </div>
+                                <!-- divider -->
+                                <div class="divider_second d-none mb-2 mt-2 pl-3 pr-3" id="divider-4"></div>
+                                <!-- content -->
+                                <div class="close-content accordeon_body--content font-15 primary text-justify open-content" id="content-4">
+                                    <div class="row p-2">
+                                        <!-- content -->
+                                        <div class="content col-md-12">
+                                            <div class="row">
+                                                <!-- order -->
+                                                <div class="form-group col-12 col-lg-2 pl-0 pr-0">
+                                                    <label for="order" class="w-900">Ordre</label>
+                                                    <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="4">
+                                                    <div class="invalid-feedback">Chiffre invalide</div>
+                                                </div>
+                                                <div class="form-group col-8 pr-0">
+                                                    <label for="engagement" class="w-900">Titre de l'action</label>
+                                                    <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="">
+                                                    <div class="invalid-feedback">
+                                                    Entrez au moins 2 lettres svp
+                                                    </div>
+                                                </div>
+                                                <div class="form-group  col-12 col-lg-2 pr-0">
+                                                    <!-- realisation -->
+                                                    <label for="realisation" class="w-900">Réalisation</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" id="input-percent" placeholder="0" aria-label="Recipient's username" aria-describedby="basic-addon2" value="0">
+                                                        <div class="input-group-append">
+                                                            <span class="input-group-text" id="basic-addon2">%</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1" class="w-900">Description</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                                                <div class="invalid-feedback">
+                                                Entrez au moins 2 lettres svp
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-end" title="supprimer">
+                                                <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <?php } ?>
+            <a href="/?admin=edit_engagement&action" class="btn btn-primary d-block col-12 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
         </div>
     </form>
-
 <!-- scroll bottom when click on "+ Ajouter" -->
 <?php if(isset($_GET['action'])) { ?>
 <script>
