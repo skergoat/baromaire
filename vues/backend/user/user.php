@@ -22,20 +22,20 @@ ob_start(); ?>
         <table class="table table-bordered table-hover bg-white shadow mb-4">
             <thead class="thead-light">
                 <tr>
-                    <th>Id</th>
-                    <th>Nom</th>
-                    <th>Email</th>
-                    <th>Rôle</th>
+                    <th class="p-2">Id</th>
+                    <th class="p-2">Nom</th>
+                    <th class="p-2">Email</th>
+                    <th class="p-2">Rôle</th>
                 </tr>
             </thead>
             <tbody>
                 <?php $i = 1; 
                     foreach($user->create() as $user) { ?>
                 <tr> 
-                    <th scope="row"><?= $i++ ?></th>
-                    <td> <a href="/?admin=edit_user" class="underline"><?= $user['first_name'] ?> <?= $user['last_name'] ?></a></td>
-                    <td><?= $user['email'] ?></td>
-                    <td><?= $user['role'] ?></td>
+                    <th scope="row" class="p-2"><?= $i++ ?></th>
+                    <td class="p-2"> <a href="/?admin=edit_user" class="underline"><?= $user['first_name'] ?> <?= $user['last_name'] ?></a></td>
+                    <td class="p-2"><?= $user['email'] ?></td>
+                    <td class="p-2"><?= $user['role'] ?></td>
                 </tr>
                 <?php } ?>
             </tbody>

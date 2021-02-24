@@ -23,7 +23,7 @@ class User
                 'password' => 'user',
                 'first_name' => 'Robert',
                 'last_name' => 'Leblanc',
-                'role' => 'Consultant'
+                'role' => 'Utilisateur'
             ],
         ];
 

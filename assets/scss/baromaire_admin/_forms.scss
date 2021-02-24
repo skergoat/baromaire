@@ -15,6 +15,20 @@
   max-width: 300px;
 }
 
+.divider_vertical {
+  border-left: 1px dashed rgba(0, 0, 0, 0.2117647059);
+}
+
+.image.image-placeholder-big {
+  // height: 40px;
+  width: 160px !important;
+  background-image: url("../../../assets/img/placeholder.png");
+  background-size: cover;
+  border-radius: 200px;
+  display: block;
+  margin: auto;
+}
+
 @media all and (max-width: 991px) {
   #form-sign {
     & input {
