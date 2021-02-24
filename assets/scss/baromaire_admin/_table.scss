@@ -1,0 +1,8 @@
+@media all and (max-width: 991px) {
+  .table-sm {
+    overflow: scroll !important;
+    & .table {
+      min-width: 500px;
+    }
+  }
+}

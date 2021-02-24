@@ -10,14 +10,17 @@ function dd($data) {
 require('Model/Cards.php'); // card content 
 require('Model/Progress.php'); // progress bars 
 require('Model/Accordeon.php'); // progress bars 
+require('Model/User.php'); // progress bars 
 
 use Model\Cards; // card content 
 use Model\Progress; // progress bars  
 use Model\Accordeon; // progress bars  
+use Model\User; // users 
 
 $cards = new Cards(); // card content 
 $progress = new Progress(); // progress bars
 $accordeon = new Accordeon(); // accordeons
+$user = new User(); // accordeons
 
 // get URL 
 $url = $_SERVER['REQUEST_URI'];
@@ -87,6 +90,9 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'profil') {
 } 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'user') {
     require('vues/backend/user/user.php');
+} 
+else if(isset($_GET['admin']) && $_GET['admin'] == 'edit_user') {
+    require('vues/backend/user/edit_user.php');
 } 
 
 // logout 

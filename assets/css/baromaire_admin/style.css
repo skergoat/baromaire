@@ -959,6 +959,14 @@ footer {
   padding-left: 1rem !important;
 }
 
+@media all and (max-width: 991px) {
+  .table-sm {
+    overflow: scroll !important;
+  }
+  .table-sm .table {
+    min-width: 500px;
+  }
+}
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   /**
