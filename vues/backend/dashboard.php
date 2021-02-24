@@ -24,8 +24,9 @@ ob_start(); ?>
         <!-- engagements -->
         <div class="col-12 pt-4">
             <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos engagements</h4>
-        <?php foreach($accordeon->create() as $accordeons) {
-            ?>
+        <?php 
+        if(!empty($accordeon->create())) {
+            foreach($accordeon->create() as $accordeons) { ?>
             <!-- accordeon -->
             <div class="accordeon mt-4 shadow">
                 <div class="row">
@@ -86,7 +87,7 @@ ob_start(); ?>
                     </div>
                 </div>
             </div>
-            <?php } ?><br>
+            <br>
             <!-- pagination -->
             <div class="row justify-content-center">
                 <nav aria-label="Page navigation example">
@@ -109,12 +110,16 @@ ob_start(); ?>
                     </ul>
                 </nav>
             </div>
+            <?php } } else { ?>  
+            <div class="alert alert-warning col-12 text-center d-block mx-auto">Aucun engagement pour le moment</div>
+            <?php } ?>
         </div>
     </div>
     <!-- bottom -->
     <div class="col-12">
         <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos catégories</h4>
         <!-- categories -->
+        <?php if(!empty($cards->create())) { ?>
         <div class="row">
             <div class="col-12 col-lg-6 pl-0 mb-lg-0 mb-4">
                 <table class="table table-bordered bg-white shadow">
@@ -195,6 +200,9 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
+        <?php } else { ?>
+        <div class="alert alert-warning col-12 text-center d-block mx-auto">Aucune catégorie pour le moment</div>
+        <?php } ?>
     </div>
 </div>
 <script>

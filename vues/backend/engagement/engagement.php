@@ -19,7 +19,9 @@ ob_start(); ?>
     </div>
     <!-- liste d'engagements -->
     <div class="mb-4">
-        <?php foreach($accordeon->create() as $accordeons) { ?>
+        <?php 
+        if(!empty($accordeon->create())) {
+            foreach($accordeon->create() as $accordeons) { ?>
         <!-- accordeon -->
         <div class="mt-2 back-transparent col-12 p-1 p-lg-0 mx-auto">
             <div class="row">
@@ -70,6 +72,9 @@ ob_start(); ?>
                 </div>
             </div>
         </div>
+        <?php } 
+        } else { ?>
+        <div class="alert alert-warning col-12 text-center d-block mx-auto">Aucun engagement pour le moment</div>
         <?php } ?>
     </div>
 <script>
