@@ -217,7 +217,7 @@ ob_start(); ?>
             <?php }  ?>
             <!-- ajouter une action -->
             <?php if(isset($_GET['action'])) { ?>
-            <div class="mt-2 back-transparent col-12 col-lg-9 p-1 p-lg-0 mx-auto">
+            <div class="mt-2 back-transparent col-11 p-1 p-lg-0 mx-auto">
                 <div class="row">
                     <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                         <div class="w-900 font-18">4</div>

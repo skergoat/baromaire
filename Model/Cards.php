@@ -10,22 +10,27 @@ class Cards
     {
         $array = [
             [
+                'id'    => 1,
                 'title' => 'Cadre de vie',
                 'image' => 'image_8.jpg'
             ],
             [
+                'id'    => 2,
                 'title' => 'Economie',
                 'image' => 'image_9.jpg'
             ],
             [
+                'id'    => 3,
                 'title' => 'Logement',
                 'image' => 'image_10.jpg'
             ],
             [
+                'id'    => 4,
                 'title' => 'Tourisme',
                 'image' => 'image_11.jpg'
             ],
             [
+                'id'    => 5,
                 'title' => 'Nos ainés',
                 'image' => 'image_12.jpg'
             ],

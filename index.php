@@ -70,7 +70,7 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'edit_engagement') {
 
 // domaine d'action 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'domaine') {
-    require('vues/backend/domaines_action/domaine_action.php');
+    require('vues/backend/domaine_action.php');
 } 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'cadre') {
     require('vues/backend/domaines_action/cadre_de_vie.php');
