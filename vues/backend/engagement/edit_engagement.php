@@ -234,9 +234,9 @@ ob_start(); ?>
                                     </div>
                                 </div>
                                 <!-- divider -->
-                                <div class="divider_second d-none mb-2 mt-2 pl-3 pr-3" id="divider-4"></div>
+                                <div class="divider_second d-none mb-2 mt-2 pl-3 pr-3 d-block" id="divider-4"></div>
                                 <!-- content -->
-                                <div class="close-content accordeon_body--content font-15 primary text-justify open-content" id="content-4">
+                                <div class="open-content accordeon_body--content font-15 primary text-justify" id="content-4">
                                     <div class="row p-2">
                                         <!-- content -->
                                         <div class="content col-md-12">
