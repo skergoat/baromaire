@@ -24,8 +24,10 @@ ob_start(); ?>
             <div class="row flex-column flex-lg-row justify-content-lg-end align-items-center">
                 <?php if(!isset($_GET['create'])) { ?>
                 <a href="/?admin=engagement&delete" class="col-6 col-lg-3 d-block btn btn-danger mr-lg-2 mb-2 mb-lg-0">Supprimer</a>
+                <a href="/?admin=engagement&reload" class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</a>
+                <?php } else { ?>
+                <a href="/?admin=engagement&create" class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</a>
                 <?php } ?>
-                <button class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</button>
             </div>
         </div>
     <!-- title -->
@@ -293,11 +295,6 @@ ob_start(); ?>
     $("html, body").animate({ scrollTop: $(document).height() }, 1);
 </script>
 <?php } ?>
-
-<!-- redirect -->
-<script>
-  $('#submit-1').on('click', function(e) {e.preventDefault(); window.location.href="/?admin=engagement&reload"});
-</script> 
 
 <!-- sidebar menu .active -->
 <script>var child = 2;</script>

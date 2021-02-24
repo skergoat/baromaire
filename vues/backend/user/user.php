@@ -7,7 +7,9 @@ $breadcrumb =
 <li class="breadcrumb-item"><a href="#">Utilisateurs</a></li>';
 ob_start(); ?>
 
-<?php if(isset($_GET['delete'])) { $alert = "Utilisateur ajouté !"; } ?>
+<?php if(isset($_GET['delete'])) { $alert = "Utilisateur supprimé !"; } ?>
+<?php if(isset($_GET['reload'])) { $alert = "Modifications enregistreés !"; } ?>
+<?php if(isset($_GET['create'])) { $alert = "Utilisateur ajouté !"; } ?>
 
 <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4 pb-5">
     <!-- ajouter -->    

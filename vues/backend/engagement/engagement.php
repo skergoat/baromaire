@@ -8,8 +8,9 @@ $breadcrumb =
 
 ob_start(); ?>
     <!-- edit alert -->
-    <?php if(isset($_GET['reload'])) { $alert = "engagement ajouté !"; } ?>
-    <?php if(isset($_GET['delete'])) { $alert = "engagement supprimé !"; } ?>
+    <?php if(isset($_GET['delete'])) { $alert = "Utilisateur supprimé !"; } ?>
+    <?php if(isset($_GET['reload'])) { $alert = "Modifications enregistreés !"; } ?>
+    <?php if(isset($_GET['create'])) { $alert = "Utilisateur ajouté !"; } ?>
 
     <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
         <!-- ajouter -->    
