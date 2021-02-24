@@ -106,7 +106,7 @@
             $('[data-toggle="profile"]').popover({
                 html:true,
                 // title:"<div><a href='/?admin=profil'><div class='pl-2 pr-2 pointer white'>Profil</div></a></div>",
-                content: "<div><a href='/?admin=profil'><div class='p-2 pl-4 pr-4 pointer'>Profil</div></a></div><div><a href='/?admin=profil'><div class='p-2 pl-4 pr-4 pointer'>Mandat</div></a></div><div><a href='/?admin=logout' class='danger'><div class='p-2 pl-4 pr-4 pointer'>Déconnexion</div></a></div>",
+                content: "<div><a href='/?admin=profil'><div class='p-2 pl-4 pr-4 pointer'>Profil</div></a></div><div><a href='/?admin=mandat'><div class='p-2 pl-4 pr-4 pointer'>Mandat</div></a></div><div><a href='/?admin=logout' class='danger'><div class='p-2 pl-4 pr-4 pointer'>Déconnexion</div></a></div>",
             });
 
             $('.popover').on('click', function() {

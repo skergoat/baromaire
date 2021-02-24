@@ -61,7 +61,7 @@ ob_start(); ?>
                         </div>
                         <div class="form-group col-12 p-0 mb-4">
                             <label for="first_name" class="w-900">Prenom</label>
-                            <input type="text" class="form-control" id="first_name" value="dupont">
+                            <input type="text" class="form-control" id="first_name" value="Dupont">
                             <!-- error message -->
                             <div class="invalid-feedback"></div>
                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
