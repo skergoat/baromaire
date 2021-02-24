@@ -6,7 +6,7 @@ $breadcrumb =
 '<li class="breadcrumb-item"><a href="#">Admin</a></li>
 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>';
 
-$title = '<div class="col-12 "><h4 class="w-900 font-30 text-center m-0">Tableau de Bord</h4></div>';
+// $title = '<div class="col-12 "><h4 class="w-900 font-30 text-center m-0">Tableau de Bord</h4></div>';
 $widget = $progress->createAdmin(false, 100, 30, [6, 3 ,2]);
 ob_start(); ?>
 <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
@@ -38,7 +38,7 @@ ob_start(); ?>
                     </div>
                     <div class="accordeon_body col-md-9 p-0 pl-md-3 pb-2">
                         <!-- title -->
-                        <div class="accordeon_body--title font-20 text-right pr-md-3 pt-md-1" id="accordeon-title-<?= $accordeons['id'] ?>"><a href="/?admin=edit"  class="underline" title="modifier"><?= $accordeons['title'] ?></a></div>
+                        <div class="accordeon_body--title font-20 text-right pr-md-3 pt-md-1" id="accordeon-title-<?= $accordeons['id'] ?>"><a href="/?admin=edit_engagement"  class="underline" title="modifier"><?= $accordeons['title'] ?></a></div>
                         <!-- divider -->
                         <div class="divider_second mb-2 mt-2 pl-3 pr-3"></div>
                         <!-- content -->
@@ -87,7 +87,7 @@ ob_start(); ?>
                     </div>
                 </div>
             </div>
-            <br>
+            <?php } ?> <br>
             <!-- pagination -->
             <div class="row justify-content-center">
                 <nav aria-label="Page navigation example">
@@ -109,8 +109,8 @@ ob_start(); ?>
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <?php } } else { ?>  
+            </div> 
+           <?php } else { ?>  
             <div class="alert alert-warning col-12 text-center d-block mx-auto">Aucun engagement pour le moment</div>
             <?php } ?>
         </div>

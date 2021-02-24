@@ -20,7 +20,7 @@ ob_start(); ?>
     <!-- start form -->
     <form>
         <!-- buttons -->
-        <div class="col-12 col-lg-9 mx-auto p-0 mb-4 mt-5 mt-lg-0">
+        <div class="col-12 mx-auto p-0 mb-sm-5 mb-lg-4 mt-5 mt-lg-0">
             <div class="row flex-column flex-lg-row justify-content-lg-end align-items-center">
                 <?php if(!isset($_GET['create'])) { ?>
                 <a href="/?admin=engagement&delete" class="col-6 col-lg-3 d-block btn btn-danger mr-lg-2 mb-2 mb-lg-0">Supprimer</a>
@@ -37,7 +37,7 @@ ob_start(); ?>
             <?php } ?>
         </div>
         
-        <div class="card p-0 col-12 col-lg-9 mx-auto">
+        <div class="card p-0 col-11 mx-auto">
             <!-- body -->
             <div class="card-body pt-5 pb-5">
             <!-- form -->
@@ -64,7 +64,7 @@ ob_start(); ?>
                                 <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" <?php if(!isset($_GET['create'])) { ?> value="1" <?php } ?> >
                                 <div class="invalid-feedback">Chiffre invalide</div>
                             </div>
-                            <div class="form-group  col-12 col-lg-6 pr-0">
+                            <div class="form-group pl-0 pl-lg-2 col-12 col-lg-6 pr-0">
                                 <!-- realisation -->
                                 <label for="realisation" class="w-900">Réalisation</label>
                                 <div class="input-group">
@@ -89,7 +89,7 @@ ob_start(); ?>
                                 </select>
                             </div>
                             <!-- quartier -->
-                            <div class="form-group pr-0 col-12 col-lg-6">
+                            <div class="form-group pl-0 pl-lg-2 pr-0 col-12 col-lg-6">
                                 <label for="exampleFormControlSelect1" class="w-900">Quartier</label>
                                 <select class="form-control" id="exampleFormControlSelect1">
                                     <?php foreach($cards->quartier() as $quartier) { ?>
@@ -118,9 +118,9 @@ ob_start(); ?>
                         <div class="row align-items-center">
                             <div class="vol-12 col-lg-6 pb-1 p-0">
                                 <?php if(isset($_GET['create'])) { ?>
-                                <img src="assets/img/placeholder.png" alt="image engagements"/>
+                                <img src="assets/img/placeholder.png" alt="image engagements" class="img-engagement"/>
                                 <?php } else { ?>
-                                <img src="assets/img/engagements/image_19.jpg" alt="image engagements"/>
+                                <img src="assets/img/engagements/image_19.jpg" alt="image engagements" class="img-engagement"/>
                                 <?php } ?>
                             </div>
                             <div class="input-group col-12 col-lg-6 p-0 pl-lg-2 mt-3 mt-lg-0">
@@ -140,11 +140,11 @@ ob_start(); ?>
             <h4 class="mb-4 mt-4 w-900 font-25 pt-3 pb-3 text-center">Vos Actions</h4>
             <!-- liste d'engagements -->
             <?php $i = 1;
-            if(!empty($accordeon->open())) {
+            if(!empty($accordeon->open()) && !isset($_GET['create'])) {
                 foreach($accordeon->open() as $loads){ 
             ?>
             <!-- accordeon -->
-            <div class="mt-2 back-transparent col-9 p-1 p-lg-0 mx-auto">
+            <div class="mt-0 mt-md-2 back-transparent col-12 col-md-11 p-1 p-lg-0 mx-auto">
                 <div class="row">
                     <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                         <div class="w-900 font-18"><?= $loads['id'] ?></div>
@@ -155,10 +155,10 @@ ob_start(); ?>
                                 <!-- title -->
                                 <div class="row">
                                     <!-- title -->
-                                    <div class="accordeon_body--title font-17 text-right col-12">
+                                    <div class="accordeon_body--title font-17 text-md-right col-12">
                                         <?= $loads['title'] ?>
                                         <!-- button -->
-                                        <i class="fas fa-chevron-down icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="<?= $loads['id'] ?>" id="icon-<?= $loads['id'] ?>"></i>
+                                        <i class="fas fa-chevron-down icon-open-close pointer open-accordion font-18 ml-2 mr-2 mr-md-0 position-relative" style="top:2px;" data-url="<?= $loads['id'] ?>" id="icon-<?= $loads['id'] ?>"></i>
                                     </div>
                                 </div>
                                 <!-- divider -->
@@ -167,7 +167,7 @@ ob_start(); ?>
                                 <div class="close-content accordeon_body--content font-15 primary text-justify" id="content-<?= $loads['id'] ?>">
                                     <div class="row p-2">
                                         <!-- content -->
-                                        <div class="content col-md-12">
+                                        <div class="content col-md-12 p-0">
                                             <div class="row">
                                                 <!-- order -->
                                                 <div class="form-group col-12 col-lg-2 pl-0 pr-0">
@@ -175,14 +175,14 @@ ob_start(); ?>
                                                     <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $loads['id'] ?>">
                                                     <div class="invalid-feedback">Chiffre invalide</div>
                                                 </div>
-                                                <div class="form-group col-8 pr-0">
+                                                <div class="form-group col-12 col-md-8 pl-0 pl-md-2 pr-0">
                                                     <label for="engagement" class="w-900">Titre de l'action</label>
                                                     <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="<?= $loads['title'] ?>">
                                                     <div class="invalid-feedback">
                                                     Entrez au moins 2 lettres svp
                                                     </div>
                                                 </div>
-                                                <div class="form-group  col-12 col-lg-2 pr-0">
+                                                <div class="form-group col-12 col-lg-2 pl-0 pl-md-2 pr-0">
                                                     <!-- realisation -->
                                                     <label for="realisation" class="w-900">Réalisation</label>
                                                     <div class="input-group">
@@ -200,8 +200,8 @@ ob_start(); ?>
                                                 Entrez au moins 2 lettres svp
                                                 </div>
                                             </div>
-                                            <div class="row justify-content-end" title="supprimer">
-                                                <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
+                                            <div class="row align-items-end justify-content-md-end" title="supprimer">
+                                                <button class="btn btn-danger white-link d-block col-2 col-md-1"><i class="fas fa-trash"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -213,11 +213,11 @@ ob_start(); ?>
             </div>
             <?php }  ?>
             <?php } else { ?>
-            <div class="alert alert-warning col-12 col-lg-5 text-center d-block mx-auto">Aucune action pour le moment</div>
+            <div class="alert alert-warning col-12 col-md-9 text-center d-block mx-auto">Aucune action pour le moment</div>
             <?php }  ?>
             <!-- ajouter une action -->
             <?php if(isset($_GET['action'])) { ?>
-            <div class="mt-2 back-transparent col-9 p-1 p-lg-0 mx-auto">
+            <div class="mt-2 back-transparent col-12 col-lg-9 p-1 p-lg-0 mx-auto">
                 <div class="row">
                     <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                         <div class="w-900 font-18">4</div>
@@ -230,7 +230,7 @@ ob_start(); ?>
                                     <!-- title -->
                                     <div class="accordeon_body--title font-17 text-right col-12">
                                         <!-- button -->
-                                        <i class="fas fa-chevron-up icon-open-close pointer open-accordion font-18 ml-2 position-relative" style="top:2px;" data-url="4" id="icon-4"></i>
+                                        <i class="fas fa-chevron-up icon-open-close pointer open-accordion font-18 ml-2 mr-2 mr-md-0 position-relative" style="top:2px;" data-url="4" id="icon-4"></i>
                                     </div>
                                 </div>
                                 <!-- divider -->
@@ -247,14 +247,14 @@ ob_start(); ?>
                                                     <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="4">
                                                     <div class="invalid-feedback">Chiffre invalide</div>
                                                 </div>
-                                                <div class="form-group col-8 pr-0">
+                                                <div class="form-group col-12 col-md-8 pl-0 pl-md-2 pr-0">
                                                     <label for="engagement" class="w-900">Titre de l'action</label>
                                                     <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="">
                                                     <div class="invalid-feedback">
                                                     Entrez au moins 2 lettres svp
                                                     </div>
                                                 </div>
-                                                <div class="form-group  col-12 col-lg-2 pr-0">
+                                                <div class="form-group col-12 col-lg-2 pl-0 pl-md-2 pr-0">
                                                     <!-- realisation -->
                                                     <label for="realisation" class="w-900">Réalisation</label>
                                                     <div class="input-group">
@@ -272,8 +272,8 @@ ob_start(); ?>
                                                 Entrez au moins 2 lettres svp
                                                 </div>
                                             </div>
-                                            <div class="row justify-content-end" title="supprimer">
-                                                <button class="btn btn-danger white-link d-block"><i class="fas fa-trash"></i></button>
+                                            <div class="row align-items-end justify-content-md-end" title="supprimer">
+                                                <button class="btn btn-danger white-link d-block col-2 col-md-1"><i class="fas fa-trash"></i></button>
                                             </div>
                                         </div>
                                     </div>
@@ -284,7 +284,7 @@ ob_start(); ?>
                 </div>
             </div>
             <?php } ?>
-            <a href="/?admin=edit_engagement&action" class="btn btn-primary d-block col-12 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
+            <a href="/?admin=edit_engagement&action" class="btn btn-primary d-block col-5 col-md-2 mx-auto mt-5"><i class="fas fa-plus mr-2"></i> Ajouter</a>
         </div>
     </form>
 <!-- scroll bottom when click on "+ Ajouter" -->

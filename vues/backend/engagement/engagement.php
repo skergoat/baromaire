@@ -13,7 +13,7 @@ ob_start(); ?>
 
     <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
         <!-- ajouter -->    
-        <a href="/?admin=edit_engagement&create" class="btn btn-primary col-3 mx-auto col-lg-1">Ajouter</a>
+        <a href="/?admin=edit_engagement&create" class="btn btn-primary col-3 mx-auto col-lg-1 mt-5 mt-lg-0 mb-5 mb-lg-0">Ajouter</a>
         <!-- title -->
         <div class="col-12 col-lg-11"><h4 class="w-900 font-30 text-center m-0 mr-lg-5">Vos engagements</h4></div>
     </div>

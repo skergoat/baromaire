@@ -932,6 +932,11 @@ footer {
   padding-left: 20px;
 }
 
+.img-engagement {
+  width: 100% !important;
+  max-width: 300px;
+}
+
 @media all and (max-width: 991px) {
   #form-sign input {
     margin-bottom: 0px !important;
