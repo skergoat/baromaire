@@ -21,7 +21,7 @@ ob_start(); ?>
     </div>
 
     <!-- title -->
-    <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
+    <div class="row flex-column-reverse flex-md-row pb-0 pb-md-4 pt-lg-4">
         <div class="col-12 col-md-11 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Votre Profil</h4></div>
     </div>
 
@@ -30,8 +30,8 @@ ob_start(); ?>
         <div class="card p-0 col-11 mx-auto mt-3 mb-4">
             <!-- body -->
             <div class="card-body">
-                <div class="row justify-content-center">
-                    <div class="form-group col-5 p-0 pr-5">
+                <div class="row flex-column flex-md-row justify-content-md-center">
+                    <div class="form-group col-12 col-md-5 p-0 pb-4 pb-md-0 p-0 pr-md-5">
                         <div class="text-center mb-4">
                             <label for="order" class="w-900">Photo</label>
                         </div>
@@ -50,8 +50,8 @@ ob_start(); ?>
                             </div>
                         </div>
                     </div>
-                    <div class="divider_vertical p-0"></div>
-                    <div class="col-6 p-0 pl-5">
+                    <div class="divider_vertical p-0 d-none d-md-block"></div>
+                    <div class="col-12 col-md-6 p-0 pl-md-5">
                         <div class="form-group col-12 p-0 mb-4">
                             <label for="last_name" class="w-900">Nom</label>
                             <input type="text" class="form-control" id="last_name" value="Robert">
@@ -91,13 +91,13 @@ ob_start(); ?>
             </div>
             <!-- body -->
             <div class="card-body">
-                <div class="form-group col-6 mx-auto">
+                <div class="form-group col-12 col-md-6 mx-auto">
                     <label for="exampleInputPassword1" class="w-900">Entrez un mot de Passe</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" value="password" >
                     <!-- error message -->
                     <div class="invalid-feedback"></div>
                 </div>
-                <div class="form-group col-6 mx-auto">
+                <div class="form-group col-12 col-md-6 mx-auto">
                     <label for="exampleInputPassword1" class="w-900">Répétez le mot de passe</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" value="password" >
                      <!-- error message -->
