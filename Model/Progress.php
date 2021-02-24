@@ -122,17 +122,17 @@ class Progress
         $widget.= '
         <div class="col-12 col-lg-4">
         <div class="card card-admin-bottom">
-            <div class="card_numbers font-15 d-flex justify-content-center">
+            <div class="card_numbers font-15 d-flex pl-3 pr-3">
                 <div class="nb nb-success font-25 mr-2">'.$numbers[0].'</div> 
                 <div class="mt-2">Engagements respectés</div>
             </div>
             <div class="divider_second mb-2 mt-2"></div>
-            <div class="card_numbers font-15 d-flex justify-content-center">
+            <div class="card_numbers font-15 d-flex pl-3 pr-3">
                 <div class="nb nb-warning font-25 mr-2">'.$numbers[1].'</div> 
                 <div class="mt-2">Engagements en cours</div>
             </div>
             <div class="divider_second mb-2 mt-2"></div>
-            <div class="card_numbers font-15 d-flex justify-content-center">
+            <div class="card_numbers font-15 d-flex pl-3 pr-3">
                 <div class="nb nb-danger font-25 mr-2">'.$numbers[2].'</div> 
                 <div class="mt-2">Engagements à respecter</div>
             </div>

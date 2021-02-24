@@ -20,7 +20,7 @@ ob_start(); ?>
     <!-- start form -->
     <form>
         <!-- buttons -->
-        <div class="col-12 mx-auto p-0 mb-sm-5 mb-lg-4 mt-5 mt-lg-0">
+        <div class="col-12 col-md-11 mx-auto p-0 mb-sm-5 mb-lg-4 mt-5 mt-lg-0">
             <div class="row flex-column flex-lg-row justify-content-lg-end align-items-center">
                 <?php if(!isset($_GET['create'])) { ?>
                 <a href="/?admin=engagement&delete" class="col-6 col-lg-3 d-block btn btn-danger mr-lg-2 mb-2 mb-lg-0">Supprimer</a>
