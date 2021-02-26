@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- container / height 100vh -->
-    <div class="b-red position-relative pt-4 container-baromaire <?php if(isset($_GET['tarifs']) || isset($_GET['principes']) || isset($_GET['create'])) { ?>container-baromaire-higher<?php } ?>">
+    <div class="position-relative pt-4 container-baromaire <?php if(isset($_GET['tarifs']) || isset($_GET['principes']) || isset($_GET['create'])) { ?>container-baromaire-higher<?php } ?>">
         <div class="col-11 mx-auto">
             <!-- header -->
             <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
