@@ -12,22 +12,22 @@ class Cards
             [
                 'id'    => 1,
                 'title' => 'Cadre de vie',
-                'image' => 'image_8.jpg'
+                'image' => 'image-8.jpg'
             ],
             [
                 'id'    => 2,
                 'title' => 'Economie',
-                'image' => 'image_9.jpg'
+                'image' => 'image-9.jpg'
             ],
             [
                 'id'    => 3,
                 'title' => 'Logement',
-                'image' => 'image_10.jpg'
+                'image' => 'image-10.jpg'
             ],
             [
                 'id'    => 4,
                 'title' => 'Tourisme',
-                'image' => 'image_11.jpg'
+                'image' => 'image-11.jpg'
             ],
             [
                 'id'    => 5,
