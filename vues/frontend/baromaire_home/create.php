@@ -4,7 +4,7 @@
 */ 
 // content
 ob_start(); ?>
-    <div class="container-baromaire text-center mt-5 mb-5 m-bottom">
+    <div class="container-baromaire container-baromaire-body text-center mt-5 mb-5 m-bottom">
         <!-- title -->
         <h1 class="mb-5 title">Pour créer votre BAROMAIRE, rien de plus simple !</h1>
         <!-- text -->

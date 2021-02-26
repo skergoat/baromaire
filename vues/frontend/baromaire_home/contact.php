@@ -4,7 +4,7 @@
 */ 
 // content
 ob_start(); ?>
-    <div class="bottom col-12 col-lg-6 mx-auto text-center mt-5">
+    <div class="container-baromaire-body col-12 col-lg-6 mx-auto text-center mt-5">
         <form>
             <div class="row">
                 <div class="col-12">

@@ -63,7 +63,7 @@
                     <li><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
                     <li><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
                     <li><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
-                    <li><a href="" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
+                    <li><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
                     <li><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
                 </ul>
             </nav>
@@ -73,7 +73,7 @@
             <li class="pt-2 pb-2 pl-4"><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
             <li class="pt-2 pb-2 pl-4"><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
             <li class="pt-2 pb-2 pl-4"><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
-            <li class="pt-2 pb-2 pl-4"><a href="" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
+            <li class="pt-2 pb-2 pl-4"><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
             <li class="pt-2 pb-2 pl-4"><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
         </ul>
         <script src="assets/js/nav.js"></script>

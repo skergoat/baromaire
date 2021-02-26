@@ -4,7 +4,7 @@
 */ 
 // content
 ob_start(); ?>
-    <div class="container text-center mb-5">
+    <div class="container container-baromaire-body text-center mb-5">
         <!-- title -->
         <h1 class="mb-5 main-title">Votre Maire respecte-t-il ses engagements ?</h1>
         <!-- subtitle -->

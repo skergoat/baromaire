@@ -32,6 +32,9 @@ if(isset($_GET['contact'])) {
 else if(isset($_GET['principes'])) {
     require('vues/frontend/baromaire_home/principes.php');
 }
+else if(isset($_GET['tarifs'])) {
+    require('vues/frontend/baromaire_home/tarifs.php');
+}
 else if(isset($_GET['create'])) {
     require('vues/frontend/baromaire_home/create.php');
 }
