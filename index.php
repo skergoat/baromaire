@@ -36,7 +36,7 @@ else if(isset($_GET['tarifs'])) {
     require('vues/frontend/baromaire_home/tarifs.php');
 }
 else if(isset($_GET['create_baromaire'])) {
-    require('vues/frontend/baromaire_home/create_baromaire.php');
+    require('vues/frontend/baromaire_home/create.php');
 }
 else if(isset($_GET['progres'])) {
     require('vues/frontend/baromaire_notation/progres.php');
