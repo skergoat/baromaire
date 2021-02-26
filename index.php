@@ -29,6 +29,9 @@ $url = $_SERVER['REQUEST_URI'];
 if(isset($_GET['contact'])) {
     require('vues/frontend/baromaire_home/contact.php');
 }
+else if(isset($_GET['principes'])) {
+    require('vues/frontend/baromaire_home/principes.php');
+}
 else if(isset($_GET['create'])) {
     require('vues/frontend/baromaire_home/create.php');
 }

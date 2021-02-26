@@ -3,7 +3,6 @@
 @import "../mixins";
 
 /*general*/
-html,
 body {
   top: 0;
   left: 0;
@@ -54,5 +53,6 @@ img {
 @import "header";
 @import "form";
 @import "font";
+@import "card";
 
 @import "../baromaire_home/max_width_576";

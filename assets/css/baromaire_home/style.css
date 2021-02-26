@@ -182,7 +182,6 @@
 }
 
 /*general*/
-html,
 body {
   top: 0;
   left: 0;
@@ -344,6 +343,33 @@ footer {
 @media all and (max-width: 576px) {
   .title {
     font-size: 25px !important;
+  }
+}
+.card-principes {
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .card-principes {
+    max-width: 300px;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .card-principes {
+    max-height: 500px !important;
+    min-height: 500px !important;
+    max-width: 300px;
+    margin: auto !important;
+  }
+}
+@media all and (max-width: 576px) {
+  .card-principes {
+    max-height: 500px !important;
+    min-height: 500px !important;
+    max-width: 100%;
   }
 }
 /*hearders and footers*/
