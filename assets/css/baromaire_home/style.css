@@ -319,6 +319,11 @@ footer {
     margin-top: 1rem;
   }
 }
+@media all and (max-width: 576px) {
+  .form-check-input {
+    margin-left: 0.25rem !important;
+  }
+}
 .uppercase {
   text-transform: uppercase !important;
 }

@@ -27,7 +27,7 @@ ob_start(); ?>
         <form action="" class="mt-5">
             <div class="row">
                 <!-- left : input -->
-                <div class="col-12 col-sm-6 pl-0 pr-0 pr-sm-5">
+                <div class="col-12 col-sm-6 pl-0 pr-0 pr-lg-5">
                     <!-- input 1 -->
                     <div class="form-inline d-flex justify-content-end mb-3">
                         <div class="form-group">
@@ -58,33 +58,40 @@ ob_start(); ?>
                     </div>
                 </div>
                 <!-- right : radio -->
-                <div class="col-12 col-sm-6 pr-0 pl-0 pl-sm-5 mt-5 mt-sm-0">
-                    <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
-                        <input class="form-check-input ml-1 ml-sm-0" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                        <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios1">
-                            Le Maire
-                        </label>
-                    </div>
-                    <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
-                        <input class="form-check-input ml-1 ml-sm-0" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios2">
-                            Un conseiller municipal
-                        </label>
+                <div class="col-12 col-sm-6 pr-0 pl-0 mt-5 mt-sm-0 pl-sm-5">
+                    <div class="row">
+                        <div class="col-12 col-lg-3 text-center text-sm-left p-0 mb-3">
+                            <div>Vous êtes :</div>
                         </div>
-                    <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
-                        <input class="form-check-input ml-1 ml-sm-0" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                        <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios3">
-                            Le webmaster du site de la commune
-                        </label>
-                    </div>
-                    <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
-                        <input class="form-check-input ml-1 ml-sm-0" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                        <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios3">
-                            Autre
-                        </label>
-                    </div>
-                    <div class="col-7 form-group p-0 pl-sm-4 mt-5 mt-sm-5 d-flex justify-content-center justify-content-sm-start">
-                        <button class="btn btn-success d-block">Envoyer</button>
+                        <div class="col-12 col-lg-10 p-0">
+                            <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios1">
+                                    Le Maire
+                                </label>
+                            </div>
+                            <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios2">
+                                    Un conseiller municipal
+                                </label>
+                                </div>
+                            <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios3">
+                                    Le webmaster du site de la commune
+                                </label>
+                            </div>
+                            <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                                <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios3">
+                                    Autre
+                                </label>
+                            </div>
+                            <div class="col-7 form-group p-0 pl-sm-4 mt-4 d-flex justify-content-center justify-content-sm-start">
+                                <button class="btn btn-success d-block">Envoyer</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
