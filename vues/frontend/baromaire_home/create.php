@@ -4,9 +4,9 @@
 */ 
 // content
 ob_start(); ?>
-    <div class="container-baromaire text-center mt-5 mb-3 m-bottom">
+    <div class="text-center mb-3 m-bottom">
         <!-- title -->
-        <h1 class="mb-5 title">Pour créer votre BAROMAIRE, rien de plus simple !</h1>
+        <h1 class="mb-4 mt-5 mt-lg-4 font-33">Pour créer votre BAROMAIRE, rien de plus simple !</h1>
         <!-- text -->
         <div class="card">
             <div class="card-body">
@@ -18,16 +18,16 @@ ob_start(); ?>
                         <p class="text-justify">
                         Remplissez ce formulaire et un membre de notre équipe prendra contact avec vous dans les 24 H, pour valider votre identité 
                         et votre légitimité à parler au nom du maire.</p>
-                        <p class="text-justify">Une fois validée, vous recevrez les codes d’accès vous permettant de créer votre BAROMAIRE .</p>
+                        <p class="text-justify mb-0">Une fois validée, vous recevrez les codes d’accès vous permettant de créer votre BAROMAIRE .</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- form -->
-        <form action="" class="mt-5 mt-md-4">
+        <form action="" class="mt-5 mt-lg-4">
             <div class="row">
                 <!-- left : input -->
-                <div class="col-12 col-sm-6 pl-0 pr-0 pr-lg-5 ">
+                <div class="col-12 col-sm-6 pl-0 pr-0 pr-lg-5">
                     <!-- input 1 -->
                     <div class="form-inline d-flex justify-content-end mb-3">
                         <div class="form-group pr-2 pl-2 pr-md-0 pl-md-0">

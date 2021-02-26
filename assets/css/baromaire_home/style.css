@@ -511,8 +511,8 @@ footer {
 }
 
 .png24 {
-  width: 100px !important;
-  height: 100px;
+  width: 80px !important;
+  height: 80px;
 }
 
 @media all and (max-width: 991px) {
@@ -534,14 +534,14 @@ footer {
   .title {
     font-size: 30px !important;
   }
-
-  .m-bottom {
-    margin-bottom: 150px !important;
-  }
 }
 @media all and (max-width: 576px) {
   .title {
     font-size: 25px !important;
+  }
+
+  .m-bottom {
+    margin-bottom: 150px !important;
   }
 }
 .card-principes {

@@ -73,13 +73,13 @@ ob_start(); ?>
                             <div class="invalid-feedback"></div>
                             <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                         </div>
-                        <div class="form-group col-12 p-0 mb-4">
+                        <!-- <div class="form-group col-12 p-0 mb-4">
                             <label for="exampleFormControlSelect1" class="w-900">Rôle</label>
                             <select class="form-control" id="exampleFormControlSelect1">
                                 <option>Administrateur</option>
                                 <option>Utilisateur</option>
                             </select>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

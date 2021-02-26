@@ -103,12 +103,12 @@ else if(isset($_GET['admin']) && $_GET['admin'] == 'profil') {
 else if(isset($_GET['admin']) && $_GET['admin'] == 'mandat') {
     require('vues/backend/user/mandat.php');
 } 
-else if(isset($_GET['admin']) && $_GET['admin'] == 'user') {
-    require('vues/backend/user/user.php');
-} 
-else if(isset($_GET['admin']) && $_GET['admin'] == 'edit_user') {
-    require('vues/backend/user/edit_user.php');
-} 
+// else if(isset($_GET['admin']) && $_GET['admin'] == 'user') {
+//     require('vues/backend/user/user.php');
+// } 
+// else if(isset($_GET['admin']) && $_GET['admin'] == 'edit_user') {
+//     require('vues/backend/user/edit_user.php');
+// } 
 
 // logout 
 else if(isset($_GET['admin']) && $_GET['admin'] == 'logout') {

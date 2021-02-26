@@ -41,7 +41,7 @@
                         <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-2"><a href="/?admin=engagement"><i class="fas fa-file-signature mr-3"></i>Engagements</a></li>
                         <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-3"><a href="/?admin=domaine"><i class="fas fa-cogs mr-3"></i>Domaines d'action</a></li>
                         <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-4"><a href="/?admin=quartier"><i class="fas fa-map-marked-alt mr-3"></i>Quartiers</a></li>
-                        <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-5"><a href="/?admin=user"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li>
+                        <!-- <li class="pl-3 pb-1 pt-1" data-toggle="sidebar-5"><a href="/?admin=user"><i class="fas fa-user mr-3"></i>Utilisateurs</a></li> -->
                     </ul>
                 </div>
             </div>
@@ -105,7 +105,6 @@
             // popover admin profile 
             $('[data-toggle="profile"]').popover({
                 html:true,
-                // title:"<div><a href='/?admin=profil'><div class='pl-2 pr-2 pointer white'>Profil</div></a></div>",
                 content: "<div><a href='/?admin=profil'><div class='p-2 pl-4 pr-4 pointer'>Profil</div></a></div><div><a href='/?admin=mandat'><div class='p-2 pl-4 pr-4 pointer'>Mandat</div></a></div><div><a href='/?admin=logout' class='danger'><div class='p-2 pl-4 pr-4 pointer'>Déconnexion</div></a></div>",
             });
 
