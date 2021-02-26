@@ -12,12 +12,13 @@ ob_start(); ?>
 <!-- edit alert -->
 <?php if(isset($_GET['reload'])) { $alert = "quartiers enregistrés !"; } ?>
 
-<div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
-    <!-- title -->
-    <div class="col"><h4 class="w-900 font-30 text-center ml-5 m-0">Quartiers</h4></div>
+<div class="row pb-4 pt-lg-4 position-relative pt-5 pt-lg-0">
     <!-- ajouter -->    
-    <a href="/?admin=quartier&reload" class="btn btn-primary">Enregistrer</a>
+    <a href="/?admin=quartier&reload" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Enregistrer</a>
+    <!-- title -->
+    <div class="col-12"><h4 class="w-900 font-30 text-center m-0">Quartiers</h4></div>
 </div>
+
 <!-- content -->
 <div class="card-admin">
     <?php $i = 1;

@@ -21,7 +21,7 @@ ob_start(); ?>
                             <!-- row 1 -->
                             <div class="row">
                                 <!-- order -->
-                                <div class="form-group col-lg-2 pl-0">
+                                <div class="form-group col-lg-2 pl-0 pr-0 pr-lg-2">
                                     <label for="order" class="w-900">Ordre</label>
                                     <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1">
                                     <div class="invalid-feedback">Chiffre invalide</div>
@@ -34,7 +34,7 @@ ob_start(); ?>
                                     Entrez au moins 2 lettres svp
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-3 pr-0">
+                                <div class="form-group col-lg-3 pr-0 pl-0 pl-lg-2">
                                     <!-- realisation -->
                                     <label for="realisation" class="w-900">Réalisation</label>
                                     <div class="input-group">
@@ -50,7 +50,7 @@ ob_start(); ?>
                         <div class="col-12 p-0 mb-3">
                             <div class="row">
                                 <!-- photo -->
-                                <div class="form-group col-lg-4 pl-0">
+                                <div class="form-group col-lg-4 pl-0 pr-0 pr-lg-2">
                                     <label for="order" class="w-900">Photo</label>
                                     <div class="input-group">
                                         <div class="custom-file">
@@ -69,7 +69,7 @@ ob_start(); ?>
                                     </select>
                                 </div>
                                 <!-- quartier -->
-                                <div class="form-group col-lg-4 pr-0 pointer" data-toggle="connexion-3">
+                                <div class="form-group col-lg-4 pr-0 pl-0 pl-lg-2 pointer" data-toggle="connexion-3">
                                     <label for="exampleFormControlSelect1" class="w-900">Quartier</label>
                                     <select class="form-control" id="exampleFormControlSelect1">
                                             <option>_</option>

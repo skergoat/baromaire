@@ -121,7 +121,7 @@ ob_start(); ?>
         <!-- categories -->
         <?php if(!empty($cards->create())) { ?>
         <div class="row">
-            <div class="col-12 col-lg-6 pl-0 mb-lg-0 mb-4">
+            <div class="col-12 col-lg-6 pl-0 mb-lg-0 mb-4 pr-0 pr-lg-3">
                 <table class="table table-bordered bg-white shadow">
                     <thead class="thead-dark">
                         <tr>
@@ -160,7 +160,7 @@ ob_start(); ?>
                     </nav>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 pr-0">
+            <div class="col-12 col-lg-6 pr-0 pl-0 pl-lg-3">
                 <table class="table table-bordered bg-white shadow">
                     <thead class="thead-light">
                         <tr>

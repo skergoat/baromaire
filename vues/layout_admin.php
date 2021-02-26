@@ -85,7 +85,7 @@
                 <div class="col-12 mt-lg-4 p-0 p-lg-2 col-lg-9 mx-auto">
                     <!-- edit alert -->
                         <?php if(isset($alert)) { ?>
-                            <div class="alert alert-success mb-4 col-11 mx-auto" id="alert-remove" role="alert"><?= $alert ?></div>
+                            <div class="alert alert-success mb-4 col-12" id="alert-remove" role="alert"><?= $alert ?></div>
                         <?php } ?>
                     <!-- card -->
                     <?= $content; ?>

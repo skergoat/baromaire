@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- container / height 100vh -->
-    <div class="position-relative pt-4 container-baromaire <?php if(isset($_GET['tarifs']) || isset($_GET['principes']) || isset($_GET['create'])) { ?>container-baromaire-higher<?php } ?>">
+    <div class="position-relative pt-4 container-baromaire <?php if(isset($_GET['tarifs']) || isset($_GET['principes']) || isset($_GET['create_baromaire'])) { ?>container-baromaire-higher<?php } ?>">
         <div class="col-11 mx-auto">
             <!-- header -->
             <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
@@ -61,7 +61,7 @@
                     <ul class="footer-nav pl-0 mb-2 d-flex">
                         <li><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
                         <li><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
-                        <li><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
+                        <li><a href="/?create_baromaire" class="white<?php if (isset($_GET['create_baromaire'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
                         <li><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
                         <li><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
                     </ul>
@@ -70,7 +70,7 @@
             <ul class="footer-responsive-nav font-22 d-none pl-0">
                 <li class="pt-2 pb-2 pl-4"><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
                 <li class="pt-2 pb-2 pl-4"><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
-                <li class="pt-2 pb-2 pl-4"><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
+                <li class="pt-2 pb-2 pl-4"><a href="/?create_baromaire" class="white<?php if (isset($_GET['create_baromaire'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
                 <li class="pt-2 pb-2 pl-4"><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
                 <li class="pt-2 pb-2 pl-4"><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
             </ul>

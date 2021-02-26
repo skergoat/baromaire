@@ -20,7 +20,7 @@ ob_start(); ?>
         </div>
         <!-- body -->
         <p class="card-title text-center font-23">Vous pouvez engager votre commune ?</p>
-        <p class="card-title text-center font-23 mb-2">Obtenez votre compte baromaire gratuit !</p>
+        <p class="card-title text-center font-23 mb-2">Obtenez votre compte Baromaire gratuit !</p>
         <p class="card-text text-center font-18 mb-2">ou</p>
         <p class="card-text text-center font-18">Ecrire à votre Maire pour mettre en place Baromaire dans votre commune.</p>
       </div>
@@ -44,13 +44,13 @@ ob_start(); ?>
         <!-- form -->
         <form class="mb-3">
             <div class="form-group row justify-content-center">
-                <label for="staticEmail" class="pl-0 col-lg-2 col-form-label text-right">Email</label>
+                <label for="staticEmail" class="pl-0 pr-0 col-lg-2 col-form-label text-right">Email</label>
                 <div class="col-lg-9 pr-0">
                     <input type="email" class="form-control" id="imputEmail" placeholder="email@example.com">
                 </div>
             </div><br>
             <div class="row justify-content-center">
-                <label for="inputPassword2" class=" pl-0 col-lg-2 col-form-label text-right mb-0">Password</label>
+                <label for="inputPassword2" class=" pl-0 pr-0 col-lg-2 col-form-label text-right mb-0">Mot de Passe</label>
                 <div class="form-group col-lg-8 mb-0"> 
                     <input type="password" class="form-control" id="inputPassword2" style="width:100%;">
                 </div>

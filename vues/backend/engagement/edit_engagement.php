@@ -19,26 +19,22 @@ else {
 ob_start(); ?>
     <!-- start form -->
     <form>
-        <!-- buttons -->
-        <div class="col-12 col-md-11 mx-auto p-0 mb-sm-5 mb-lg-4 mt-5 mt-lg-0">
-            <div class="row flex-column flex-lg-row justify-content-lg-end align-items-center">
-                <?php if(!isset($_GET['create'])) { ?>
-                <a href="/?admin=engagement&delete" class="col-6 col-lg-3 d-block btn btn-danger mr-lg-2 mb-2 mb-lg-0">Supprimer</a>
-                <a href="/?admin=engagement&reload" class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</a>
-                <?php } else { ?>
-                <a href="/?admin=engagement&create" class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</a>
-                <?php } ?>
-            </div>
-        </div>
-    <!-- title -->
-        <div class="row flex-column-reverse flex-md-row pb-4 pt-lg-4">
+        <!-- top -->
+        <div class="col-11 mx-auto pl-0 pr-0 pb-4 pt-5 pt-lg-4 position-relative">
+            <!-- ajouter -->    
             <?php if(!isset($_GET['create'])) { ?>
-            <div class="col-12 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Aménagement du nouveau mobilier urbain</h4></div>
+                <a href="/?admin=engagement&delete" class="btn btn-danger position-absolute edit-1 ml-0 ml-md-1 ml-lg-0">Supprimer</a>
+                <a href="/?admin=engagement&reload" class="btn btn-primary position-absolute edit-2 ml-0 ml-md-1 ml-lg-0" id="submit-1">Enregistrer</a>
             <?php } else { ?>
-            <div class="col-12 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Ajouter un engagement</h4></div>
+                <a href="/?admin=engagement&create" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0" id="submit-1">Enregistrer</a>
+            <?php } ?>
+            <!-- title -->
+            <?php if(!isset($_GET['create'])) { ?>
+                <div class="col-12"><h4 class="w-900 font-30 text-center m-0 mt-5 mt-md-4 ">Aménagement du nouveau mobilier urbain</h4></div>
+            <?php } else { ?>
+                <div class="col-12"><h4 class="w-900 font-30 text-center m-0">Ajouter un engagement</h4></div>
             <?php } ?>
         </div>
-        
         <div class="card p-0 col-11 mx-auto">
             <!-- body -->
             <div class="card-body pt-5 pb-5">
@@ -177,14 +173,14 @@ ob_start(); ?>
                                                     <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="<?= $loads['id'] ?>">
                                                     <div class="invalid-feedback">Chiffre invalide</div>
                                                 </div>
-                                                <div class="form-group col-12 col-md-8 pl-0 pl-md-2 pr-0">
+                                                <div class="form-group col-12 col-lg-8 pl-0 pr-0 pl-lg-2 pr-0">
                                                     <label for="engagement" class="w-900">Titre de l'action</label>
                                                     <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="<?= $loads['title'] ?>">
                                                     <div class="invalid-feedback">
                                                     Entrez au moins 2 lettres svp
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-12 col-lg-2 pl-0 pl-md-2 pr-0">
+                                                <div class="form-group col-12 col-lg-2 pl-0 pl-lg-2 pr-0">
                                                     <!-- realisation -->
                                                     <label for="realisation" class="w-900">Réalisation</label>
                                                     <div class="input-group">
@@ -215,11 +211,11 @@ ob_start(); ?>
             </div>
             <?php }  ?>
             <?php } else { ?>
-            <div class="alert alert-warning col-12 col-md-9 text-center d-block mx-auto">Aucune action pour le moment</div>
+            <div class="alert alert-warning col-12 text-center d-block mx-auto">Aucune action pour le moment</div>
             <?php }  ?>
             <!-- ajouter une action -->
             <?php if(isset($_GET['action'])) { ?>
-            <div class="mt-2 back-transparent col-11 p-1 p-lg-0 mx-auto">
+            <div class="mt-0 mt-md-2 back-transparent col-12 col-md-11 p-1 p-lg-0 mx-auto">
                 <div class="row">
                     <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                         <div class="w-900 font-18">4</div>
@@ -241,7 +237,7 @@ ob_start(); ?>
                                 <div class="open-content accordeon_body--content font-15 primary text-justify" id="content-4">
                                     <div class="row p-2">
                                         <!-- content -->
-                                        <div class="content col-md-12">
+                                        <div class="content col-md-12 p-0">
                                             <div class="row">
                                                 <!-- order -->
                                                 <div class="form-group col-12 col-lg-2 pl-0 pr-0">
@@ -249,14 +245,14 @@ ob_start(); ?>
                                                     <input type="number" class="form-control" min="0" max="10" id="order" placeholder="1" value="4">
                                                     <div class="invalid-feedback">Chiffre invalide</div>
                                                 </div>
-                                                <div class="form-group col-12 col-md-8 pl-0 pl-md-2 pr-0">
+                                                <div class="form-group col-12 col-lg-8 pl-0 pl-lg-2 pr-0">
                                                     <label for="engagement" class="w-900">Titre de l'action</label>
                                                     <input type="text" class="form-control" id="engagement" placeholder="Rénover les arrêts de bus, etc." value="">
                                                     <div class="invalid-feedback">
                                                     Entrez au moins 2 lettres svp
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-12 col-lg-2 pl-0 pl-md-2 pr-0">
+                                                <div class="form-group col-12 col-lg-2 pl-0 pl-lg-2 pr-0">
                                                     <!-- realisation -->
                                                     <label for="realisation" class="w-900">Réalisation</label>
                                                     <div class="input-group">

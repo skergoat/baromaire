@@ -29,10 +29,44 @@
   margin: auto;
 }
 
+.ajouter,
+.ajouter-domaine,
+.edit-1,
+.edit-2 {
+  z-index: 99999;
+}
+
+.edit-1,
+.edit-2 {
+  top: -10px;
+  right: 0;
+}
+
+.edit-1 {
+  right: 120px;
+}
+
 @media all and (max-width: 991px) {
   #form-sign {
     & input {
       margin-bottom: 0px !important;
     }
+  }
+  .ajouter {
+    left: 0.25rem;
+  }
+  .edit-1,
+  .edit-2 {
+    top: 10px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  .ajouter {
+    top: 0px !important;
+  }
+  .ajouter-domaine {
+    top: 10px;
+    left: 36%;
   }
 }
