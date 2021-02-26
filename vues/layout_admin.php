@@ -33,7 +33,7 @@
                 <div class="card sidebar-left p-0 col position-fixed" id="sidebar-admin">
                     <div class="logo-admin pl-1 pr-1">
                         <a href="/">
-                            <img class="" src="assets/img/logo_baromaire_admin.jpg" alt="">
+                            <img class="" src="assets/img/logo_baromaire_admin.png" alt="">
                         </a>
                     </div>
                     <ul class="sidebar-left_nav">
