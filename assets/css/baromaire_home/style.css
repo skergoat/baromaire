@@ -415,11 +415,29 @@ img {
   margin: 0px !important;
 }
 
+@media all and (max-width: 991px) {
+  .container-baromaire.container-baromaire-higher {
+    height: 100% !important;
+  }
+  .container-baromaire.container-baromaire-higher .col-11.mx-auto {
+    margin-bottom: 200px !important;
+  }
+}
+@media all and (max-width: 576px) {
+  .container-baromaire.container-baromaire-higher .col-11.mx-auto {
+    margin-bottom: 0px !important;
+  }
+}
 /*home*/
 footer {
   line-height: 45px;
   background-color: #2d4e9d !important;
   width: 100%;
+}
+
+#footer-home {
+  position: absolute;
+  bottom: 0;
 }
 
 #hamburger {

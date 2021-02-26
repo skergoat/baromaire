@@ -27,7 +27,7 @@
 </head>
 <body>
     <!-- container / height 100vh -->
-    <div class="b-red position-relative pt-4 container-baromaire">
+    <div class="b-red position-relative pt-4 container-baromaire <?php if(isset($_GET['tarifs']) || isset($_GET['principes']) || isset($_GET['create'])) { ?>container-baromaire-higher<?php } ?>">
         <div class="col-11 mx-auto">
             <!-- header -->
             <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
@@ -42,12 +42,11 @@
                     </a>
                 </div>
             </header>
-        <!-- </div> -->
             <!-- content -->
             <?= $content ?>
         <!-- footer -->
         </div>
-        <footer style="position:absolute;bottom:0;" id="footer-home" class="text-white pb-3 pt-3 <?php if (isset($_GET['contact']) || $_SERVER['REQUEST_URI'] == "/"){ ?> footer-absolute <?php } ?>">
+        <footer id="footer-home" class="text-white pb-3 pt-3 <?php if (isset($_GET['contact']) || $_SERVER['REQUEST_URI'] == "/"){ ?> footer-absolute <?php } ?>">
             <div class="f-flex flex-column">
                 <nav class="d-flex justify-content-center">
                     <!-- nav button xs -->

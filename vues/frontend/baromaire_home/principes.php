@@ -4,8 +4,6 @@
 */ 
 // content
 ob_start(); ?>
-<!-- <div class="container-baromaire text-center mb-5 mt-5"> -->
-<!-- <div class="text-center mb-5 mt-5"> -->
 <div class="text-center mb-5 mt-4">
     <div class="row justify-content-between">
         <div class="col-12 col-lg-6 pr-lg-0 mb-5 mb-lg-0">
@@ -30,7 +28,6 @@ ob_start(); ?>
                 </div>
                 <div class="col-12 col-md-6 pr-3 pl-3">
                     <div class="card card-principes shadow">
-                        <!-- <div class="card-body pb-5 pt-4"> -->
                         <div class="card-body pb-2 pt-4" style="min-height:100%;">
                             <div class="pt-3 mb-4">
                                 <img src="assets/img/principes/principes-2.jpg" alt="" style="max-width:150px;"/>
