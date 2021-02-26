@@ -55,7 +55,7 @@ ob_start(); ?>
                                 <div class="row p-2">
                                     <!-- image -->
                                     <div class="col-md-3 pt-2">
-                                        <img src="assets/img/engagements/<?= $accordeons['image'] ?>" alt="image engagements" class="d-block mx-auto" style="max-width:130px;"/>
+                                        <img src="assets/img/<?= $accordeons['image'] ?>" alt="image engagements" class="d-block mx-auto" style="max-width:130px;"/>
                                     </div>
                                     <!-- content -->
                                     <div class="content col-md-9">

@@ -118,7 +118,7 @@ ob_start(); ?>
                                 <?php if(isset($_GET['create'])) { ?>
                                 <img src="assets/img/placeholder.png" alt="image engagements" class="img-engagement"/>
                                 <?php } else { ?>
-                                <img src="assets/img/engagements/image_19.jpg" alt="image engagements" class="img-engagement"/>
+                                <img src="assets/img/image_19.jpg" alt="image engagements" class="img-engagement"/>
                                 <?php } ?>
                             </div>
                             <div class="input-group col-12 col-lg-6 p-0 pl-lg-2 mt-3 mt-lg-0">

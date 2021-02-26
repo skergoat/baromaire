@@ -24,7 +24,7 @@ ob_start(); ?>
                 <div class="card card-loop">
                     <!-- see : Model/Cards -->
                     <div class="reajust">
-                        <img class="card-img-top" src="assets/img/engagements/<?= $domaine['image'] ?>" alt="Card image cap">
+                        <img class="card-img-top" src="assets/img/<?= $domaine['image'] ?>" alt="Card image cap">
                     </div>
                     <?= $progress->cards(40) ?>
                     <div class="card-body p-0 pt-1">
