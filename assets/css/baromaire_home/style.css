@@ -217,6 +217,10 @@ img {
   text-transform: uppercase !important;
 }
 
+.botom {
+  margin-bottom: 100px !important;
+}
+
 @media all and (min-width: 1440px) {
   .container-baromaire {
     max-width: 90%;
@@ -308,6 +312,12 @@ footer {
   color: black;
 }
 
+@media all and (max-width: 991px) {
+  .btn-right {
+    position: relative !important;
+    margin-top: 1rem;
+  }
+}
 /*hearders and footers*/
 @media all and (max-width: 576px) {
   body {

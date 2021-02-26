@@ -26,7 +26,13 @@ $user = new User(); // accordeons
 $url = $_SERVER['REQUEST_URI'];
 
 // FRONT 
-if(isset($_GET['progres'])) {
+if(isset($_GET['contact'])) {
+    require('vues/frontend/baromaire_home/contact.php');
+}
+else if(isset($_GET['create'])) {
+    require('vues/frontend/baromaire_home/create.php');
+}
+else if(isset($_GET['progres'])) {
     require('vues/frontend/baromaire_notation/progres.php');
 }
 else if(isset($_GET['cadre'])) {
