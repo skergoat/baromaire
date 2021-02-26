@@ -3,9 +3,9 @@
 
 /*hearders and footers*/
 @media all and (max-width: 576px) {
-  body {
-    overflow: hidden;
-  }
+  // body {
+  //   overflow: hidden;
+  // }
 
   /**
   * HOME 
@@ -70,6 +70,8 @@
   #footer-home {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    bottom: 0;
+    position: relative !important;
   }
   .footer {
     &-nav {

@@ -214,14 +214,6 @@ img {
   margin: 0px !important;
 }
 
-.uppercase {
-  text-transform: uppercase !important;
-}
-
-.m-bottom {
-  margin-bottom: 70px !important;
-}
-
 @media all and (min-width: 1440px) {
   .container-baromaire {
     max-width: 90%;
@@ -327,12 +319,30 @@ footer {
     margin-top: 1rem;
   }
 }
-/*hearders and footers*/
-@media all and (max-width: 576px) {
-  body {
-    overflow: hidden;
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.m-bottom {
+  margin-bottom: 70px !important;
+}
+
+@media all and (max-width: 991px) {
+  .title {
+    font-size: 30px !important;
   }
 
+  .m-bottom {
+    margin-bottom: 150px !important;
+  }
+}
+@media all and (max-width: 576px) {
+  .title {
+    font-size: 25px !important;
+  }
+}
+/*hearders and footers*/
+@media all and (max-width: 576px) {
   /**
   * HOME 
   */
@@ -393,6 +403,8 @@ footer {
   #footer-home {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
+    bottom: 0;
+    position: relative !important;
   }
 
   .footer-nav {

@@ -34,14 +34,6 @@ img {
   margin: 0px !important;
 }
 
-.uppercase {
-  text-transform: uppercase !important;
-}
-
-.m-bottom {
-  margin-bottom: 70px !important;
-}
-
 // xxl
 @media all and (min-width: 1440px) {
   .container-baromaire {
@@ -61,5 +53,6 @@ img {
 @import "footer";
 @import "header";
 @import "form";
+@import "font";
 
 @import "../baromaire_home/max_width_576";
