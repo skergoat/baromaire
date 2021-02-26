@@ -12,7 +12,7 @@ ob_start(); ?>
                     <div class="card card-principes card-principes-prices shadow">
                         <div class="card-body pb-5 pt-5">
                             <div class="pt-3 mb-5 position-relative">
-                                <img src="assets/img/admin/image_28.jpg" alt="" class="position-absolute logo-tarifs"> 
+                                <img src="assets/img/image_28.jpg" alt="" class="position-absolute logo-tarifs"> 
                                 <span class="font-45 text-danger w-900">0 &euro;</span>
                             </div>
                             <div>
