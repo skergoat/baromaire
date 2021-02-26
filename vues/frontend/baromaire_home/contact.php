@@ -13,7 +13,7 @@ ob_start(); ?>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
                     </div>
                     <div class="form-group text-left mb-0">
-                        <label for="exampleFormControlTextarea1" class="w-900">Example textarea</label>
+                        <label for="exampleFormControlTextarea1" class="w-900">Votre message</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
                     </div>
                 </div>

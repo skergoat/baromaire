@@ -5,6 +5,13 @@
   overflow: hidden;
 }
 
+.logo-tarifs {
+  height: 50px;
+  width: 50px !important;
+  left: 30px;
+  top: 20px;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .card-principes,
   .card-principes-prices {
@@ -25,5 +32,8 @@
   .card-principes-prices {
     max-width: 300px;
     margin: auto !important;
+  }
+  .logo-tarifs {
+    left: 15px;
   }
 }
