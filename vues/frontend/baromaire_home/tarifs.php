@@ -4,7 +4,7 @@
 */ 
 // content
 ob_start(); ?>
-<div class="container-baromaire container-baromaire-body text-center mb-5 mt-5">
+<div class="container-baromaire text-center mb-5 mt-5">
     <div class="row justify-content-between">
         <div class="col-12 col-lg-6 pr-lg-0 mb-5 mb-lg-0">
             <div class="row">

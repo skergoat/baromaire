@@ -393,7 +393,8 @@ body {
 }
 
 .container-baromaire-body {
-  min-height: 60vh !important;
+  min-height: 55vh !important;
+  max-height: 100vh;
 }
 
 a,
@@ -533,10 +534,6 @@ footer {
 }
 .uppercase {
   text-transform: uppercase !important;
-}
-
-.m-bottom {
-  margin-bottom: 70px !important;
 }
 
 @media all and (max-width: 991px) {

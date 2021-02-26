@@ -4,7 +4,7 @@
 */ 
 // content
 ob_start(); ?>
-    <div class="container-baromaire container-baromaire-body text-center mt-5 mb-5 m-bottom">
+    <div class="container-baromaire text-center mt-5 mb-3 m-bottom">
         <!-- title -->
         <h1 class="mb-5 title">Pour créer votre BAROMAIRE, rien de plus simple !</h1>
         <!-- text -->
@@ -24,34 +24,34 @@ ob_start(); ?>
             </div>
         </div>
         <!-- form -->
-        <form action="" class="mt-5">
+        <form action="" class="mt-5 mt-md-4">
             <div class="row">
                 <!-- left : input -->
-                <div class="col-12 col-sm-6 pl-0 pr-0 pr-lg-5">
+                <div class="col-12 col-sm-6 pl-0 pr-0 pr-lg-5 ">
                     <!-- input 1 -->
                     <div class="form-inline d-flex justify-content-end mb-3">
-                        <div class="form-group">
+                        <div class="form-group pr-2 pl-2 pr-md-0 pl-md-0">
                             <label for="inputPassword2" class="w-900">Nom ou code postal<br class="d-none d-sm-inline-block"> de votre commune</label>
                             <input type="text" class="form-control ml-0 ml-sm-3"/>
                         </div>
                     </div>
                     <!-- input 2 -->
                     <div class="form-inline  d-flex justify-content-end mb-3">
-                        <div class="form-group">
+                        <div class="form-group pr-2 pl-2 pr-md-0 pl-md-0">
                             <label for="inputPassword2" class="w-900">Votre nom</label>
                             <input type="text" class="form-control ml-0 ml-sm-3"/>
                         </div>
                     </div>
                     <!-- input 3 -->
                     <div class="form-inline d-flex justify-content-end mb-3">
-                        <div class="form-group">
+                        <div class="form-group pr-2 pl-2 pr-md-0 pl-md-0">
                             <label for="inputPassword2" class="w-900">Votre mobile</label>
                             <input type="tel" class="form-control ml-0 ml-sm-3"/>
                         </div>
                     </div>
                     <!-- input 4 -->
                     <div class="form-inline d-flex justify-content-end">
-                        <div class="form-group">
+                        <div class="form-group pr-2 pl-2 pr-md-0 pl-md-0">
                             <label for="inputPassword2" class="w-900">Votre email</label>
                             <input type="email" class="form-control ml-0 ml-sm-3"/>
                         </div>
