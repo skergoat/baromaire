@@ -13,16 +13,12 @@ ob_start(); ?>
 
 <!-- start form -->
 <form>
-    <!-- buttons -->
-    <div class="col-12 col-md-11 mx-auto p-0 mb-sm-5 mb-lg-4 mt-5 mt-lg-0">
-        <div class="row flex-column flex-lg-row justify-content-lg-end align-items-center">
-            <a href="/?admin=profil&reload" class="btn btn-primary col-6 col-lg-3" id="submit-1">Enregistrer</a>
-        </div>
-    </div>
 
-    <!-- title -->
-    <div class="row flex-column-reverse flex-md-row pb-0 pb-md-4 pt-lg-4">
-        <div class="col-12 col-md-11 pb-lg-4"><h4 class="w-900 font-30 text-center m-0">Votre Profil</h4></div>
+    <div class="col-11 mx-auto p-0 pb-4 pt-lg-4 position-relative pt-5 pt-lg-0">
+        <!-- ajouter -->    
+        <a href="/?admin=profil&reload" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Enregistrer</a>
+        <!-- title -->
+        <div class="col-12"><h4 class="w-900 font-30 text-center m-0">Votre Profil</h4></div>
     </div>
 
     <!-- content -->

@@ -30,6 +30,11 @@
   border-bottom-color: $secondary !important;
 }
 
+.bs-popover-bottom .arrow::before,
+.bs-popover-bottom .arrow::after {
+  border-bottom-color: rgb(156, 156, 156) !important;
+}
+
 .popover.bs-popover-right {
   & .arrow::before,
   & .arrow::after {

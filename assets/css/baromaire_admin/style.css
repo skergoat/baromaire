@@ -453,14 +453,6 @@ img {
     margin: auto;
   }
 }
-.overlay {
-  display: none !important;
-}
-
-.sidebar-left {
-  display: none !important;
-}
-
 /*home*/
 footer {
   line-height: 45px;
@@ -1124,6 +1116,11 @@ footer {
   border-bottom-color: #2d4e9d !important;
 }
 
+.bs-popover-bottom .arrow::before,
+.bs-popover-bottom .arrow::after {
+  border-bottom-color: #9c9c9c !important;
+}
+
 .popover.bs-popover-right .arrow::before, .popover.bs-popover-right .arrow::after {
   border-bottom-color: transparent !important;
 }
@@ -1174,7 +1171,7 @@ footer {
   right: 0;
 }
 
-.edit-1 {
+.edit-2 {
   right: 120px;
 }
 
