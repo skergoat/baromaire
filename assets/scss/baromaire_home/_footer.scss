@@ -1,11 +1,12 @@
 footer {
-  // position: absolute;
   line-height: 45px;
-  // height: 70px;
   background-color: #2d4e9d !important;
-  bottom: 0;
   width: 100%;
+}
+
+.footer-absolute {
   position: absolute;
+  bottom: 0;
 }
 
 // nav mobile
