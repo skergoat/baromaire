@@ -8,14 +8,12 @@ body {
   left: 0;
   background: #f6f6f6 0 0 no-repeat padding-box;
   opacity: 1;
-  font-family: Arial, sans-serif; /*provisoire*/
-  padding-top: 20px;
-  // height: 100%;
+  font-family: Arial, sans-serif;
 }
 
-.container-baromaire-body {
-  min-height: 55vh !important;
-  max-height: 100vh;
+.container-baromaire {
+  height: 100vh !important;
+  overflow: hidden;
 }
 
 a,
@@ -36,27 +34,6 @@ img {
 
 .row {
   margin: 0px !important;
-}
-
-// xxl
-@media all and (min-width: 1440px) {
-  .container-baromaire {
-    max-width: 90%;
-    margin: auto;
-  }
-}
-// xl
-@media all and (max-width: 1440px) {
-  .container-baromaire {
-    max-width: 1300px;
-    margin: auto;
-  }
-}
-
-@media all and (max-width: 576px) {
-  .container-baromaire-body {
-    min-height: 70vh !important;
-  }
 }
 
 /*home*/

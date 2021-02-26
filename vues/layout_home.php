@@ -25,57 +25,57 @@
     <script>$class = ".progresses";</script>
     <script src="assets/js/progress_bar.js"></script>
 </head>
-<body id="position-relative">
-    <div class="container-baromaire">
-        <!-- header -->
-        <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
-            <div class="position-absolute pl-5" style="width:100%">
-                <a href="/">
-                    <img class="logo-left d-sm-none d-lg-block" src="assets/img/icone_m.png" alt="">
-                </a>
-            </div>
-            <div>
-                <a href="/">
-                    <img class="logo-home" src="assets/img/logo_baromaire.png" alt="">
-                </a>
-            </div>
-        </header>
-    </div>
-    <!-- content -->
-    <?= $content ?>
-    <!-- footer -->
-    <footer id="footer-home" class="text-white pb-4 pt-4 <?php if (isset($_GET['contact']) || $_SERVER['REQUEST_URI'] == "/"){ ?> footer-absolute <?php } ?>">
-        <div class="f-flex flex-column">
-            <nav class="d-flex justify-content-center">
-                <!-- nav button xs -->
-                <div id="hamburger" class="col-sm-12">
-                    <div class="row justify-content-end">
-                        <div id="hamburger-button">
-                            <i class="fas fa-bars"></i>
-                            <!-- <div class="mx-auto"></div>
-                            <div class="mx-auto"></div>
-                            <div class="mx-auto"></div> -->
+<body>
+    <!-- container / height 100vh -->
+    <div class="b-red position-relative pt-4 container-baromaire">
+        <div class="col-11 mx-auto">
+            <!-- header -->
+            <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
+                <div class="position-absolute pl-5" style="width:100%">
+                    <a href="/">
+                        <img class="logo-left d-sm-none d-lg-block" src="assets/img/icone_m.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="/">
+                        <img class="logo-home" src="assets/img/logo_baromaire.png" alt="">
+                    </a>
+                </div>
+            </header>
+        <!-- </div> -->
+            <!-- content -->
+            <?= $content ?>
+        <!-- footer -->
+        </div>
+        <footer style="position:absolute;bottom:0;" id="footer-home" class="text-white pb-3 pt-3 <?php if (isset($_GET['contact']) || $_SERVER['REQUEST_URI'] == "/"){ ?> footer-absolute <?php } ?>">
+            <div class="f-flex flex-column">
+                <nav class="d-flex justify-content-center">
+                    <!-- nav button xs -->
+                    <div id="hamburger" class="col-sm-12">
+                        <div class="row justify-content-end">
+                            <div id="hamburger-button">
+                                <i class="fas fa-bars"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- nav sm -> xxl -->
-                <ul class="footer-nav pl-0 mb-2 d-flex">
-                    <li><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
-                    <li><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
-                    <li><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
-                    <li><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
-                    <li><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
-                </ul>
-            </nav>
-            <!-- <div class="text-center font-12">Tous Droits Réservés Baromaire<sup style="font-size:7px"><i class="far fa-copyright text-white"></i></sup> 2021</div> -->
-        </div>
-        <ul class="footer-responsive-nav font-22 d-none pl-0">
-            <li class="pt-2 pb-2 pl-4"><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
-            <li class="pt-2 pb-2 pl-4"><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
-            <li class="pt-2 pb-2 pl-4"><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
-            <li class="pt-2 pb-2 pl-4"><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
-            <li class="pt-2 pb-2 pl-4"><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
-        </ul>
-        <script src="assets/js/nav.js"></script>
-    </footer>
+                    <!-- nav sm -> xxl -->
+                    <ul class="footer-nav pl-0 mb-2 d-flex">
+                        <li><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
+                        <li><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
+                        <li><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
+                        <li><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li><span class="ml-sm-3 mr-sm-3 ml-lg-4 mr-lg-4">/</span>
+                        <li><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="footer-responsive-nav font-22 d-none pl-0">
+                <li class="pt-2 pb-2 pl-4"><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
+                <li class="pt-2 pb-2 pl-4"><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
+                <li class="pt-2 pb-2 pl-4"><a href="/?create" class="white<?php if (isset($_GET['create'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
+                <li class="pt-2 pb-2 pl-4"><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
+                <li class="pt-2 pb-2 pl-4"><a href="/?contact" class="white<?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
+            </ul>
+            <script src="assets/js/nav.js"></script>
+        </footer>
+    </div>
 </body>

@@ -4,10 +4,10 @@
 */ 
 // content
 ob_start(); ?>
-    <div class="container-baromaire-body col-12 col-lg-6 mx-auto text-center mt-5">
+    <div class="container-baromaire-body col-12 pl-0 pr-0 col-lg-6 mx-auto text-center mt-5">
         <form>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 pr-0 pl-0 pr-lg-3">
                     <div class="form-group text-left">
                         <label for="exampleFormControlInput1" class="w-900">Votre Email</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">

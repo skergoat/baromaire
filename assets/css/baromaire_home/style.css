@@ -388,13 +388,11 @@ body {
   background: #f6f6f6 0 0 no-repeat padding-box;
   opacity: 1;
   font-family: Arial, sans-serif;
-  /*provisoire*/
-  padding-top: 20px;
 }
 
-.container-baromaire-body {
-  min-height: 55vh !important;
-  max-height: 100vh;
+.container-baromaire {
+  height: 100vh !important;
+  overflow: hidden;
 }
 
 a,
@@ -417,33 +415,11 @@ img {
   margin: 0px !important;
 }
 
-@media all and (min-width: 1440px) {
-  .container-baromaire {
-    max-width: 90%;
-    margin: auto;
-  }
-}
-@media all and (max-width: 1440px) {
-  .container-baromaire {
-    max-width: 1300px;
-    margin: auto;
-  }
-}
-@media all and (max-width: 576px) {
-  .container-baromaire-body {
-    min-height: 70vh !important;
-  }
-}
 /*home*/
 footer {
   line-height: 45px;
   background-color: #2d4e9d !important;
   width: 100%;
-}
-
-.footer-absolute {
-  position: absolute;
-  bottom: 0;
 }
 
 #hamburger {
@@ -553,13 +529,8 @@ footer {
 .card-principes {
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  max-height: 100%;
-  min-height: 100%;
+  min-height: 470px;
   overflow: hidden;
-}
-.card-principes-prices {
-  max-height: 400px !important;
-  min-height: 400px !important;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px) {
@@ -571,8 +542,6 @@ footer {
 @media all and (min-width: 576px) and (max-width: 768px) {
   .card-principes,
 .card-principes-prices {
-    max-height: 500px !important;
-    min-height: 500px !important;
     max-width: 300px;
     margin: auto !important;
   }
@@ -580,8 +549,6 @@ footer {
 @media all and (max-width: 576px) {
   .card-principes,
 .card-principes-prices {
-    max-height: 500px !important;
-    min-height: 500px !important;
     max-width: 300px;
     margin: auto !important;
   }
@@ -649,7 +616,6 @@ footer {
     padding-top: 10px !important;
     padding-bottom: 10px !important;
     bottom: 0;
-    position: relative !important;
   }
 
   .footer-nav {

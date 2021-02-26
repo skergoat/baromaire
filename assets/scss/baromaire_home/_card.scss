@@ -1,12 +1,13 @@
 .card-principes {
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  max-height: 100%;
-  min-height: 100%;
-  &-prices {
-    max-height: 400px !important;
-    min-height: 400px !important;
-  }
+  min-height: 470px;
+  // max-height: 100%;
+  // min-height: 100%;
+  // &-prices {
+  //   max-height: 400px !important;
+  //   min-height: 400px !important;
+  // }
   overflow: hidden;
 }
 
@@ -20,8 +21,8 @@
 @media all and (min-width: 576px) and (max-width: 768px) {
   .card-principes,
   .card-principes-prices {
-    max-height: 500px !important;
-    min-height: 500px !important;
+    // max-height: 500px !important;
+    // min-height: 500px !important;
     max-width: 300px;
     margin: auto !important;
   }
@@ -30,8 +31,8 @@
 @media all and (max-width: 576px) {
   .card-principes,
   .card-principes-prices {
-    max-height: 500px !important;
-    min-height: 500px !important;
+    // max-height: 500px !important;
+    // min-height: 500px !important;
     max-width: 300px;
     margin: auto !important;
   }
