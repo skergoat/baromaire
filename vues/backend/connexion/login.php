@@ -24,7 +24,7 @@ ob_start(); ?>
         <p class="card-title text-center font-23">Vous pouvez engager votre commune ?</p>
         <p class="card-title text-center font-23 mb-2">Obtenez votre compte Baromaire gratuit !</p>
         <p class="card-text text-center font-18 mb-2">ou</p>
-        <p class="card-text text-center font-18">Ecrire à votre Maire pour mettre en place Baromaire dans votre commune.</p>
+        <p class="card-text text-center font-18">Ecrire à votre Maire pour lui demander le Baromaire de votre commune.</p>
       </div>
     </div>
   </div>
