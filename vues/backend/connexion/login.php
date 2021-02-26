@@ -38,7 +38,7 @@ ob_start(); ?>
           <img src="assets/img/icone_m.png" alt="icon baromaire" class="pr-0 d-inline-block" id="login-logo-2">
           Accès à la gestion de votre Baromaire
         </p>
-        <div class="alert alert-danger text-center mx-auto" id="alert-remove" role="alert" style="max-width:500px;">
+        <div class="alert alert-danger text-center col-12 col-lg-9 mx-auto" id="alert-remove" role="alert">
           Email ou Mot de Passe incorrects 
         </div>
         <!-- form -->

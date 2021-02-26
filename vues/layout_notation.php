@@ -68,7 +68,7 @@
                     <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-3"></i>Notre démarche</a></li>
                     <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-3"></i>Nos engagements</a></li>
                     <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-3"></i>Votre quartier</a></li>
-                    <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
+                    <li class="pl-2"><a href="/?contact-me"><i class="fas fa-envelope mr-3"></i>Me Contacter</a></li>
                     <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-3"></i>Se connecter</a></li>
                 </ul>
                 <!-- alert -->
@@ -115,8 +115,8 @@
         <!-- sidebars -->
         <div class="row pt-sm-5 pt-lg-4">
             <!-- sidebar left -->
-            <div class="card p-3 col-2 d-none d-sm-none d-lg-block" style="height:100%;">
-                <div class="divider_first pb-3 mb-3">
+            <div class="card p-0 col-2 d-none d-sm-none d-lg-block" style="height:100%;">
+                <div class="divider_first p-3">
                     <div class="position-relative">
                         <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
                         <!-- edit button -->
@@ -149,16 +149,16 @@
                         </a>
                     </div>
                 </div>
-                <ul class="sidebar-left_nav">
-                    <li class="pl-2"><a href="/?progres"><i class="fas fa-ruler-combined mr-2"></i>Suivre les progrès</a></li>
-                    <li class="pl-2"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-2"></i>Notre démarche</a></li>
-                    <li class="pl-2"><a href="/?engagement"><i class="fas fa-file-signature mr-2"></i>Nos engagements</a></li>
-                    <li class="pl-2"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-2"></i>Votre quartier</a></li>
-                    <li class="pl-2"><a href="#"><i class="fas fa-envelope mr-2"></i>Me Contacter</a></li>
+                <ul class="mt-3 sidebar-left_nav">
+                    <li class="pl-3 pt-1 pb-1"><a href="/?progres"><i class="fas fa-ruler-combined mr-2"></i>Suivre les progrès</a></li>
+                    <li class="pl-3 pt-1 pb-1"><a href="/?demarche"><i class="fas fa-puzzle-piece mr-2"></i>Notre démarche</a></li>
+                    <li class="pl-3 pt-1 pb-1"><a href="/?engagement"><i class="fas fa-file-signature mr-2"></i>Nos engagements</a></li>
+                    <li class="pl-3 pt-1 pb-1"><a href="/?quartier"><i class="fas fa-map-marked-alt mr-2"></i>Votre quartier</a></li>
+                    <li class="pl-3 pt-1 pb-1"><a href="/?contact-me"><i class="fas fa-envelope mr-2"></i>Me Contacter</a></li>
                     <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
-                    <li class="pl-2"><a href="/?admin=dashboard"><i class="fas fa-sign-in-alt mr-2"></i>Admin</a></li>
+                    <li class="pl-3 pt-1 pb-1"><a href="/?admin=dashboard"><i class="fas fa-sign-in-alt mr-2"></i>Admin</a></li>
                     <?php } else { ?>
-                    <li class="pl-2"><a href="/?login"><i class="fas fa-sign-in-alt mr-2"></i>Se connecter</a></li>
+                    <li class="pl-3 pt-1 pb-1"><a href="/?login"><i class="fas fa-sign-in-alt mr-2"></i>Se connecter</a></li>
                     <?php } ?>
                 </ul>
                 <!-- alert -->

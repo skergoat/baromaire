@@ -53,6 +53,9 @@ else if(isset($_GET['engagement'])) {
 else if(isset($_GET['quartier'])) {
     require('vues/frontend/baromaire_notation/quartier.php');
 }
+else if(isset($_GET['contact-me'])) {
+    require('vues/frontend/baromaire_notation/contact-me.php');
+}
 // ADMIN
 // connexion 
 else if(isset($_GET['login'])) {
