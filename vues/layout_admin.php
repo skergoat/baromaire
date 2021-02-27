@@ -84,7 +84,7 @@
                 </nav>
                 <?php } ?>
                 <!-- content -->
-                <div class="col-12 mt-lg-4 p-0 p-lg-2 col-lg-9 mx-auto">
+                <div class="col-12 mt-lg-4 pl-1 pr-1 pl-md-3 pr-md-3 p-lg-2 col-lg-9 mx-auto">
                     <!-- edit alert -->
                         <?php if(isset($alert)) { ?>
                             <div class="alert alert-success mb-4 col-12" id="alert-remove" role="alert"><?= $alert ?></div>
