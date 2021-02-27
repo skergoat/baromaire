@@ -642,8 +642,8 @@ footer {
   }
 
   #footer-home {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
     bottom: 0;
   }
 
