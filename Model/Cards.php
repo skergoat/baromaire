@@ -72,7 +72,7 @@ class Cards
         $array = [
             [
                 'title' => 'Cadre de vie',
-                'image' => 'image_12.jpg'
+                'image' => 'image_8.jpg'
             ],
             [
                 'title' => 'Economie',
