@@ -453,6 +453,14 @@ img {
     margin: auto;
   }
 }
+.overlay {
+  display: none !important;
+}
+
+.sidebar-left {
+  display: none !important;
+}
+
 /*home*/
 footer {
   line-height: 45px;
