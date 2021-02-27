@@ -22,7 +22,7 @@ ob_start(); ?>
     </div>
 
     <!-- content -->
-    <div class="row card-admin">
+    <div class="row card-admin pr-2 pl-2 pr-md-0 pl-md-0">
         <div class="card p-0 col-12 col-lg-9 mx-auto mt-3">
             <!-- body -->
             <div class="card-body pt-lg-4 pb-4">
