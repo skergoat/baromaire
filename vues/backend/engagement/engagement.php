@@ -14,7 +14,7 @@ ob_start(); ?>
 
     <div class="col-12 p-0 pb-2 pb-md-4 pt-lg-4 position-relative pt-5 pt-lg-0">
         <!-- ajouter -->    
-        <a href="/?admin=edit_engagement&create" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Enregistrer</a>
+        <a href="/?admin=edit_engagement&create" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Ajouter</a>
         <!-- title -->
         <div class="col-12"><h4 class="w-900 font-30 text-center m-0">Vos engagements</h4></div>
     </div>
@@ -25,7 +25,7 @@ ob_start(); ?>
         if(!empty($accordeon->create())) {
             foreach($accordeon->create() as $accordeons) { ?>
         <!-- accordeon -->
-        <div class="mt-2 back-transparent col-12 p-1 p-lg-0 mx-auto">
+        <div class="mt-1 mt-md-2 back-transparent col-12 p-1 p-lg-0 mx-auto">
             <div class="row">
                 <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                     <div class="w-900 font-18"><?= $accordeons['id'] ?></div>
