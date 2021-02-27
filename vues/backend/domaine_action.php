@@ -12,7 +12,7 @@ ob_start(); ?>
 <!-- edit alert -->
 <?php if(isset($_GET['reload'])) { $alert = "domaines enregistrés !"; } ?>
 
-<div class="row pb-4 pt-lg-4 position-relative pt-5 pt-lg-0">
+<div class="row pb-4 pt-lg-4 position-relative pt-3 pt-lg-0">
     <!-- ajouter -->    
     <a href="/?admin=domaine&reload" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Enregistrer</a>
     <!-- title -->
