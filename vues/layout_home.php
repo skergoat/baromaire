@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- favicon -->
-    <link rel="shortcut icon" type="image/jpg" href="assets/img/icone_m.png">
+    <link rel="shortcut icon" type="image/jpg" href="assets/img/favicon.png">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/1596c4b58a.js" crossorigin="anonymous"></script>
     <!-- fonts -->
