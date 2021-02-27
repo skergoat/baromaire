@@ -45,14 +45,14 @@ ob_start(); ?>
         </div>
         <!-- form -->
         <form class="mb-3">
-            <div class="form-group row justify-content-center pb-3">
-                <label for="staticEmail" class="pl-0 pr-0 col-lg-2 col-form-label text-right">Email</label>
+            <div class="form-group row justify-content-center pb-2 pb-lg-3">
+                <label for="staticEmail" class="pl-0 pr-0 col-lg-2 col-form-label text-right w-900">Email</label>
                 <div class="col-lg-9 pr-0">
                     <input type="email" class="form-control" id="imputEmail" placeholder="email@example.com">
                 </div>
             </div>
             <div class="row justify-content-center">
-                <label for="inputPassword2" class=" pl-0 pr-0 col-lg-2 col-form-label text-right mb-0">Mot de Passe</label>
+                <label for="inputPassword2" class=" pl-0 pr-0 col-lg-2 col-form-label text-right mb-0 w-900">Mot de Passe</label>
                 <div class="form-group col-lg-8 mb-0"> 
                     <input type="password" class="form-control" id="inputPassword2" style="width:100%;">
                 </div>
