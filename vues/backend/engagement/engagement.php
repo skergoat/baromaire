@@ -12,7 +12,7 @@ ob_start(); ?>
     <?php if(isset($_GET['reload'])) { $alert = "Modifications enregistreés !"; } ?>
     <?php if(isset($_GET['create'])) { $alert = "Utilisateur ajouté !"; } ?>
 
-    <div class="col-12 p-0 pb-4 pt-lg-4 position-relative pt-5 pt-lg-0">
+    <div class="col-12 p-0 pb-3 pb-md-4 pt-lg-4 position-relative pt-5 pt-lg-0">
         <!-- ajouter -->    
         <a href="/?admin=edit_engagement&create" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Enregistrer</a>
         <!-- title -->
