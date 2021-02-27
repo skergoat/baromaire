@@ -90,7 +90,7 @@ ob_start(); ?>
                     </div>
                     <!-- button -->
                     <div class="col-12 p-0">
-                        <div class="row justify-content-lg-center align-items-sm-center">
+                        <div class="row justify-content-center align-items-center">
                             <button class="btn btn-primary col-md-7 mb-md-1" id="submit-1">Enregistrer</button>
                         </div>
                     </div>

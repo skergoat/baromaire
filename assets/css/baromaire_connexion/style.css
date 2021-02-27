@@ -85,6 +85,24 @@
 }
 
 /*font-size*/
+/* font-size */
+.font-5 {
+  font-size: 5px;
+}
+
+.font-7 {
+  font-size: 7px;
+}
+
+.font-8 {
+  font-size: 8px;
+}
+
+.font-9 {
+  font-size: 9px;
+}
+
+/* 10 */
 .font-10 {
   font-size: 10px;
 }
@@ -125,8 +143,13 @@
   font-size: 19px;
 }
 
+/* 20 */
 .font-20 {
   font-size: 20px;
+}
+
+.font-21 {
+  font-size: 21px;
 }
 
 .font-21 {
@@ -149,12 +172,189 @@
   font-size: 25px;
 }
 
+.font-26 {
+  font-size: 26px;
+}
+
+.font-27 {
+  font-size: 27px;
+}
+
+.font-28 {
+  font-size: 28px;
+}
+
+.font-29 {
+  font-size: 29px;
+}
+
+/* 30 */
 .font-30 {
   font-size: 30px;
 }
 
+.font-31 {
+  font-size: 31px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-33 {
+  font-size: 33px;
+}
+
+.font-34 {
+  font-size: 34px;
+}
+
+.font-35 {
+  font-size: 35px;
+}
+
+.font-36 {
+  font-size: 36px;
+}
+
+.font-37 {
+  font-size: 37px;
+}
+
+.font-38 {
+  font-size: 38px;
+}
+
+.font-39 {
+  font-size: 39px;
+}
+
+/* 40 */
+.font-40 {
+  font-size: 40px;
+}
+
+.font-41 {
+  font-size: 41px;
+}
+
+.font-42 {
+  font-size: 42px;
+}
+
+.font-43 {
+  font-size: 43px;
+}
+
+.font-44 {
+  font-size: 44px;
+}
+
+.font-45 {
+  font-size: 45px;
+}
+
+.font-46 {
+  font-size: 46px;
+}
+
+.font-47 {
+  font-size: 47px;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+.font-49 {
+  font-size: 49px;
+}
+
+/* 50 */
 .font-50 {
   font-size: 50px;
+}
+
+.font-51 {
+  font-size: 51px;
+}
+
+.font-52 {
+  font-size: 52px;
+}
+
+.font-53 {
+  font-size: 53px;
+}
+
+.font-54 {
+  font-size: 54px;
+}
+
+.font-55 {
+  font-size: 55px;
+}
+
+.font-56 {
+  font-size: 56px;
+}
+
+.font-57 {
+  font-size: 57px;
+}
+
+.font-58 {
+  font-size: 58px;
+}
+
+.font-59 {
+  font-size: 59px;
+}
+
+/* 60 */
+.font-60 {
+  font-size: 60px;
+}
+
+.font-61 {
+  font-size: 61px;
+}
+
+.font-62 {
+  font-size: 62px;
+}
+
+.font-63 {
+  font-size: 63px;
+}
+
+.font-64 {
+  font-size: 64px;
+}
+
+.font-65 {
+  font-size: 65px;
+}
+
+.font-66 {
+  font-size: 66px;
+}
+
+.font-67 {
+  font-size: 67px;
+}
+
+.font-68 {
+  font-size: 68px;
+}
+
+.font-69 {
+  font-size: 69px;
+}
+
+/* 70 */
+.font-70 {
+  font-size: 70px;
 }
 
 /*font-weight*/
@@ -249,9 +449,12 @@ img {
 footer {
   line-height: 45px;
   background-color: #2d4e9d !important;
-  bottom: 0;
   width: 100%;
-  position: absolute;
+}
+
+#footer-home {
+  position: fixed;
+  bottom: 0;
 }
 
 #hamburger {
@@ -905,8 +1108,17 @@ footer {
   border-bottom-color: #2d4e9d !important;
 }
 
+.bs-popover-bottom .arrow::before,
+.bs-popover-bottom .arrow::after {
+  border-bottom-color: #9c9c9c !important;
+}
+
 .popover.bs-popover-right .arrow::before, .popover.bs-popover-right .arrow::after {
   border-bottom-color: transparent !important;
+}
+
+.btn.btn-danger {
+  color: white !important;
 }
 
 .custom-file-label::after {
@@ -920,16 +1132,39 @@ footer {
   padding-left: 20px;
 }
 
-.custom-file-label.custom-file-label-assistant::after {
-  font-family: "Arial";
-  content: "Modifier";
+.img-engagement {
+  width: 100% !important;
+  max-width: 300px;
 }
 
-.image.image-placeholder.img-placeholder-assistant {
-  max-width: 170px !important;
-  max-height: 170px !important;
-  width: 100% !important;
-  height: 100% !important;
+.divider_vertical {
+  border-left: 1px dashed rgba(0, 0, 0, 0.2117647059);
+}
+
+.image.image-placeholder-big {
+  width: 160px !important;
+  background-image: url("../../../assets/img/placeholder.png");
+  background-size: cover;
+  border-radius: 200px;
+  display: block;
+  margin: auto;
+}
+
+.ajouter,
+.ajouter-domaine,
+.edit-1,
+.edit-2 {
+  z-index: 99999;
+}
+
+.edit-1,
+.edit-2 {
+  top: -10px;
+  right: 0;
+}
+
+.edit-2 {
+  right: 120px;
 }
 
 @media all and (max-width: 991px) {
@@ -937,8 +1172,23 @@ footer {
     margin-bottom: 0px !important;
   }
 
-  #submit-1, #submit-2, #submit-3 {
-    margin-bottom: 5px !important;
+  .ajouter {
+    left: 0.25rem;
+  }
+
+  .edit-1,
+.edit-2 {
+    top: 10px;
+  }
+}
+@media all and (max-width: 576px) {
+  .ajouter {
+    top: 0px !important;
+  }
+
+  .ajouter-domaine {
+    top: 10px;
+    left: 36%;
   }
 }
 .card-admin {
@@ -1019,14 +1269,6 @@ footer {
   .accordeons .accordeon_body--title .icon-open-close {
     font-size: 14px !important;
   }
-
-  .overlay {
-    display: none !important;
-  }
-
-  .sidebar-left {
-    display: none !important;
-  }
 }
 .popover .popover-body {
   padding: 0.5rem 0.75rem !important;
@@ -1071,6 +1313,14 @@ footer {
   height: 100% !important;
 }
 
+@media all and (max-width: 991px) {
+  .image.image-placeholder.img-placeholder-assistant {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+  }
+}
 @media all and (max-width: 576px) {
   .row-profil {
     flex-direction: column !important;

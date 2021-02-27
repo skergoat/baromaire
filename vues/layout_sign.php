@@ -34,7 +34,7 @@
                     <div class="row">
                         <div class="col-sm-2 col-6 p-0">
                             <div class="row">
-                                <ul class="navbar-nav col-sm-6 col-8">
+                                <ul class="navbar-nav col-12">
                                     <li class="nav-item">
                                         <a class="nav-link" href="/?login"><i class="fas fa-chevron-left mr-3"></i> Retour <span class="sr-only">(current)</span></a>
                                     </li>
@@ -44,7 +44,7 @@
                     </div>
                 </nav>
                 <!-- content -->
-                <div class="card-admin">
+                <div class="card-admin pl-2 pr-2 pr-md-4 pl-md-4 pr-lg-0 pl-lg-0">
                     <?= $content; ?>
                 </div>
                 <!-- footer -->

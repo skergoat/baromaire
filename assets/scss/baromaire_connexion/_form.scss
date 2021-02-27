@@ -10,6 +10,17 @@
   height: 100% !important;
 }
 
+@media all and (max-width: 991px) {
+  .image.image-placeholder.img-placeholder-assistant {
+    // max-width: 50px !important;
+    // min-height: 170px !important;
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+  }
+}
+
 @media all and (max-width: 576px) {
   .row-profil {
     flex-direction: column !important;
