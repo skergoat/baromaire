@@ -36,7 +36,7 @@ ob_start(); ?>
           <img src="assets/img/icone_m.png" alt="icon baromaire" class="pr-0" id="login-logo-3">
         </p>
         <!-- title -->
-        <p class="text-center font-23 mb-0 mb-lg-4">
+        <p class="text-center font-23 mb-4">
           <img src="assets/img/icone_m.png" alt="icon baromaire" class="pr-0 d-inline-block" id="login-logo-2">
           Accès à la gestion de votre Baromaire
         </p>
