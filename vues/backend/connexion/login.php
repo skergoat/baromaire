@@ -32,11 +32,11 @@ ob_start(); ?>
   <div class="col-lg-12 login-card-bottom">
     <div class="card">
       <div class="card-body">
-        <p class="card-title text-center font-23 d-none" id="login-logo-p-3">
+        <p class="text-center font-23 d-none" id="login-logo-p-3">
           <img src="assets/img/icone_m.png" alt="icon baromaire" class="pr-0" id="login-logo-3">
         </p>
         <!-- title -->
-        <p class="card-title text-center font-23">
+        <p class="text-center font-23 mb-0 mb-lg-4">
           <img src="assets/img/icone_m.png" alt="icon baromaire" class="pr-0 d-inline-block" id="login-logo-2">
           Accès à la gestion de votre Baromaire
         </p>
@@ -45,12 +45,12 @@ ob_start(); ?>
         </div>
         <!-- form -->
         <form class="mb-3">
-            <div class="form-group row justify-content-center">
+            <div class="form-group row justify-content-center pb-3">
                 <label for="staticEmail" class="pl-0 pr-0 col-lg-2 col-form-label text-right">Email</label>
                 <div class="col-lg-9 pr-0">
                     <input type="email" class="form-control" id="imputEmail" placeholder="email@example.com">
                 </div>
-            </div><br>
+            </div>
             <div class="row justify-content-center">
                 <label for="inputPassword2" class=" pl-0 pr-0 col-lg-2 col-form-label text-right mb-0">Mot de Passe</label>
                 <div class="form-group col-lg-8 mb-0"> 
