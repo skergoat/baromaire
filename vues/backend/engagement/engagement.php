@@ -25,7 +25,7 @@ ob_start(); ?>
         if(!empty($accordeon->create())) {
             foreach($accordeon->create() as $accordeons) { ?>
         <!-- accordeon -->
-        <div class="mt-1 mt-md-2 back-transparent col-12 p-1 p-lg-0 mx-auto">
+        <div class="mt-0 mt-md-2 back-transparent col-12 p-1 p-lg-0 mx-auto">
             <div class="row">
                 <div class="accordeon accordeons col-1 d-flex justify-content-center align-items-center mr-2 back-white">
                     <div class="w-900 font-18"><?= $accordeons['id'] ?></div>
