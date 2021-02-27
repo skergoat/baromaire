@@ -68,7 +68,7 @@
                 </nav>
             </div>
             <ul class="footer-responsive-nav font-22 d-none pl-0">
-                <li class="pt-2 pb-2 pl-4"><a href="/?principes" class="white<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
+                <li class="pt-2 pb-2 pl-4"><a href="/?principes" class="white li-a<?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
                 <li class="pt-2 pb-2 pl-4"><a href="#" class="white<?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
                 <li class="pt-2 pb-2 pl-4"><a href="/?create_baromaire" class="white<?php if (isset($_GET['create_baromaire'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
                 <li class="pt-2 pb-2 pl-4"><a href="/?tarifs" class="white<?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
