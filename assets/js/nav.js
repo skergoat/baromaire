@@ -18,14 +18,14 @@ $('#hamburger-button').on('click', function() {
  */ 
  $('#hamburger-buttons').on('touchstart click', function(){
      // show popover when open responsive nav 
-     if(!$('body').hasClass('hidden')) {
+     if(!$(this).hasClass('hidden')) {
         $('[data-toggle="popover-2"]').popover('show');
     }
     else {
         $('[data-toggle="popover-2"]').popover('hide');
     } 
     // toggle nav
-    $('body').toggleClass('hidden');
+    $(this).toggleClass('hidden');
     $('#nav-responsive').toggleClass('d-none');
     $('#hamburger-buttons i').toggleClass('fa-bars').toggleClass('fa-times');
 });
