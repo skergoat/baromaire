@@ -86,15 +86,21 @@
         border-bottom: 1px solid #152448;
         margin-bottom: 0px !important;
         font-size: 20px;
-        & a.active {
-          font-size: 25px;
-          padding-bottom: 3px;
-          border-bottom: 1px solid white;
-        }
+        // & a.active {
+        //   font-size: 25px;
+        //   padding-bottom: 3px;
+        //   border-bottom: 1px solid white;
+        // }
       }
       & span {
         display: none !important;
       }
+    }
+  }
+  .li-a {
+    display: block;
+    &.active {
+      border-bottom: 0px;
     }
   }
 }

@@ -415,13 +415,6 @@ img {
   margin: 0px !important;
 }
 
-.li-a {
-  display: block;
-}
-.li-a.active {
-  border-bottom: 0px;
-}
-
 @media all and (max-width: 991px) {
   .container-baromaire.container-baromaire-higher {
     height: 100% !important;
@@ -669,13 +662,15 @@ footer {
     margin-bottom: 0px !important;
     font-size: 20px;
   }
-  .footer-responsive-nav li a.active {
-    font-size: 25px;
-    padding-bottom: 3px;
-    border-bottom: 1px solid white;
-  }
   .footer-responsive-nav span {
     display: none !important;
+  }
+
+  .li-a {
+    display: block;
+  }
+  .li-a.active {
+    border-bottom: 0px;
   }
 }
 
