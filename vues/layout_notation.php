@@ -44,9 +44,9 @@
                         <?php } ?>
                         </a>
                         <!-- img mayor -->
-                        <!-- <div class="image image-rounded img-thumbnail mx-auto mb-3"></div> -->
+                        <div class="image image-rounded img-thumbnail mx-auto mb-3"></div>
                         <!-- img placeholder -->
-                        <div class="image image-placeholder img-thumbnail mx-auto mb-3"></div>
+                        <!-- <div class="image image-placeholder img-thumbnail mx-auto mb-3"></div> -->
                     </div>
                     <div class="row">
                         <div class="col-12 p-0">
