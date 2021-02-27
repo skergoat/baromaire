@@ -14,7 +14,7 @@ ob_start(); ?>
 <!-- start form -->
 <form>
 
-    <div class="col-9 mx-auto p-0 pb-4 pt-lg-4 position-relative pt-5 pt-lg-0">
+    <div class="col-11 mx-auto p-0 pb-4 pt-lg-4 position-relative pt-5 pt-lg-0">
         <!-- ajouter -->    
         <a href="/?admin=mandat&reload" class="btn btn-primary col-4 col-md-2 position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Enregistrer</a>
         <!-- title -->
