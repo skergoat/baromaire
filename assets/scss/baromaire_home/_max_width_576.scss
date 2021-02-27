@@ -102,5 +102,8 @@
     &.active {
       border-bottom: 0px;
     }
+    &:hover {
+      background: #588ae8 !important;
+    }
   }
 }

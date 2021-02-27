@@ -71,10 +71,10 @@
             </div>
             <ul class="footer-responsive-nav font-22 d-none pl-0">
                 <li class=""><a href="/?principes" class="white li-a pt-2 pb-2 pl-4 <?php if (isset($_GET['principes'])){ ?> active <?php } ?>">Principes</a></li>
-                <li class=""><a href="#" class="white pt-2 pb-2 pl-4 <?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
-                <li class=""><a href="/?create_baromaire" class="white pt-2 pb-2 pl-4 <?php if (isset($_GET['create_baromaire'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
-                <li class=""><a href="/?tarifs" class="white pt-2 pb-2 pl-4 <?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
-                <li class=""><a href="/?contact" class="white pt-2 pb-2 pl-4 <?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
+                <li class=""><a href="#" class="white li-a  pt-2 pb-2 pl-4 <?php if (isset($_GET['demo'])){ ?> active <?php } ?>">Démo</a></li>
+                <li class=""><a href="/?create_baromaire" class="white li-a  pt-2 pb-2 pl-4 <?php if (isset($_GET['create_baromaire'])){ ?> active <?php } ?>">Créer votre Baromaire</a></li>
+                <li class=""><a href="/?tarifs" class="white pt-2 li-a  pb-2 pl-4 <?php if (isset($_GET['tarifs'])){ ?> active <?php } ?>">Tarifs</a></li>
+                <li class=""><a href="/?contact" class="white pt-2 li-a pb-2 pl-4 <?php if (isset($_GET['contact'])){ ?> active <?php } ?>">Nous contacter</a></li>
             </ul>
             <script src="assets/js/nav.js"></script>
         </footer>

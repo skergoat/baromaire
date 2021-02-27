@@ -672,6 +672,9 @@ footer {
   .li-a.active {
     border-bottom: 0px;
   }
+  .li-a:hover {
+    background: #588ae8 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
