@@ -415,6 +415,13 @@ img {
   margin: 0px !important;
 }
 
+.li-a {
+  display: block;
+}
+.li-a.active {
+  border-bottom: 0px;
+}
+
 @media all and (max-width: 991px) {
   .container-baromaire.container-baromaire-higher {
     height: 100% !important;
