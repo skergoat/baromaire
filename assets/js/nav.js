@@ -16,7 +16,7 @@ $('#hamburger-button').on('click', function() {
 /****
  * NOTATION
  */ 
- $('#hamburger-buttons').on('click', function() {
+ $('#hamburger-buttons').bind('touchstart click', function(){
      // show popover when open responsive nav 
      if(!$('body').hasClass('hidden')) {
         $('[data-toggle="popover-2"]').popover('show');
