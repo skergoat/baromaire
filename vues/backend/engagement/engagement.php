@@ -14,7 +14,7 @@ ob_start(); ?>
 
     <div class="col-12 p-0 pb-2 pb-md-4 pt-lg-4 position-relative pt-5 pt-lg-0">
         <!-- ajouter -->    
-        <a href="/?admin=edit_engagement&create" class="btn btn-primary position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Ajouter</a>
+        <a href="/?admin=edit_engagement&create" class="btn btn-primary col-4 col-md-2 position-absolute ajouter-domaine ml-0 ml-md-1 ml-lg-0">Ajouter</a>
         <!-- title -->
         <div class="col-12"><h4 class="w-900 font-30 text-center m-0">Vos engagements</h4></div>
     </div>
