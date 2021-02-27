@@ -46,7 +46,7 @@
             <?= $content ?>
         <!-- footer -->
         </div>
-        <footer style="position:fixed;bottom:0;" id="footer-home" class="text-white pb-3 pt-3 <?php if (isset($_GET['contact']) || $_SERVER['REQUEST_URI'] == "/"){ ?> footer-absolute <?php } ?>">
+        <footer id="footer-home" class="text-white pb-3 pt-3 <?php if (isset($_GET['contact']) || $_SERVER['REQUEST_URI'] == "/"){ ?> footer-absolute <?php } ?>">
             <div class="f-flex flex-column">
                 <nav class="d-flex justify-content-center">
                     <!-- nav button xs -->

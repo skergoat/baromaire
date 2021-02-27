@@ -436,7 +436,7 @@ footer {
 }
 
 #footer-home {
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 
