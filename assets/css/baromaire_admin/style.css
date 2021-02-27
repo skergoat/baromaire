@@ -1203,8 +1203,9 @@ footer {
   }
 
   .ajouter-domaine {
-    top: 10px;
-    left: 140px;
+    position: relative !important;
+    display: block;
+    margin: auto;
   }
 }
 .card-admin {
