@@ -18,6 +18,14 @@
   }
 }
 
+@media all and (min-width: 1450px) {
+  .justify-content-xl-end .col-md-6,
+  .justify-content-xl-start .col-md-6 {
+    flex: 0 0 41.666667% !important;
+    max-width: 41.666667% !important;
+  }
+}
+
 @media all and (min-width: 1260px) {
   .card-principes.principes {
     max-height: 470px;

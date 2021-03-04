@@ -7,7 +7,7 @@ ob_start(); ?>
 <div class="text-center mb-5 mt-4">
     <div class="row justify-content-between">
         <div class="col-12 col-lg-6 pr-0 pl-0 mb-5 mb-0">
-            <div class="row">
+            <div class="row justify-content-xl-end">
                 <div class="col-12 col-md-6 mb-5 mb-md-0 pr-0 pl-0 pr-md-3">
                     <div class="card card-principes card-principes-prices shadow">
                         <div class="card-body pb-5 pt-5">
@@ -40,7 +40,7 @@ ob_start(); ?>
             </div>
         </div>
         <div class="col-12 col-lg-6 pr-0 pl-0 ">
-            <div class="row">
+            <div class="row justify-content-xl-start">
                 <div class="col-12 col-md-6 mb-5 mb-md-0 pr-0 pl-0 pl-md-3 pr-md-3">
                     <div class="card card-principes card-principes-prices shadow">
                         <div class="card-body pb-5 pt-5">
