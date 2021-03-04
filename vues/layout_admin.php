@@ -32,7 +32,7 @@
         <div class="row pt-0">
             <!-- sidebar left -->
             <div class="position-relative col-2 p-0">
-                <div class="card sidebar-left p-0 col position-fixed" id="sidebar-admin">
+                <div class="card sidebar-left p-0 col-2 position-fixed" id="sidebar-admin">
                     <div class="logo-admin pl-1 pr-1">
                         <a href="/">
                             <img class="" src="assets/img/logo_baromaire_admin.png" alt="">

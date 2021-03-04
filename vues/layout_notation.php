@@ -165,7 +165,7 @@
                 </ul>
                 <!-- alert -->
                 <?php if(isset($_SESSION['admin']) && $_SESSION['admin']== true) { ?>
-                <div class="alert alert-danger text-center" role="alert">
+                <div class="alert alert-danger text-center ml-2 mr-2" role="alert">
                 <a href="#" class="alert-link">Administrateur</a>
                 </div>
                 <?php } ?>

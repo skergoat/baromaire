@@ -489,6 +489,12 @@ footer {
   border-bottom: 2px solid white;
 }
 
+@media all and (max-width: 991px) {
+  #footer-home {
+    position: fixed !important;
+    bottom: 0;
+  }
+}
 @media all and (min-width: 576px) {
   .footer-nav {
     font-size: 15px !important;
@@ -947,7 +953,6 @@ footer {
 .sidebar-left {
   height: 100vh !important;
   min-height: 100vh;
-  max-width: 250px !important;
   background: #303c54 !important;
   border-radius: 0px !important;
   z-index: 99999;
