@@ -390,11 +390,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container-baromaire {
-  height: 100vh !important;
-  overflow: hidden;
-}
-
 a,
 a:hover {
   color: white;
@@ -491,8 +486,8 @@ footer {
   padding: 28px;
   background: white !important;
   border-radius: 5px;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .main-title {
@@ -503,7 +498,7 @@ footer {
   width: 240px !important;
 }
 .logo-home {
-  min-width: 310px !important;
+  width: 310px !important;
 }
 .logo-left {
   max-width: 60px;
