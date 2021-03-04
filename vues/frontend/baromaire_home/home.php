@@ -11,7 +11,7 @@ ob_start(); ?>
         <!-- subtitle -->
         <h5 class="main-subtitle primary mb-sm-4">Tapez le nom de votre commune ou son code postal</h5>
         <!-- form -->
-        <!-- <form>
+        <form>
             <div class="form-inline justify-content-center">
                 <div class="form-group position-relative mb-sm-2 mr-sm-3 col-4 pl-0 pr-0">
                     <input type="text" class="form-control col-sm-12" id="commune" placeholder="ex. : 75015 ou Paris" autocomplete>
@@ -27,7 +27,7 @@ ob_start(); ?>
                 <button type="submit" class="submit btn btn-primary mb-2">Envoyer</button>
             </div>
         </form>
-    </div> -->
+    </div>
 <!-- redirect provisoire -->
 <script>
 $('.submit').on('click', function(e) {
