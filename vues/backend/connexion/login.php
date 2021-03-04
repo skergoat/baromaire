@@ -58,10 +58,6 @@ ob_start(); ?>
                 </div>
                 <button type="submit" class="btn btn-primary" id="submit">OK</button>
             </div><br>
-            <div class="form-check text-right pr-3">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Mot de Passe oublié ? </label>
-            </div>
         </form>
       </div>
     </div>
