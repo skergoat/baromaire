@@ -390,9 +390,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.container-baromaire {
-  height: 100vh !important;
+#wrapper {
+  min-height: 90vh !important;
   overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.container-baromaire {
+  border: 2px solid green;
 }
 
 a,
@@ -433,11 +438,6 @@ footer {
   line-height: 45px;
   background-color: #2d4e9d !important;
   width: 100%;
-}
-
-#footer-home {
-  position: fixed;
-  bottom: 0;
 }
 
 #hamburger {
@@ -491,8 +491,8 @@ footer {
   padding: 28px;
   background: white !important;
   border-radius: 5px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main-title {
@@ -571,7 +571,7 @@ footer {
 .card-principes {
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  min-height: 470px;
+  min-height: 500px;
   overflow: hidden;
 }
 

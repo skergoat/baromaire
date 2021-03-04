@@ -11,14 +11,18 @@ body {
   font-family: Arial, sans-serif;
 }
 
-// #wrapper {
-//   height: 89% !important;
-//   overflow: hidden;
-// }
+#wrapper {
+  min-height: 90vh !important;
+  overflow: hidden;
+  // border: 2px solid red;
+  // display: none;
+  margin-bottom: 50px;
+}
 
 .container-baromaire {
-  height: 100vh !important;
-  overflow: hidden;
+  // min-height: 100vh !important;
+  // overflow: scroll;
+  border: 2px solid green;
 }
 
 a,
