@@ -390,6 +390,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.container-baromaire {
+  height: 100vh !important;
+  overflow: hidden;
+}
+
 a,
 a:hover {
   color: white;
