@@ -40,3 +40,10 @@
     padding-bottom: 1rem;
   }
 }
+
+@media all and (max-width: 991px) {
+  .header_baromaire {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
