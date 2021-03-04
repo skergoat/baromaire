@@ -4,10 +4,10 @@ footer {
   width: 100%;
 }
 
-#footer-home {
-  position: fixed;
-  bottom: 0;
-}
+// #footer-home {
+//   position: fixed;
+//   bottom: 0;
+// }
 
 // nav mobile
 #hamburger {
@@ -37,6 +37,13 @@ footer {
 }
 
 // responsive
+
+@media all and (max-width: 576px) {
+  #footer-home {
+    position: fixed !important;
+    bottom: 0;
+  }
+}
 
 @media all and (min-width: 576px) {
   .footer-nav {

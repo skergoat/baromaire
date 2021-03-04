@@ -3,6 +3,8 @@
   padding: 28px;
   background: white !important;
   border-radius: 5px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main-title {
@@ -26,4 +28,15 @@
 
 .subtitle_baromaire {
   color: black;
+}
+
+@media all and (max-width: 1200px) {
+  .logo-home {
+    max-width: 300px !important;
+  }
+
+  .header_baromaire {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }

@@ -390,6 +390,10 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#wrapper {
+  height: 89% !important;
+}
+
 .container-baromaire {
   height: 100vh !important;
   overflow: hidden;
@@ -435,11 +439,6 @@ footer {
   width: 100%;
 }
 
-#footer-home {
-  position: fixed;
-  bottom: 0;
-}
-
 #hamburger {
   display: none !important;
 }
@@ -464,6 +463,12 @@ footer {
   border-bottom: 2px solid white;
 }
 
+@media all and (max-width: 576px) {
+  #footer-home {
+    position: fixed !important;
+    bottom: 0;
+  }
+}
 @media all and (min-width: 576px) {
   .footer-nav {
     font-size: 15px !important;
@@ -485,6 +490,8 @@ footer {
   padding: 28px;
   background: white !important;
   border-radius: 5px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main-title {
@@ -510,6 +517,16 @@ footer {
   color: black;
 }
 
+@media all and (max-width: 1200px) {
+  .logo-home {
+    max-width: 300px !important;
+  }
+
+  .header_baromaire {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
 .png24 {
   width: 80px !important;
   height: 80px;
@@ -558,6 +575,11 @@ footer {
   top: 20px;
 }
 
+@media all and (max-width: 1200px) {
+  .create-message {
+    font-size: 15px !important;
+  }
+}
 @media all and (min-width: 768px) and (max-width: 991px) {
   .card-principes,
 .card-principes-prices {

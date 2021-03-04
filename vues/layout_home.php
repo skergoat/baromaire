@@ -30,9 +30,9 @@
 <body>
     <!-- container / height 100vh -->
     <div class="position-relative pt-4 container-baromaire <?php if(isset($_GET['tarifs']) || isset($_GET['principes']) || isset($_GET['create_baromaire'])) { ?>container-baromaire-higher<?php } ?>">
-        <div class="col-11 mx-auto">
+        <div class="col-11 mx-auto" id="wrapper">
             <!-- header -->
-            <header class="position-relative header_baromaire row align-items-center justify-content-center pt-5 pb-5">
+            <header class="position-relative header_baromaire row align-items-center justify-content-center">
                 <div class="position-absolute pl-5" style="width:100%">
                     <a href="/">
                         <img class="logo-left d-sm-none d-lg-block" src="assets/img/icone_m.png" alt="">

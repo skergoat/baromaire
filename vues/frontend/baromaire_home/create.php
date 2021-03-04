@@ -8,7 +8,7 @@ ob_start(); ?>
         <!-- title -->
         <h1 class="mb-4 mt-5 mt-lg-4 font-33">Pour créer votre BAROMAIRE, rien de plus simple !</h1>
         <!-- text -->
-        <div class="card">
+        <div class="card create-message">
             <div class="card-body">
                 <div class="row">
                     <div class="col-12 col-sm-2 mb-3 mb-sm-0">
@@ -78,7 +78,7 @@ ob_start(); ?>
                                 </div>
                             <div class="form-check d-flex flex-column flex-sm-row align-items-center justify-content-sm-start mb-4 mb-sm-2 pl-0 pl-sm-5">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                                <label class="form-check-label w-900 mt-4 mt-sm-0" for="exampleRadios3">
+                                <label class="form-check-label w-900 mt-4 mt-sm-0 text-left" for="exampleRadios3">
                                     Le webmaster du site de la commune
                                 </label>
                             </div>
