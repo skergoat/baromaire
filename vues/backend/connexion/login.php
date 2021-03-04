@@ -46,17 +46,19 @@ ob_start(); ?>
         <!-- form -->
         <form class="mb-3">
             <div class="form-group row justify-content-center pb-2 pb-lg-3">
-                <label for="staticEmail" class="pl-0 pr-0 col-lg-2 col-form-label text-right w-900">Email</label>
-                <div class="col-lg-9 pr-0">
+                <label for="staticEmail" class="pl-0 pr-0 col-lg-3 col-form-label text-right w-900">Email</label>
+                <div class="col-lg-8 pr-0 pl-0 pl-lg-3">
                     <input type="email" class="form-control" id="imputEmail" placeholder="email@example.com">
                 </div>
             </div>
             <div class="row justify-content-center">
-                <label for="inputPassword2" class=" pl-0 pr-0 col-lg-2 col-form-label text-right mb-0 w-900">Mot de Passe</label>
-                <div class="form-group col-lg-8 mb-0"> 
-                    <input type="password" class="form-control" id="inputPassword2" style="width:100%;">
+                <label for="inputPassword2" class=" pl-0 pr-0 col-lg-3 col-form-label text-right mb-0 w-900">Mot de Passe</label>
+                <div class="form-group col-12 col-lg-8 mb-0 pr-0"> 
+                    <div class="row">
+                      <input type="password" class="form-control col" id="inputPassword2" style="width:100%;">
+                      <button type="submit" class="btn btn-primary d-block col-4 col-lg-2 ml-0 ml-lg-2" id="submit">OK</button>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary" id="submit">OK</button>
             </div><br>
         </form>
       </div>
