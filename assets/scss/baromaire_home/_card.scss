@@ -12,9 +12,44 @@
   top: 20px;
 }
 
-@media all and (max-width: 1200px) {
+.card-principes.principes {
+  & img {
+    max-width: 150px !important;
+  }
+}
+
+@media all and (min-width: 1260px) {
+  .card-principes.principes {
+    max-height: 470px;
+    min-height: 470px;
+  }
+}
+
+@media all and (min-width: 991px) and (max-width: 1200px) {
   .create-message {
     font-size: 15px !important;
+  }
+  .logo-tarifs {
+    display: none !important;
+  }
+  .card-principes .content {
+    font-size: 22px !important;
+  }
+  .card-principes span.text-danger {
+    font-size: 30px !important;
+  }
+  .card-principes.principes {
+    max-height: 520px;
+    min-height: 520px;
+    & img {
+      max-width: 100px !important;
+    }
+    & .font-25 {
+      font-size: 20px !important;
+    }
+    & .principes.content {
+      font-size: 16px !important;
+    }
   }
 }
 
@@ -22,6 +57,9 @@
   .card-principes,
   .card-principes-prices {
     max-width: 300px;
+  }
+  .logo-tarifs {
+    display: block !important;
   }
 }
 
@@ -41,5 +79,10 @@
   }
   .logo-tarifs {
     left: 15px;
+  }
+  .card-principes.principes {
+    & .principes.content {
+      font-size: 22px !important;
+    }
   }
 }
